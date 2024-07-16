@@ -11,10 +11,7 @@ const scale = 3;
  * @returns {Number}
  */
 export function score(rank, percent, minPercent) {
-    if (rank > 50) {
-        return 0;
-    }
-    if (rank > 75 && percent < 100) {
+    if (rank > 75) {
         return 0;
     }
     let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *

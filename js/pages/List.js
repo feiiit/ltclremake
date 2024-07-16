@@ -21,7 +21,7 @@ export default {
             <Spinner></Spinner>
         </main>
         <main v-else class="page-list">
-            <div class="list-container" style="height: 100%; justify-content: center; align-items: center;">
+            <div class="list-container">
                 <table class="list" v-if="list">
                     <tr v-for="([level, err], i) in list">
                         <td class="rank">

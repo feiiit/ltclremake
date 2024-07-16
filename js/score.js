@@ -30,7 +30,7 @@ const scale = 2;
 export function score(rank){
   var top10Score = 250/(Math.log(3 * rank + 10) / Math.log(13));
   var top11_50Score = (Math.sin(0.08 * (rank + 8.905))*70) + 100;
-  var top51_75Score = 1.83 + (1/(0.0036*(rank-40)))
+  var top51_75Score = 1.83 + (1/(0.0036*(rank-41)))
 
   if(rank => 1){ //rank has to be above 1
     if(rank < 11)//if rank is 10 or above

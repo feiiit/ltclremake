@@ -1,0 +1,36 @@
+{
+    "id": 82646736,
+    "name": "FCL IS BIASED",
+    "author": "",
+    "creators": ["functionxd", "Slick", "taiga"],
+    "verifier": "taiga",
+    "verification": "https://www.youtube.com/watch?v=V-M_Sektw2M",
+    "percentToQualify": "100",
+    "records": [
+      "vids": [
+        {
+          "user": "KandyMan",
+          "percent": 100
+        },
+        {
+          "user": "Algirdas42",
+          "percent": 100
+        },
+        {
+          "user": "functionxd",
+          "percent": 100
+        },
+        {
+          "user": "xtrapnationx",
+          "percent": 100
+        },
+        {
+          "user": "Slick",
+          "percent": 100
+        },
+        {
+          "user": "ta1p",
+          "percent": 100
+        }
+    ]
+}

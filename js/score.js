@@ -18,7 +18,7 @@ export function score(rank) { //pointu formule
         return roundNumber(250 / log13, 2);
       }
       else if (rank > 10) {
-        if (rank < 51) {
+        if (rank < 76) {
           return roundNumber((250 * Math.sin(90 - (1000 / 28745 * rank)) / log5) - 10, 2);
         }
         else {
@@ -27,7 +27,7 @@ export function score(rank) { //pointu formule
       }
     }
   }
-  function roundNumber(num, scale) {     //apvalinimas
+  function round(num, scale) {     //apvalinimas
     if (!("" + num).includes("e")) {
       return +(Math.round(num + "e+" + scale) + "e-" + scale);
     } else {

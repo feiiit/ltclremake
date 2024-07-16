@@ -136,7 +136,7 @@ export default {
             return this.progression[this.progression.length - 1] || 0;
         },
         placeholder() {
-            if (this.currentPercentage >= 95){
+            if (this.currentPercentage >= 96){
                 this.currentPercentage = 100;
                 return `Bent ${this.currentPercentage}%`;
             } else {

@@ -41,5 +41,5 @@ export function score(rank, percent, minPercent) {
 //     }
 // }
 export function round(num){
-  return Math.round(num, 2);
+  return Math.round(num*100, 2)/100;
 }

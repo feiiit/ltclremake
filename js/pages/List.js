@@ -36,29 +36,24 @@ export default {
                     </tr>
                 </table>
             </div>
-            <div class="level-container">
+            <div class="level-container" style="justify-content: center; align-items: center;">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
-                            <div class="type-title-sm">Points when completed</div>
+                            <div class="type-title-sm">Taškų vertė</div>
                             <p>{{ score(selected + 1, 100, level.percentToQualify) }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">ID</div>
+                            <div class="type-title-sm">Lygio ID</div>
                             <p>{{ level.id }}</p>
-                        </li>
-                        <li>
-                            <div class="type-title-sm">Password</div>
-                            <p>{{ level.password || 'Free to Copy' }}</p>
                         </li>
                     </ul>
                     <h2>Records</h2>
-                    <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
-                    <p v-else-if="selected +1 <= 150"><strong>100%</strong> or better to qualify</p>
-                    <p v-else>This level does not accept new records.</p>
+                    <p v-if="selected + 1 <= 50"><strong>100%</strong> būtinas, kad rekordas būtų priimtas</p>
+                    <p v-else>Legacy lygiams nauji rekordai nepriimami.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">

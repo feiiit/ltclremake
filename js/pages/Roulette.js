@@ -11,6 +11,7 @@ export default {
             <Spinner></Spinner>
         </main>
         <main v-else class="page-roulette">
+                <div class="sidebar">
                 <form class="options">
                     <div class="check">
                         <input type="checkbox" id="main" value="Main List" v-model="useMainList">

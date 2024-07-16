@@ -142,7 +142,7 @@ export default {
             }
             else
             {
-                return this.progression[this.progression.length - 1];
+                return this.progression[this.progression.length - 1] + 5;
             }
         },
         placeholder() //holds the current percentage for displaying the requirement for the next level in the roulette

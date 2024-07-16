@@ -7,20 +7,24 @@ const dir = '/data';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
+    const packResult = await fetch(`${dir}/_packlist.json`);
     try {
         const list = await listResult.json();
+        const packsList = await packResult.json();
         return await Promise.all(
             list.map(async (path, rank) => {
                 const levelResult = await fetch(`${dir}/${path}.json`);
                 try {
                     const level = await levelResult.json();
+                    let packs = packsList.filter((x) =>
+                        x.levels.includes(path)
+                    );
                     return [
                         {
                             ...level,
+                            packs,
                             path,
-                            records: level.records.sort(
-                                (a, b) => b.percent - a.percent,
-                            ),
+                            records: level.records,
                         },
                         null,
                     ];
@@ -35,6 +39,7 @@ export async function fetchList() {
         return null;
     }
 }
+
 
 export async function fetchEditors() {
     try {

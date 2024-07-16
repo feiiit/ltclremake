@@ -59,7 +59,7 @@ export default {
                                 <p>{{ currentLevel.id }}</p>
                             </div>
                             <form class="actions" v-if="!givenUp">
-                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 2" max=100>
+                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 5" max=100>
                                 <Btn @click.native.prevent="onDone">Baigta</Btn>
                                 <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63;">Pasiduoti</Btn>
                             </form>
@@ -80,7 +80,7 @@ export default {
                                 <div class="meta">
                                     <p>#{{ level.rank }}</p>
                                     <h2>{{ level.name }}</h2>
-                                    <p style="color: #d50000; font-weight: 700">{{ currentPercentage + 2 + i }}%</p>
+                                    <p style="color: #d50000; font-weight: 700">{{ currentPercentage + 5 + i }}%</p>
                                 </div>
                             </div>
                         </template>
@@ -131,14 +131,14 @@ export default {
             return this.levels[this.progression.length];
         },
         currentPercentage() {
-            return this.progression[this.progression.length - 2] || 0;
+            return this.progression[this.progression.length - 5] || 0;
         },
         placeholder() {
-            return `Bent ${this.currentPercentage + 2}%`;
+            return `Bent ${this.currentPercentage + 5}%`;
         },
         hasCompleted() {
             return (
-                this.progression[this.progression.length - 2] >= 100 ||
+                this.progression[this.progression.length - 5] >= 100 ||
                 this.progression.length === this.levels.length
             );
         },

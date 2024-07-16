@@ -13,11 +13,11 @@ const scale = 3;
 export function score(rank) { //pointu formule
     log13 = Math.log(3 * rank + 10) / Math.log(13);
     log5 = Math.log(rank) / Math.log(5);
+
     if (rank => 1) {
       if (rank < 11) {
         return round(250 / log13, 2);
-      }
-      else if (rank > 10) {
+      } else if (rank > 10) {
         if (rank < 76) {
           return round((250 * Math.sin(90 - (1000 / 28745 * rank)) / log5) - 10, 2);
         }
@@ -27,15 +27,16 @@ export function score(rank) { //pointu formule
       }
     }
   }
-  function round(num) {     //apvalinimas
-    if (!("" + num).includes("e")) {
-      return +(Math.round(num + "e+" + scale) + "e-" + scale);
+
+export function round(num) {
+    if (!('' + num).includes('e')) {
+        return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
     } else {
-      var arr = ("" + num).split("e");
-      var sig = ""
-      if (+arr[1] + scale > 0) {
-        sig = "+";
-      }
-      return +(Math.round(+arr[0] + "e" + sig + (+arr[1] + scale)) + "e-" + scale);
+        var arr = ('' + num).split('e');
+        var sig = '';
+        if (+arr[1] + scale > 0) {
+            sig = '+';
+        }
+        return +(Math.round(+arr[0] + 'e' + sig + (+arr[1] + scale)) + 'e-' + scale);
     }
   }

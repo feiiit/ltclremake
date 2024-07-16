@@ -134,7 +134,7 @@ export async function fetchPacks() {
         return null;
     }}
 
-    export async function fetchPackLevels(packname) {
+export async function fetchPackLevels(packname) {
         const packResult = await fetch(`${dir}/_packlist.json`);
         const packsList = await packResult.json();
         const selectedPack = await packsList.find((pack) => pack.name == packname);

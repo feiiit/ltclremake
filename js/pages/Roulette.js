@@ -131,14 +131,14 @@ export default {
             return this.levels[this.progression.length];
         },
         currentPercentage() {
-            return this.progression[this.progression.length - 5] || 0;
+            return this.progression[this.progression.length - 1] || 0;
         },
         placeholder() {
-            return `Bent ${this.currentPercentage + 5}%`;
+            return `Bent ${this.currentPercentage + 4}%`;
         },
         hasCompleted() {
             return (
-                this.progression[this.progression.length - 5] >= 100 ||
+                this.progression[this.progression.length - 1] >= 100 ||
                 this.progression.length === this.levels.length
             );
         },

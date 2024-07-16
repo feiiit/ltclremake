@@ -11,9 +11,11 @@ const scale = 3;
  * @returns {Number}
  */
 export function score(rank) {
+    var log13 = Math.log(3 * rank + 10) / Math.log(13);
+    var log5 = Math.log(rank) / Math.log(5);
     if (rank => 1) {
         if (rank < 11) {
-          return round(250 /  2);
+          return round(250 / log13,  2);
         }}
 
     if (rank > 75) {
@@ -24,7 +26,7 @@ export function score(rank) {
         return Math.max(round(score), 0);
 }
 
-export function round(num) {
+export function round(num, scale) {
     if (!('' + num).includes('e')) {
         return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
     } else {

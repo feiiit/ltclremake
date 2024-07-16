@@ -142,7 +142,7 @@ export default {
             }
             else
             {
-                return this.progression[this.progression.length - 1] + 5;
+                return this.progression[this.progression.length - 1];
             }
         },
         placeholder() //holds the current percentage for displaying the requirement for the next level in the roulette
@@ -152,7 +152,7 @@ export default {
                 return `Bent 100%`;
             } 
             else {
-                return `Bent ${this.currentPercentage}%`;
+                return `Bent ${this.currentPercentage + 5}%`;
             }
             
         },

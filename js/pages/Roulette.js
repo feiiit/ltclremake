@@ -159,7 +159,6 @@ export default {
         hasCompleted() //called whenever the roulette is complete, probably.
         {
             return (
-                this.progression[this.progression.length - 1] <= this.percentage ||
                 this.progression.length === this.levels.length ||
                 this.progression[this.progression.length - 1] >= 100
             );

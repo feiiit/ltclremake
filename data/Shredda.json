@@ -1,88 +1,63 @@
 {
-         "id": 77952663,
-        "name": "Shredda",
-      "author": "TopHatMark [bebras!]",
-      "verifier": "taiga",
-    "verification": "https://www.youtube.com/watch?v=vqK8oz--nrI",
+    "id": 77952663,
+    "name": "Shredda",
+    "author": "TopHatMark",
+    "creators": [],
+    "verifier": "taiga",
+    "verification": "https://www.youtube.com/watch?v=v8mofG9tE1Q",
     "percentToQualify": "100",
     "records": [
         {
           "user": "Slick",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "danz",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "yolomodeboom",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "KandyMan",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "ZygisDij",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "functionxd",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "Kovaldas",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "xtrapnationx",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "Algirdas42",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "RiVeLqZ",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "harmyko",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "ta1p",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         },
         {
           "user": "iDinamte",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         }
     ]
 }

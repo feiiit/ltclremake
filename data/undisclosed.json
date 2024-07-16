@@ -9,19 +9,8 @@
     "password": "Free to copy",
     "records": [
         {
-            "user": "Algi42"
-        },
-        {
-            "user": "KandyMan",
-            "link": "",
+            "user": "Algirdas42", "KandyMan", "ta1p",
             "percent": 100,
-            "hz": ""
-        },
-        {
-            "user": "ta1p",
-            "link": "",
-            "percent": 100,
-            "hz": ""
         }
     ]
 }

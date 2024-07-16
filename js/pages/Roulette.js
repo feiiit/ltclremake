@@ -104,7 +104,7 @@ export default {
         givenUp: false,
         showRemaining: false,
         useMainList: true,
-        useExtendedList: true,
+        useLegacyList: true,
         toasts: [],
         fileInput: undefined,
     }),
@@ -183,7 +183,7 @@ export default {
                 return;
             }
 
-            if (!this.useMainList && !this.useExtendedList) {
+            if (!this.useMainList && !this.useLegacyList) {
                 return;
             }
 
@@ -207,7 +207,7 @@ export default {
             }));
             const list = [];
             if (this.useMainList) list.push(...fullListMapped.slice(0, 75));
-            if (this.useExtendedList) {
+            if (this.useLegacyList) {
                 list.push(...fullListMapped.slice(75, 150));
             }
 

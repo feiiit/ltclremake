@@ -11,6 +11,14 @@ const scale = 3;
  * @returns {Number}
  */
 export function score(rank) {
+    log13 = Math.log(3 * rank + 10) / Math.log(13);
+    log5 = Math.log(rank) / Math.log(5);
+
+    if (rank => 1) {
+        if (rank < 11) {
+          return round(250 / log13, 2);
+        }}
+
     if (rank > 75) {
         return 0;
     }

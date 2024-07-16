@@ -218,24 +218,21 @@ export default {
             if (!this.percentage) {
                 return;
             }
-            if (this.currentPercentage > 95){
-                this.currentPercentage = 100}
-            if (
-                this.percentage <= this.currentPercentage + 4 ||
-                this.percentage >= 100
-            ) {
+            if (this.currentPercentage > 95)
+            {
+                this.currentPercentage = 100;
+            }
+            if (this.percentage <= this.currentPercentage || this.percentage >= 100) 
+            {
                 this.showToast('Netinkami procentai.');
                 return;
             }
-
             this.progression.push(this.percentage);
             this.percentage = undefined;
-
             this.save();
         },
         onGiveUp() {
             this.givenUp = true;
-
             // Save progress
             localStorage.removeItem('roulette');
         },

@@ -1,0 +1,29 @@
+{
+    "id": 85968728,
+    "name": "Best chall possible",
+    "author": "functionxd",
+    "creators": ["functionxd","taiga"],
+    "verifier": "taiga",
+    "verification": "https://youtu.be/moJzok2tVD4",
+    "percentToQualify": "100",
+    "password": "Free to copy",
+    "records": [
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "yolomodeboom",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        },
+        {
+            "user": "Algirdas42",
+            "percent": 100
+        }
+        
+    ]
+}

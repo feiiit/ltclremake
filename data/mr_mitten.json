@@ -1,23 +1,19 @@
 {
-    "id": 57436521,
-    "name": "Clap of yolomodeboom",
-    "author": "functionxd",
+    "id": 83568006,
+    "name": "mr mitten",
+    "author": "ArcticEggz",
     "creators": [],
-    "verifier": "functionxd",
-    "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
+    "verifier": "taiga",
+    "verification": "https://youtu.be/OYNUb0rJuTw",
     "percentToQualify": "100",
-    "password": "free to copy",
+    "password": "Free to copy",
     "records": [
         {
+            "user": "iDinamte",
+            "percent": 100
+        },
+        {
             "user": "KandyMan",
-            "percent": 100
-        },
-        {
-            "user": "harmyko",
-            "percent": 100
-        },
-        {
-            "user": "taiga",
             "percent": 100
         },
         {
@@ -25,7 +21,7 @@
             "percent": 100
         },
         {
-            "user": "ArcticEggz",
+            "user": "ZygisDij",
             "percent": 100
         },
         {

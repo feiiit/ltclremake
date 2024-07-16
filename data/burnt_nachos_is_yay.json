@@ -1,0 +1,30 @@
+{
+    "id": 72349366,
+    "name": "Burnt nachos is yay",
+    "author": "yolomodeboom",
+    "creators": [],
+    "verifier": "yolomodeboom",
+    "verification": "https://youtu.be/6eba6dAoMmo?t=466",
+    "percentToQualify": "100",
+    "password": "Free to copy",
+    "records": [
+        {
+            "user": "harmyko",
+            "percent": 100
+        },
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        },
+        {
+            "user": "Algirdas42",
+            "percent": 100
+        }
+
+        
+    ]
+}

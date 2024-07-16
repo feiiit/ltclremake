@@ -1,15 +1,15 @@
 {
-    "id": 57436521,
-    "name": "Clap of yolomodeboom",
-    "author": "functionxd",
+    "id": 78113824,
+    "name": "Natura Electrum",
+    "author": "KandyMan",
     "creators": [],
-    "verifier": "functionxd",
-    "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
+    "verifier": "KandyMan",
+    "verification": "https://youtu.be/o6mGqt_AETE",
     "percentToQualify": "100",
-    "password": "free to copy",
+    "password": "Free to copy",
     "records": [
         {
-            "user": "KandyMan",
+            "user": "yolomodeboom",
             "percent": 100
         },
         {
@@ -17,15 +17,23 @@
             "percent": 100
         },
         {
+            "user": "xtrapnation",
+            "percent": 100
+        },
+        {
             "user": "taiga",
             "percent": 100
         },
         {
-            "user": "ta1p",
+            "user": "iDinamte",
             "percent": 100
         },
         {
-            "user": "ArcticEggz",
+            "user": "functionxd",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
             "percent": 100
         },
         {

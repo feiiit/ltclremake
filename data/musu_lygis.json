@@ -1,0 +1,37 @@
+{
+    "id": 81380094,
+    "name": "musu lygis",
+    "author": "harmyko",
+    "creators": ["harmyko","Slick","functionxd","Algirdas42","xtrapnation"],
+    "verifier": "harmyko",
+    "verification": "https://youtu.be/7ZlQSylJc9A",
+    "percentToQualify": "100",
+    "password": "Free to copy",
+    "records": [
+        {
+            "user": "Kovaldas",
+            "percent": 100
+        },
+        {
+            "user": "yolomodeboom",
+            "percent": 100
+        },
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "xtrapnation",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        },
+        {
+            "user": "Algirdas42",
+            "percent": 100
+        }
+        
+    ]
+}

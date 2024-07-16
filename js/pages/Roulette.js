@@ -213,7 +213,8 @@ export default {
 
             if (
                 this.percentage <= this.currentPercentage + 4 ||
-                this.percentage > 100
+                this.percentage >= 100 ||
+                this.percentage === 100
             ) {
                 this.showToast('Netinkami procentai.');
                 return;

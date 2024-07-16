@@ -219,7 +219,7 @@ export default {
                 return;
             }
             if (this.currentPercentage > 100){
-                this.currentPercentage == 100}
+                this.currentPercentage = 100}
             if (
                 this.percentage <= this.currentPercentage + 4 ||
                 this.percentage >= 100

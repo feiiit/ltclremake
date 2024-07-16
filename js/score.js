@@ -16,11 +16,14 @@ export function score(rank) {
     if (rank => 1) {
         if (rank < 11) {
           return round(250 / log13,  2);
-        }}
-
-    if (rank > 75) {
-        return 0;
-    }
+        }else if (rank > 10) {
+            if (rank < 76) {
+              return round((250 * Math.sin(90 - (1000 / 28745 * rank)) / log5) - 10, 2);
+            }
+            else {
+              return 0;
+            }
+          }};
     let score = (-24.9975*Math.pow(rank-1, 0.4) + 200);
         score = Math.max(0, score);
         return Math.max(round(score), 0);

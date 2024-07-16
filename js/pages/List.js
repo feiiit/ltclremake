@@ -21,7 +21,7 @@ export default {
             <Spinner></Spinner>
         </main>
         <main v-else class="page-list">
-            <div class="list-container">
+            <div class="list-container" style="height: 100%; justify-content: center; align-items: center;">
                 <table class="list" v-if="list">
                     <tr v-for="([level, err], i) in list">
                         <td class="rank">
@@ -36,18 +36,18 @@ export default {
                     </tr>
                 </table>
             </div>
-            <div class="level-container" style="height: 100%; justify-content: center; align-items: center;">
+            <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
-                            <div class="type-title-sm" style="height: 100%; justify-content: center; align-items: center;">Taškų vertė</div>
+                            <div class="type-title-sm">Taškų vertė</div>
                             <p>{{ score(selected + 1, 100, level.percentToQualify) }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm" style="height: 100%; justify-content: center; align-items: center;">Lygio ID</div>
+                            <div class="type-title-sm">Lygio ID</div>
                             <p>{{ level.id }}</p>
                         </li>
                     </ul>

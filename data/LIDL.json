@@ -1,19 +1,28 @@
 {
-    "id": 57436521,
-    "name": "lidl",
-    "author": "retard",
-    "creators": ["Solo_Creator"],
-    "verifier": "Solo_Creator",
-    "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
+    "id": 81476063,
+    "name": "LIDL",
+    "author": "Zygisdij",
+    "creators": [],
+    "verifier": "Zygisdij",
+    "verification": "https://youtu.be/X0iaDxMj1sk",
     "percentToQualify": "100",
-    "password": "46290",
+    "password": "",
     "records": [
         {
-            "user": "daunas_1",
+            "user": "yolomodeboom",
+            "percent": 100
         },
         {
-            "user": "daunas_2",
-            "percent": 100,
+            "user": "Algirdas42",
+            "percent": 100
+        },
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
         }
     ]
 }

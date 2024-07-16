@@ -10,7 +10,7 @@ const scale = 2;
  * @param {Number} minPercent Minimum percentage required
  * @returns {Number}
  */
-export function score(rank) {
+export function score(rank, percent, minPercent) {
     var log13 = Math.log(3 * rank + 10) / Math.log(13);
     var log5 = Math.log(rank) / Math.log(5);
 

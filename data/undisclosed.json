@@ -1,0 +1,30 @@
+{
+    "id": 83775635,
+    "name": "undisclosed",
+    "author": "ArcticEggz",
+    "creators": ["ArcticEggz"],
+    "verifier": "yolomodeboom",
+    "verification": "yolomodeboom",
+    "percentToQualify": 100,
+    "password": "Free to copy",
+    "records": [
+        {
+            "user": "Algirdas42",
+            "link": "",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "KandyMan",
+            "link": "",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "ta1p",
+            "link": "",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -91,21 +91,21 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Completionų submittinimo taisyklės:</h3>
-                    <li>
+                    <h4>Completionų submittinimo taisyklės:</h4>
+                    <p>
                         Turi būti nufilmuotas completion (obviously) ir su aiškiai girdimais clickais.
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         Turi būti matoma mirtis prieš completion attempt. (jei sugebėjai one attemptint po practice arba iškart
               įeinant į level, turi parodyt ir tai)
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         Turi būti matomas end screen ir "Level Complete" tekstas.
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         Nenaudokit bug routes ir skips, arba jei labai buggy levelis tai bent naudokit kuo įmanoma mažiau.
-                    </li>
-                    <h3>Challengų submittinimo taisyklės:</h3>
+                    </p>
+                    <h4>Challengų submittinimo taisyklės:</h4>
                     <p>
                         Challenge negali būti layout. Turi būti kažkiek dekoruotas, normaliai sustruktūruotas ir būt bent šiek
               tiek visually appealing. OBJECT SPAM =/= DEKORACIJA, nebent ji done right (pavyzdžiui Slick Challenge

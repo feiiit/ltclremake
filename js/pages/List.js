@@ -51,9 +51,7 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                     </ul>
-                    <h2>Records</h2>
-                    <p v-if="selected + 1 <= 50"><strong>100%</strong> būtinas, kad rekordas būtų priimtas</p>
-                    <p v-else>Legacy lygiams nauji rekordai nepriimami.</p>
+                    <h2>Rekordai</h2>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">

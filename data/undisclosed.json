@@ -10,9 +10,15 @@
     "records": [
         {
             "user": "Algirdas42",
+            "percent": 100
+        },
+        {
             "user": "KandyMan",
+            "percent": 100
+        },
+        {
             "user": "ta1p",
-            "percent": 100,
+            "percent": 100
         }
     ]
 }

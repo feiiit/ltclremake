@@ -100,7 +100,7 @@ export default {
         loading: false,
         levels: [],
         progression: [], // list of percentages completed
-        percentage: undefined,
+        percentage: 1,
         givenUp: false,
         showRemaining: false,
         useMainList: true,

@@ -127,11 +127,13 @@ export default {
         this.progression = roulette.progression;
     },
     computed: {
-        currentLevel() {
+        currentLevel() //returns the current level that is in the array for the roulette to display
+        {
             return this.levels[this.progression.length];
         },
-        currentPercentage() {
-           if (this.progression[this.progression.length - 1] > 95)
+        currentPercentage() 
+        {
+            if (this.progression[this.progression.length - 1] >= 95)
             {
                 return 100;
             }
@@ -140,22 +142,25 @@ export default {
                 return this.progression[this.progression.length - 1];
             }
         },
-        placeholder() {
-            if (this.currentPercentage >= 96)
+        placeholder() //holds the current percentage for displaying the requirement for the next level in the roulette
+        {
+            if (this.currentPercentage >= 95)
             {
-                return `Bent ${this.currentPercentage}%`;
+                return `Bent 100%`;
             } else {
                 return `Bent ${this.currentPercentage + 5}%`;
             }
             
         },
-        hasCompleted() {
+        hasCompleted() //called whenever the roulette is complete, probably.
+        {
             return (
-                this.progression[this.progression.length - 1] >= 100 ||
+                //this.progression[this.progression.length - 1] >= 100 ||
                 this.progression.length === this.levels.length
             );
         },
-        isActive() {
+        isActive() //checks whether the roulette is still active
+        {
             return (
                 this.progression.length > 0 &&
                 !this.givenUp &&

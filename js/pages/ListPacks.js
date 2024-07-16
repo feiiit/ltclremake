@@ -1,7 +1,7 @@
-import { store } from '../main.js';
 import { fetchPacks, fetchPackLevels } from "../content.js";
 import { getFontColour, embed } from "../util.js";
 import { score } from "../score.js";
+import { store } from "../main.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -64,10 +64,12 @@ export default {
                         </li>
                     </ul>
                     <h2>Records</h2>
+                    <p v-if="selected + 1 <= 150"><strong>{{ selectedPackLevels[selectedLevel][0].level.percentToQualify }}%</strong> or better to qualify</p>
+                    <p v-else>100% or better to qualify</p>
                     <table class="records">
                         <tr v-for="record in selectedPackLevels[selectedLevel][0].records" class="record">
-                            <td class="link">
-                                <a :href="record.link" target="_blank" class="type-label-lg">Video</a>
+                            <td class="percent">
+                                <p>100%</p>
                             </td>
                             <td class="user">
                                 <a :href="record.link" target="_blank" class="type-label-lg">{{ record.user }}</a>
@@ -116,14 +118,23 @@ export default {
             return this.packs[this.selected];
         },
         video() {
-			if (!this.selectedPackLevels[this.selectedLevel][0].level.showcase) {
-				return embed(this.selectedPackLevels[this.selectedLevel][0].level.verification);
-			}
+            if (
+                !this.selectedPackLevels[this.selectedLevel][0].level.showcase
+            ) {
+                return embed(
+                    this.selectedPackLevels[this.selectedLevel][0].level
+                        .verification
+                );
+            }
 
-			return embed(
-				this.toggledShowcase ? this.selectedPackLevels[this.selectedLevel][0].level.showcase : this.selectedPackLevels[this.selectedLevel][0].level.verification,
-			);
-		},
+            return embed(
+                this.toggledShowcase
+                    ? this.selectedPackLevels[this.selectedLevel][0].level
+                          .showcase
+                    : this.selectedPackLevels[this.selectedLevel][0].level
+                          .verification
+            );
+        },
     },
     async mounted() {
         this.packs = await fetchPacks();
@@ -132,19 +143,19 @@ export default {
         );
 
         // Error handling
-         if (!this.packs) {
-             this.errors = [
-                 "Failed to load list. Retry in a few minutes or notify list staff.",
-             ];
-         } else {
-             this.errors.push(
-                 ...this.selectedPackLevels
-                     .filter(([_, err]) => err)
-                     .map(([_, err]) => {
-                         return `Failed to load level. (${err}.json)`;
-                     })
-             );
-         }
+        if (!this.packs) {
+            this.errors = [
+                "Failed to load list. Retry in a few minutes or notify list staff.",
+            ];
+        } else {
+            this.errors.push(
+                ...this.selectedPackLevels
+                    .filter(([_, err]) => err)
+                    .map(([_, err]) => {
+                        return `Failed to load level. (${err}.json)`;
+                    })
+            );
+        }
 
         // Hide loading spinner
         this.loading = false;

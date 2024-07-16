@@ -1,0 +1,67 @@
+{
+    "id": 81183291,
+    "name": "Resent",
+    "author": "functionxd",
+    "creators": [],
+    "verifier": "functionxd",
+    "verification": "https://www.youtube.com/watch?v=jjhTGnSkY7c",
+    "percentToQualify": "100",
+    "records": [
+        {
+          "user": "Slick",
+          "percent": 100
+        },
+        {
+          "user": "yolomodeboom",
+          "percent": 100
+        },
+        {
+          "user": "xtrapnationx",
+          "percent": 100
+        },
+        {
+          "user": "Algirdas42",
+          "percent": 100
+        },
+        {
+          "user": "KandyMan",
+          "percent": 100
+        },
+        {
+          "user": "RiVeLqZ",
+          "percent": 100
+        },
+        {
+          "user": "danz",
+          "percent": 100
+        },
+        {
+          "user": "harmyko",
+          "percent": 100
+        },
+        {
+          "user": "Kovaldas",
+          "percent": 100
+        },
+        {
+          "user": "taiga",
+          "percent": 100
+        },
+        {
+          "user": "Veikkies",
+          "percent": 100
+        },
+        {
+          "user": "ArcticEggz",
+          "percent": 100
+        },
+        {
+          "user": "Jack Daniels",
+          "percent": 100
+        },
+        {
+          "user": "iDinamte",
+          "percent": 100
+        }
+    ]
+}

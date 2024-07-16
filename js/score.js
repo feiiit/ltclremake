@@ -16,10 +16,12 @@ export function score(rank) {
 
     if (rank => 1) {
       if (rank < 11) {
-        return round(250 / log13, 2);
+        //return round(250 / log13, 2);
+        return 5;
       } else if (rank > 10) {
         if (rank < 50) {
-          return round((250 * Math.sin(90 - (1000 / 28745 * rank)) / log5) - 10, 2);
+          //return round((250 * Math.sin(90 - (1000 / 28745 * rank)) / log5) - 10, 2);
+          return 5;
         }
         else {
           return 0;

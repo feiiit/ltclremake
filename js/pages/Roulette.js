@@ -131,12 +131,12 @@ export default {
             return this.levels[this.progression.length];
         },
         currentPercentage() {
-            if (this.currentPercentage > 100){
+            if (this.currentPercentage >= 95){
             this.currentPercentage = 100;}
             return this.progression[this.progression.length - 1] || 0;
         },
         placeholder() {
-            if (this.currentPercentage > 100){
+            if (this.currentPercentage >= 95){
                 this.currentPercentage = 100;
                 return `Bent ${this.currentPercentage == 100}%`;
             } else {
@@ -218,7 +218,7 @@ export default {
             if (!this.percentage) {
                 return;
             }
-            if (this.currentPercentage > 100){
+            if (this.currentPercentage > 95){
                 this.currentPercentage = 100}
             if (
                 this.percentage <= this.currentPercentage + 4 ||

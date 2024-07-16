@@ -1,0 +1,41 @@
+{
+    "id": 86993088,
+    "name": "kauno pienas",
+    "author": "functionxd",
+    "creators": ["functionxd"],
+    "verifier": "functionxd",
+    "verification": "https://youtu.be/BfLYAJmC7CY",
+    "percentToQualify": "100",
+    "password": "0",
+    "records": [
+        {
+            "user": "danz",
+            "percent": 100
+        },
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "Algirdas42",
+            "percent": 100
+        },
+        {
+            "user": "Velniukstis",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        },
+        {
+            "user": "xtrapnation",
+            "percent": 100
+        },
+        {
+            "user": "wagneris",
+            "percent": 100
+        }
+        
+    ]
+}

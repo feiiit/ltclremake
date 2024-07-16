@@ -1,0 +1,49 @@
+{
+    "id": 78358237,
+    "name": "Holy Moly",
+    "author": "functionxd",
+    "creators": [],
+    "verifier": "taiga",
+    "verification": "https://youtu.be/Sm34QPdZIq0",
+    "percentToQualify": "100",
+    "password": "0",
+    "records": [
+        {
+            "user": "yolomodeboom",
+            "percent": 100
+        },
+        {
+            "user": "functionxd",
+            "percent": 100
+        },
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "harmyko",
+            "percent": 100
+        },
+        {
+            "user": "xtrapnation",
+            "percent": 100
+        },
+        {
+            "user": "Algirdas42",
+            "percent": 100
+        },
+        {
+            "user": "Slick",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        },
+        {
+            "user": "iDinamte",
+            "percent": 100
+        }
+        
+    ]
+}

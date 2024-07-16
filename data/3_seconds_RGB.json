@@ -1,0 +1,29 @@
+{
+    "id": 82051808,
+    "name": "3 seconds RGB",
+    "author": "TopHatMark",
+    "creators": [],
+    "verifier": "Algirdas42",
+    "verification": "https://youtu.be/wMx3p3xVvmM",
+    "percentToQualify": "100",
+    "password": "",
+    "records": [
+        {
+            "user": "functionxd",
+            "percent": 100
+        },
+        {
+            "user": "taiga",
+            "percent": 100
+        },
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        }
+        
+    ]
+}

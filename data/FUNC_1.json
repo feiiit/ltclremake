@@ -1,0 +1,45 @@
+{
+    "id": 81199303,
+    "name": "FUNC 1",
+    "author": "functionxd",
+    "creators": [],
+    "verifier": "functionxd",
+    "verification": "https://youtu.be/cTCBJ2o-VH4",
+    "percentToQualify": "100",
+    "password": "0",
+    "records": [
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "harmyko",
+            "percent": 100
+        },
+        {
+            "user": "yolomodeboom",
+            "percent": 100
+        },
+        {
+            "user": "Algirdas42",
+            "percent": 100
+        },
+        {
+            "user": "Veikkies",
+            "percent": 100
+        },
+        {
+            "user": "iDinamte",
+            "percent": 100
+        },
+        {
+            "user": "xtrapnation",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        }
+        
+    ]
+}

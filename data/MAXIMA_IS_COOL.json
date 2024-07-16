@@ -1,0 +1,33 @@
+{
+    "id": 81907692,
+    "name": "MAXIMA IS COOL",
+    "author": "Slick",
+    "creators": ["Slick","taiga"],
+    "verifier": "KandyMan",
+    "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
+    "percentToQualify": "100",
+    "password": "",
+    "records": [
+        {
+            "user": "functionxd",
+            "percent": 100
+        },
+        {
+            "user": "Algirdas42",
+            "percent": 100
+        },
+        {
+            "user": "xtrapnation",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        },
+        {
+            "user": "iDinamte",
+            "percent": 100
+        }
+        
+    ]
+}

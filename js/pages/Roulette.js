@@ -14,11 +14,11 @@ export default {
                 <div class="sidebar">
                 <form class="options">
                     <div class="check">
-                        <input type="checkbox" id="main" value="Main List" v-model="useMainList"
+                        <input type="checkbox" id="main" value="Main List" v-model="useMainList">
                         <label for="main">Main List</label>
                     </div>
                     <div class="check">
-                       <input type="checkbox" id="legacy" value="Legacy" v-model="useLegacyList">
+                        <input type="checkbox" id="legacy" value="Legacy" v-model="useLegacyList">
                         <label for="extended">Legacy</label>
                     </div>
                     <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Pradėti' : 'Pradėti iš naujo'}}</Btn>
@@ -59,7 +59,7 @@ export default {
                                 <p>{{ currentLevel.id }}</p>
                             </div>
                             <form class="actions" v-if="!givenUp">
-                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 2" max=100>
+                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 1" max=100>
                                 <Btn @click.native.prevent="onDone">Baigta</Btn>
                                 <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63;">Pasiduoti</Btn>
                             </form>
@@ -73,7 +73,7 @@ export default {
                         </div>
                         <!-- Va, ką dar tau būtų reikėję žaist! -->
                         <template v-if="givenUp && showRemaining">
-                            <div class="level" v-for="(level, i) in levels.slice(progression.length + 2, levels.length - currentPercentage + progression.length)">
+                            <div class="level" v-for="(level, i) in levels.slice(progression.length + 1, levels.length - currentPercentage + progression.length)">
                                 <a :href="level.video" target="_blank" class="video">
                                     <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
                                 </a>
@@ -104,7 +104,7 @@ export default {
         givenUp: false,
         showRemaining: false,
         useMainList: true,
-        useLegacyList: true,
+        useExtendedList: true,
         toasts: [],
         fileInput: undefined,
     }),
@@ -184,12 +184,12 @@ export default {
             }));
             const list = [];
             if (this.useMainList) list.push(...fullListMapped.slice(0, 75));
-            if (this.useLegacyList) {
-                list.push(...fullListMapped.slice(75, 500));
+            if (this.useExtendedList) {
+                list.push(...fullListMapped.slice(75, 150));
             }
 
             // random 100 levels
-            this.levels = shuffle(list).slice(0, 500);
+            this.levels = shuffle(list).slice(0, 100);
             this.showRemaining = false;
             this.givenUp = false;
             this.progression = [];

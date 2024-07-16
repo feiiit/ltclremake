@@ -59,7 +59,7 @@ export default {
                                 <p>{{ currentLevel.id }}</p>
                             </div>
                             <form class="actions" v-if="!givenUp">
-                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 1" max=100>
+                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 2" max=100>
                                 <Btn @click.native.prevent="onDone">Baigta</Btn>
                                 <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63;">Pasiduoti</Btn>
                             </form>
@@ -100,7 +100,7 @@ export default {
         loading: false,
         levels: [],
         progression: [], // list of percentages completed
-        percentage: 1,
+        percentage: 2,
         givenUp: false,
         showRemaining: false,
         useMainList: true,

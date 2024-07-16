@@ -1,0 +1,49 @@
+{
+    "id": 77041624,
+    "name": "riktus",
+    "author": "Slick",
+    "creators": [],
+    "verifier": "Slick",
+    "verification": "https://youtu.be/78fhUjC5nW8",
+    "percentToQualify": "100",
+    "password": "Free to copy",
+    "records": [
+        {
+            "user": "danz",
+            "percent": 100
+        },
+        {
+            "user": "harmyko",
+            "percent": 100
+        },
+        {
+            "user": "yolomodeboom",
+            "percent": 100
+        },
+        {
+            "user": "Veikkies",
+            "percent": 100
+        },
+        {
+            "user": "taiga",
+            "percent": 100
+        },
+        {
+            "user": "KandyMan",
+            "percent": 100
+        },
+        {
+            "user": "functionxd",
+            "percent": 100
+        },
+        {
+            "user": "ta1p",
+            "percent": 100
+        },
+        {
+            "user": "Algirdas42",
+            "percent": 100
+        }
+        
+    ]
+}

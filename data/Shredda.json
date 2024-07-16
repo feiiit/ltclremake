@@ -1,11 +1,11 @@
 {
-    "name": "Shredda",
+         "id": 77952663,
+        "name": "Shredda",
       "author": "TopHatMark [bebras!]",
-      "more": "none",
-      "id": 77952663,
-      "pass": "082247",
-      "percentToQualify": 100,
-      "verificationVid": "https://youtu.be/v8mofG9tE1Q",
+      "verifier": "taiga",
+    "verification": "https://www.youtube.com/watch?v=vqK8oz--nrI",
+    "percentToQualify": "100",
+    "records": [
         {
           "user": "Slick",
           "link": "",

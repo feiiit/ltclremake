@@ -73,14 +73,14 @@ export default {
                         </div>
                         <!-- Va, ką dar tau būtų reikėję žaist! -->
                         <template v-if="givenUp && showRemaining">
-                            <div class="level" v-for="(level, i) in levels.slice(progression.length + 5, levels.length - currentPercentage + progression.length)">
+                            <div class="level" v-for="(level, i) in levels.slice(progression.length + 1, levels.length - currentPercentage + progression.length)">
                                 <a :href="level.video" target="_blank" class="video">
                                     <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
                                 </a>
                                 <div class="meta">
                                     <p>#{{ level.rank }}</p>
                                     <h2>{{ level.name }}</h2>
-                                    <p style="color: #d50000; font-weight: 700">{{ currentPercentage + 5 + i }}%</p>
+                                    <p style="color: #d50000; font-weight: 700">{{ currentPercentage + 4 + i }}%</p>
                                 </div>
                             </div>
                         </template>
@@ -212,7 +212,7 @@ export default {
             }
 
             if (
-                this.percentage <= this.currentPercentage + 5 ||
+                this.percentage <= this.currentPercentage + 4 ||
                 this.percentage > 100
             ) {
                 this.showToast('Netinkami procentai.');

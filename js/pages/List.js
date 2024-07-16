@@ -92,19 +92,19 @@ export default {
                         </ol>
                     </template>
                     <h3>Completionų submittinimo taisyklės:</h3>
-                    <p>
+                    <li>
                         Turi būti nufilmuotas completion (obviously) ir su aiškiai girdimais clickais.
-                    </p>
-                    <p>
+                    </li>
+                    <li>
                         Turi būti matoma mirtis prieš completion attempt. (jei sugebėjai one attemptint po practice arba iškart
               įeinant į level, turi parodyt ir tai)
-                    </p>
-                    <p>
+                    </li>
+                    <li>
                         Turi būti matomas end screen ir "Level Complete" tekstas.
-                    </p>
-                    <p>
+                    </li>
+                    <li>
                         Nenaudokit bug routes ir skips, arba jei labai buggy levelis tai bent naudokit kuo įmanoma mažiau.
-                    </p>
+                    </li>
                     <h3>Challengų submittinimo taisyklės:</h3>
                     <p>
                         Challenge negali būti layout. Turi būti kažkiek dekoruotas, normaliai sustruktūruotas ir būt bent šiek

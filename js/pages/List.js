@@ -91,30 +91,45 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Submission Requirements</h3>
+                    <h3>Completionų submittinimo taisyklės:</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        Turi būti nufilmuotas completion (obviously) ir su aiškiai girdimais clickais.
                     </p>
                     <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
+                        Turi būti matoma mirtis prieš completion attempt. (jei sugebėjai one attemptint po practice arba iškart
+              įeinant į level, turi parodyt ir tai)
                     </p>
                     <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
+                        Turi būti matomas end screen ir "Level Complete" tekstas.
                     </p>
                     <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
+                        Nenaudokit bug routes ir skips, arba jei labai buggy levelis tai bent naudokit kuo įmanoma mažiau.
+                    </p>
+                    <h3>Challengų submittinimo taisyklės:</h3>
+                    <p>
+                        Challenge negali būti layout. Turi būti kažkiek dekoruotas, normaliai sustruktūruotas ir būt bent šiek
+              tiek visually appealing. OBJECT SPAM =/= DEKORACIJA, nebent ji done right (pavyzdžiui Slick Challenge
+              series, Say Gex). Default layout blocks naudot galima, bet tada turi būti labai geri ir pilnai užpildyti
+              structures, ir/arba normalesnis background deco. Ar jūsų lygio dekoracija gerai atrodo nusprendžia list
+              modai kolektyviai.
                     </p>
                     <p>
-                        The recording must also show the player hit the endwall, or the completion will be invalidated.
+                        Challenge turi būti orginalus. Jis negali būti tiesiog buffed arba/ir tik šiek tiek pakeista kito
+              challenge versija, ir negali būti kito lygio dalis, nesvarbu ar tas lygis jis unreleased ar ne.
                     </p>
                     <p>
-                        Do not use secret routes or bug routes
+                        Verificationai turi būti keliami į YouTube. Ar public ar unlisted, jau jūsų sprendimas.
                     </p>
                     <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
+                        Jei daromas redeco update lygiui ir tas redeco labai mažai pakeičia difficulty arba išvis nekeičia,
+              reverification nebūtinas.
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        Challenge turi būti pilnai lietuviškas - gameplay sukurtas lietuvio, dekoracija sukurta lietuvio. Tik
+              verification gali būti ne lietuvio.
+                    </p>
+                    <p>
+                        Naudok common sense ir neieškok loop holes taisyklėse.
                     </p>
                 </div>
             </div>

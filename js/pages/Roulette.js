@@ -211,9 +211,11 @@ export default {
                 return;
             }
             if (
-                this.percentage >= 100
+                this.percentage >= 100 ||
+                this.currentPercentage >= 100
             ){
-                this.percentage == 100
+                this.percentage == 100 
+                this.currentPercentage == 100
             }
 
             if (

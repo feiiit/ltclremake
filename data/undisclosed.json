@@ -9,7 +9,9 @@
     "password": "Free to copy",
     "records": [
         {
-            "user": "Algirdas42", "KandyMan", "ta1p",
+            "user": "Algirdas42",
+            "user": "KandyMan",
+            "user": "ta1p",
             "percent": 100,
         }
     ]

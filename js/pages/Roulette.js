@@ -18,7 +18,7 @@ export default {
                         <label for="main">Main List</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="extended" value="Legacy" v-model="useExtendedList">
+                        <input type="checkbox" id="legacy" value="Legacy" v-model="useLegacyList">
                         <label for="extended">Legacy</label>
                     </div>
                     <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Pradėti' : 'Pradėti iš naujo'}}</Btn>

@@ -1,5 +1,6 @@
 import { store } from '../main.js';
 import { fetchPacks, fetchPackLevels } from "../content.js";
+import { getFontColour, embed } from "../util.js";
 import { score } from "../score.js";
 
 import Spinner from "../components/Spinner.js";
@@ -18,7 +19,7 @@ export default {
             <div class="packs-nav">
                 <div>
                     <button @click="switchLevels(i)" v-for="(pack, i) in packs" :style="{background: pack.colour}" class="type-label-lg">
-                        <p :style="{color:#1c1b1f}">{{pack.name}}</p>
+                        <p :style="{color:getFontColour(pack.colour)}">{{pack.name}}</p>
                     </button>
                 </div>
             </div>
@@ -29,7 +30,7 @@ export default {
                             <p class="type-label-lg">#{{ i + 1 }}</p>
                         </td>
                         <td class="level" :class="{ 'active': selectedLevel == i, 'error': !level[0] }">
-                            <button :style= "[selectedLevel == i ? {background: pack.colour, color: #1c1b1f} : {}]" @click="selectedLevel = i">
+                            <button :style= "[selectedLevel == i ? {background: pack.colour, color: getFontColour(pack.colour)} : {}]" @click="selectedLevel = i">
                                 <span class="type-label-lg">{{ level[0]?.level.name || \`Error (\${level[1]}.json)\` }}</span>
                             </button>
                         </td>
@@ -41,9 +42,15 @@ export default {
                     <h1>{{ selectedPackLevels[selectedLevel][0].level.name }}</h1>
                     <LevelAuthors :author="selectedPackLevels[selectedLevel][0].level.author" :creators="selectedPackLevels[selectedLevel][0].level.creators" :verifier="selectedPackLevels[selectedLevel][0].level.verifier"></LevelAuthors>
                     <div style="display:flex">
-                        <div v-for="pack in selectedPackLevels[selectedLevel][0].level.packs" class="tag" :style="{background:pack.colour, color:#1c1b1f}">{{pack.name}}</div>
+                        <div v-for="pack in selectedPackLevels[selectedLevel][0].level.packs" class="tag" :style="{background:pack.colour, color:getFontColour(pack.colour)}">{{pack.name}}</div>
                     </div>
-                    <div v-if="selectedPackLevels[selectedLevel][0].level.verification" class="tabs">
+                    <div v-if="selectedPackLevels[selectedLevel][0].level.showcase" class="tabs">
+                        <button class="tab type-label-lg" :class="{selected: !toggledShowcase}" @click="toggledShowcase = false">
+                            <span class="type-label-lg">Verification</span>
+                        </button>
+                        <button class="tab" :class="{selected: toggledShowcase}" @click="toggledShowcase = true">
+                            <span class="type-label-lg">Showcase</span>
+                        </button>
                     </div>
                     <iframe class="video" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
@@ -102,11 +109,21 @@ export default {
         selectedPackLevels: [],
         loading: true,
         loadingPack: true,
+        toggledShowcase: false,
     }),
     computed: {
         pack() {
             return this.packs[this.selected];
         },
+        video() {
+			if (!this.selectedPackLevels[this.selectedLevel][0].level.showcase) {
+				return embed(this.selectedPackLevels[this.selectedLevel][0].level.verification);
+			}
+
+			return embed(
+				this.toggledShowcase ? this.selectedPackLevels[this.selectedLevel][0].level.showcase : this.selectedPackLevels[this.selectedLevel][0].level.verification,
+			);
+		},
     },
     async mounted() {
         this.packs = await fetchPacks();
@@ -160,5 +177,7 @@ export default {
             this.loadingPack = false;
         },
         score,
+        embed,
+        getFontColour,
     },
 };

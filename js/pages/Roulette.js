@@ -11,36 +11,32 @@ export default {
             <Spinner></Spinner>
         </main>
         <main v-else class="page-roulette">
-            <div class="sidebar">
-                <p class="type-label-md" style="color: #aaa">
-                    Shameless copy of the Extreme Demon Roulette by <a href="https://matcool.github.io/extreme-demon-roulette/" target="_blank">matcool</a>.
-                </p>
                 <form class="options">
                     <div class="check">
                         <input type="checkbox" id="main" value="Main List" v-model="useMainList">
                         <label for="main">Main List</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="extended" value="Extended List" v-model="useExtendedList">
-                        <label for="extended">Extended List</label>
+                        <input type="checkbox" id="extended" value="Legacy" v-model="useExtendedList">
+                        <label for="extended">Legacy</label>
                     </div>
-                    <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Start' : 'Restart'}}</Btn>
+                    <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Pradėti' : 'Pradėti iš naujo'}}</Btn>
                 </form>
                 <p class="type-label-md" style="color: #aaa">
-                    The roulette saves automatically.
+                    Ruletė išsisaugoja automatiškai.
                 </p>
                 <form class="save">
                     <p>Manual Load/Save</p>
                     <div class="btns">
-                        <Btn @click.native.prevent="onImport">Import</Btn>
-                        <Btn :disabled="!isActive" @click.native.prevent="onExport">Export</Btn>
+                        <Btn @click.native.prevent="onImport">Importuoti</Btn>
+                        <Btn :disabled="!isActive" @click.native.prevent="onExport">Exportuoti</Btn>
                     </div>
                 </form>
             </div>
             <section class="levels-container">
                 <div class="levels">
                     <template v-if="levels.length > 0">
-                        <!-- Completed Levels -->
+                        <!-- Įveikti lygiai -->
                         <div class="level" v-for="(level, i) in levels.slice(0, progression.length)">
                             <a :href="level.video" class="video">
                                 <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
@@ -63,18 +59,18 @@ export default {
                             </div>
                             <form class="actions" v-if="!givenUp">
                                 <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 1" max=100>
-                                <Btn @click.native.prevent="onDone">Done</Btn>
-                                <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63;">Give Up</Btn>
+                                <Btn @click.native.prevent="onDone">Baigta</Btn>
+                                <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63;">Pasiduoti</Btn>
                             </form>
                         </div>
                         <!-- Results -->
                         <div v-if="givenUp || hasCompleted" class="results">
-                            <h1>Results</h1>
+                            <h1>Rezultatai</h1>
                             <p>Number of levels: {{ progression.length }}</p>
                             <p>Highest percent: {{ currentPercentage }}%</p>
-                            <Btn v-if="currentPercentage < 99 && !hasCompleted" @click.native.prevent="showRemaining = true">Show remaining levels</Btn>
+                            <Btn v-if="currentPercentage < 99 && !hasCompleted" @click.native.prevent="showRemaining = true">Parodyti likusius lygius</Btn>
                         </div>
-                        <!-- Remaining Levels -->
+                        <!-- Va, ką dar tau būtų reikėję žaist! -->
                         <template v-if="givenUp && showRemaining">
                             <div class="level" v-for="(level, i) in levels.slice(progression.length + 1, levels.length - currentPercentage + progression.length)">
                                 <a :href="level.video" target="_blank" class="video">
@@ -137,7 +133,7 @@ export default {
             return this.progression[this.progression.length - 1] || 0;
         },
         placeholder() {
-            return `At least ${this.currentPercentage + 1}%`;
+            return `Bent ${this.currentPercentage + 1}%`;
         },
         hasCompleted() {
             return (
@@ -159,7 +155,7 @@ export default {
         getYoutubeIdFromUrl,
         async onStart() {
             if (this.isActive) {
-                this.showToast('Give up before starting a new roulette.');
+                this.showToast('Pasiduok prieš pradėdamas naują ruletę.');
                 return;
             }
 
@@ -174,7 +170,7 @@ export default {
             if (fullList.filter(([_, err]) => err).length > 0) {
                 this.loading = false;
                 this.showToast(
-                    'List is currently broken. Wait until it\'s fixed to start a roulette.',
+                    'Listas neveikia. Palauk, kol jį sutaisys, kad pradėtum ruletę.',
                 );
                 return;
             }
@@ -218,7 +214,7 @@ export default {
                 this.percentage <= this.currentPercentage ||
                 this.percentage > 100
             ) {
-                this.showToast('Invalid percentage.');
+                this.showToast('Netinkami procentai.');
                 return;
             }
 
@@ -236,7 +232,7 @@ export default {
         onImport() {
             if (
                 this.isActive &&
-                !window.confirm('This will overwrite the currently running roulette. Continue?')
+                !window.confirm('Dabartinė ruletė bus perrašyta. Tęsti?')
             ) {
                 return;
             }
@@ -257,7 +253,7 @@ export default {
                 const roulette = JSON.parse(await file.text());
 
                 if (!roulette.levels || !roulette.progression) {
-                    this.showToast('Invalid file.');
+                    this.showToast('Neteisingas failas.');
                     return;
                 }
 
@@ -268,7 +264,7 @@ export default {
                 this.showRemaining = false;
                 this.percentage = undefined;
             } catch {
-                this.showToast('Invalid file.');
+                this.showToast('Neteisingas failas.');
                 return;
             }
         },

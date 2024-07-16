@@ -13,21 +13,20 @@ const scale = 3;
 export function score(rank) {
     var log13 = Math.log(3 * rank + 10) / Math.log(13);
     var log5 = Math.log(rank) / Math.log(5);
+
     if (rank => 1) {
-        if (rank < 11) {
-          return round(250 / log13,  2);
-        }else if (rank > 10) {
-            if (rank < 50) {
-              return round((250 * Math.sin(90 - (1000 / 28745 * rank)) / log5) - 10, 2);
-            }
-            else {
-              return 0;
-            }
-          }};
-    let score = (-24.9975*Math.pow(rank-1, 0.4) + 200);
-        score = Math.max(0, score);
-        return Math.max(round(score), 0);
-}
+      if (rank < 11) {
+        return round(250 / log13, 2);
+      } else if (rank > 10) {
+        if (rank < 76) {
+          return round((250 * Math.sin(90 - (1000 / 28745 * rank)) / log5) - 10, 2);
+        }
+        else {
+          return 0;
+        }
+      }
+    }
+  }
 
 export function round(num, scale) {
     if (!('' + num).includes('e')) {

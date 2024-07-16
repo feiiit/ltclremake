@@ -1,0 +1,51 @@
+{
+    "id": 81311522,
+    "name": "RGB SKRAIDYMAS",
+    "author": "taiga",
+    "creators": [],
+    "verifier": "taiga",
+    "verification": "https://www.youtube.com/watch?v=91oSemIjuF0",
+    "percentToQualify": "100",
+    "records": [
+        {
+          "user": "Kovaldas",
+          "percent": 100
+        },
+        {
+          "user": "harmyko",
+          "percent": 100
+        },
+        {
+          "user": "iDinamte",
+          "percent": 100
+        },
+        {
+          "user": "functionxd",
+          "percent": 100
+        },
+        {
+          "user": "Algirdas42",
+          "percent": 100
+        },
+        {
+          "user": "yolomodeboom",
+          "percent": 100
+        },
+        {
+          "user": "KandyMan",
+          "percent": 100
+        },
+        {
+          "user": "danz",
+          "percent": 100
+        },
+        {
+          "user": "Veikkies",
+          "percent": 100
+        },
+        {
+          "user": "Slick",
+          "percent": 100
+        }
+    ]
+}

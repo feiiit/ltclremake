@@ -27,7 +27,7 @@ export default {
                     Ruletė išsisaugoja automatiškai.
                 </p>
                 <form class="save">
-                    <p>Manual Load/Save</p>
+                    <p>Savarankiškas progreso importavimas/exportavimas</p>
                     <div class="btns">
                         <Btn @click.native.prevent="onImport">Importuoti</Btn>
                         <Btn :disabled="!isActive" @click.native.prevent="onExport">Exportuoti</Btn>

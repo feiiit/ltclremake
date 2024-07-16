@@ -1,0 +1,19 @@
+{
+    "id": 88603363,
+    "name": "Who let the cats out",
+    "author": "Algirdas42",
+    "creators": [],
+    "verifier": "Algirdas42",
+    "verification": "https://www.youtube.com/watch?v=v6Q6KjX5IXA",
+    "percentToQualify": "100",
+    "records": [
+        {
+          "user": "ZygisDij",
+          "percent": 100
+        },
+        {
+          "user": "ta1p",
+          "percent": 100
+        }
+    ]
+}

@@ -138,7 +138,7 @@ export default {
         },
         hasCompleted() {
             return (
-                this.progression[this.progression.length - 1] >= 100 ||
+                this.progression[this.progression.length - 1] = 100 ||
                 this.progression.length === this.levels.length
             );
         },

@@ -134,9 +134,9 @@ export default {
         currentPercentage() 
         {
             if(this.progression[this.progression.length - 1] == null){
-                return 5;
+                return 0;
             }
-            if (this.progression[this.progression.length - 1] >= 95)
+            else if (this.progression[this.progression.length - 1] >= 95)
             {
                 return 100;
             }
@@ -150,8 +150,9 @@ export default {
             if (this.currentPercentage >= 95)
             {
                 return `Bent 100%`;
-            } else {
-                return `Bent ${this.currentPercentage + 5}%`;
+            } 
+            else {
+                return `Bent ${this.currentPercentage}%`;
             }
             
         },

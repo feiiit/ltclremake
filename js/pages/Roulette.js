@@ -67,8 +67,8 @@ export default {
                         <!-- Results -->
                         <div v-if="givenUp || hasCompleted" class="results">
                             <h1>Rezultatai</h1>
-                            <p>Number of levels: {{ progression.length }}</p>
-                            <p>Highest percent: {{ currentPercentage }}%</p>
+                            <p>Lygių kiekis: {{ progression.length }}</p>
+                            <p>Aukščiausi procentai: {{ currentPercentage }}%</p>
                             <Btn v-if="currentPercentage < 99 && !hasCompleted" @click.native.prevent="showRemaining = true">Parodyti likusius lygius</Btn>
                         </div>
                         <!-- Va, ką dar tau būtų reikėję žaist! -->
@@ -131,14 +131,14 @@ export default {
             return this.levels[this.progression.length];
         },
         currentPercentage() {
-            return this.progression[this.progression.length - 1] || 0;
+            return this.progression[this.progression.length - 2] || 0;
         },
         placeholder() {
-            return `Bent ${this.currentPercentage + 1}%`;
+            return `Bent ${this.currentPercentage + 2}%`;
         },
         hasCompleted() {
             return (
-                this.progression[this.progression.length - 1] >= 100 ||
+                this.progression[this.progression.length - 2] >= 100 ||
                 this.progression.length === this.levels.length
             );
         },

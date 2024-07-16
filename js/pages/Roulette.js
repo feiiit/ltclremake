@@ -13,13 +13,13 @@ export default {
         <main v-else class="page-roulette">
                 <div class="sidebar">
                 <form class="options">
-                    div class="check"
+                    <div class="check">
                         <input type="checkbox" id="main" value="Main List" v-model="useMainList"
-                        label for="main">Main List</label
-                    /div
-                    div class="check"
-                        input type="checkbox" id="legacy" value="Legacy" v-model="useLegacyList"
-                        label for="extended">Legacy</label
+                        <label for="main">Main List</label>
+                    </div>
+                    <div class="check">
+                       <input type="checkbox" id="legacy" value="Legacy" v-model="useLegacyList">
+                        <label for="extended">Legacy</label>
                     </div>
                     <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Pradėti' : 'Pradėti iš naujo'}}</Btn>
                 </form>
@@ -104,7 +104,7 @@ export default {
         givenUp: false,
         showRemaining: false,
         useMainList: true,
-        useExtendedList: true,
+        useLegacyList: true,
         toasts: [],
         fileInput: undefined,
     }),

@@ -60,8 +60,8 @@
     text-align: center;
 }
 .page-list .level-container .level .video {
-    aspect-ratio: 16/9;
     align-items: center;
+    aspect-ratio: 16/9;
 }
 .page-list .level-container .level .stats {
     display: flex;

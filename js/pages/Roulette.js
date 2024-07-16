@@ -134,7 +134,7 @@ export default {
         currentPercentage() 
         {
             if(this.progression[this.progression.length - 1] == null){
-                return 0;
+                return 5;
             }
             else if (this.progression[this.progression.length - 1] >= 95)
             {

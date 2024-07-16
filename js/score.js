@@ -27,19 +27,6 @@ export function score(rank, percent, minPercent) {
       }
     }
   }
-
-// export function round(num) {
-//     if (!('' + num).includes('e')) {
-//         return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
-//     } else {
-//         var arr = ('' + num).split('e');
-//         var sig = '';
-//         if (+arr[1] + scale > 0) {
-//             sig = '+';
-//         }
-//         return +(Math.round(+arr[0] + 'e' + sig + (+arr[1] + scale)) + 'e-' + scale);
-//     }
-// }
 export function round(num){
-  return Math.round(num*100, 2)/100;
+  return Math.round(num*100)/100;
 }

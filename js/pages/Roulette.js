@@ -132,7 +132,7 @@ export default {
         },
         currentPercentage() {
             if (this.currentPercentage > 100){
-            return this.currentPercentage == 100;}
+            this.currentPercentage == 100;}
             return this.progression[this.progression.length - 1] || 0;
         },
         placeholder() {

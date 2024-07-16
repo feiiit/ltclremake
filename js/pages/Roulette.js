@@ -131,13 +131,15 @@ export default {
             return this.levels[this.progression.length];
         },
         currentPercentage() {
-            if (this.currentPercentage >= 95){
-            this.currentPercentage = 100;}
+            // if (this.currentPercentage >= 96)
+            // {
+            // this.currentPercentage = 100;
+            // }
             return this.progression[this.progression.length - 1] || 0;
         },
         placeholder() {
-            if (this.currentPercentage >= 96){
-                this.currentPercentage = 100;
+            if (this.currentPercentage >= 96)
+            {
                 return `Bent ${this.currentPercentage}%`;
             } else {
                 return `Bent ${this.currentPercentage + 5}%`;
@@ -146,7 +148,7 @@ export default {
         },
         hasCompleted() {
             return (
-                this.progression[this.progression.length - 1] >= 100 ||
+                //this.progression[this.progression.length - 1] >= 100 ||
                 this.progression.length === this.levels.length
             );
         },

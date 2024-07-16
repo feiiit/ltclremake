@@ -138,7 +138,7 @@ export default {
         placeholder() {
             if (this.currentPercentage >= 95){
                 this.currentPercentage = 100;
-                return `Bent ${this.currentPercentage == 100}%`;
+                return `Bent ${this.currentPercentage}%`;
             } else {
                 return `Bent ${this.currentPercentage + 5}%`;
             }

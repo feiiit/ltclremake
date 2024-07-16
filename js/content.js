@@ -70,7 +70,7 @@ export async function fetchLeaderboard() {
         verified.push({
             rank: rank + 1,
             level: level.name,
-            score: score(rank + 1, 100, level.percentToQualify),
+            score: score(rank + 1, 100),
             link: level.verification,
         });
 
@@ -82,7 +82,6 @@ export async function fetchLeaderboard() {
             scoreMap[user] ??= {
                 verified: [],
                 completed: [],
-                progressed: [],
             };
             const { completed, progressed } = scoreMap[user];
             if (record.percent === 100) {

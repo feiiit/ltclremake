@@ -26,6 +26,7 @@ export function score(rank) { //pointu formule
         }
       }
     }
+    return Math.max(round(score), 0);
   }
 
 export function round(num) {

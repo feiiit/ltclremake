@@ -4,7 +4,7 @@
     "author": "taiga",
     "creators": ["functionxd","taiga"],
     "verifier": "taiga",
-    "verification": "Banana Juice Strat",
+    "verification": "https://youtu.be/7ghbpjUkCY4",
     "percentToQualify": "100",
     "password": "Free to copy",
     "records": [
@@ -15,40 +15,30 @@
           },
           {
             "user": "harmyko",
-            "link": "",
-            "percent": 100,
-            "hz": ""
+            "percent": 100
           },
           {
             "user": "Algirdas42",
-            "link": "",
-            "percent": 100,
-            "hz": ""
-          },
+            "percent": 100
+            },
           {
             "user": "KandyMan",
             "link": "",
-            "percent": 100,
-            "hz": ""
-          },
+            "percent": 100
+            },
           {
             "user": "iDinamte",
-            "link": "",
-            "percent": 100,
-            "hz": ""
-          },
+            "percent": 100
+            },
           {
             "user": "ZygisDij",
-            "link": "",
-            "percent": 100,
-            "hz": ""
+            "percent": 100
+            
           },
           {
             "user": "ta1p",
-            "link": "",
-            "percent": 100,
-            "hz": ""
-          },
+            "percent": 100
+            }
         
     ]
 }

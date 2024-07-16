@@ -152,7 +152,7 @@ export default {
                 return `Bent 100%`;
             } 
             else {
-                return `Bent ${this.currentPercentage + 5}%`;
+                return `Bent ${this.currentPercentage}%`;
             }
             
         },

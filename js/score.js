@@ -10,32 +10,38 @@ const scale = 3;
  * @param {Number} minPercent Minimum percentage required
  * @returns {Number}
  */
-export function score(rank) { //pointu formule
-    log13 = Math.log(3 * rank + 10) / Math.log(13);
-    log5 = Math.log(rank) / Math.log(5);
-    if (rank => 1) {
-      if (rank < 11) {
-        return roundNumber(250 / log13, 2);
-      }
-      else if (rank > 10) {
-        if (rank < 76) {
-          return roundNumber((250 * Math.sin(90 - (1000 / 28745 * rank)) / log5) - 10, 2);
-        }
-        else {
-          return 0;
-        }
-      }
+export function score(rank, percent, minPercent) {
+    if (rank > 50) {
+        return 0;
     }
-  }
-  function round(num, scale) {     //apvalinimas
-    if (!("" + num).includes("e")) {
-      return +(Math.round(num + "e+" + scale) + "e-" + scale);
+    if (rank > 75 && percent < 100) {
+        return 0;
+    }
+    let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *
+        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
+
+    score = Math.max(0, score);
+
+    if (percent != 100) {
+        return round(score - score / 3);
+    }
+
+    return Math.max(round(score), 0);
+}
+
+export function round(num) {
+    if (!('' + num).includes('e')) {
+        return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
     } else {
-      var arr = ("" + num).split("e");
-      var sig = ""
-      if (+arr[1] + scale > 0) {
-        sig = "+";
-      }
-      return +(Math.round(+arr[0] + "e" + sig + (+arr[1] + scale)) + "e-" + scale);
+        var arr = ('' + num).split('e');
+        var sig = '';
+        if (+arr[1] + scale > 0) {
+            sig = '+';
+        }
+        return +(
+            Math.round(+arr[0] + 'e' + sig + (+arr[1] + scale)) +
+            'e-' +
+            scale
+        );
     }
-  }
+}

@@ -41,7 +41,7 @@ export function score(rank){
     { 
       return round(top11_50Score)
     }
-    else if(rank > 51 && rank < 76)//if rank is between 51 and 75
+    else if(rank > 50 && rank < 76)//if rank is between 51 and 75
     { 
       return round(top51_75Score);
     }

@@ -100,7 +100,7 @@ export default {
         loading: false,
         levels: [],
         progression: [], // list of percentages completed
-        percentage: 0,
+        percentage: undefined,
         givenUp: false,
         showRemaining: false,
         useMainList: true,
@@ -134,7 +134,7 @@ export default {
             return this.progression[this.progression.length - 1] || 0;
         },
         placeholder() {
-            return `Bent ${this.currentPercentage + 4}%`;
+            return `Bent ${this.currentPercentage + 5}%`;
         },
         hasCompleted() {
             return (

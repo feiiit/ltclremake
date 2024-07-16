@@ -147,13 +147,14 @@ export default {
         },
         placeholder() //holds the current percentage for displaying the requirement for the next level in the roulette
         {
-            if (this.currentPercentage >= 95)
-            {
-                return `Bent 100%`;
-            } 
-            else {
-                return `Bent ${this.currentPercentage}%`;
-            }
+            // if (this.currentPercentage >= 95)
+            // {
+            //     return `Bent 100%`;
+            // } 
+            // else {
+            //     return `Bent ${this.currentPercentage}%`;
+            // }
+            return `Bent ${this.currentPercentage}%`
             
         },
         hasCompleted() //called whenever the roulette is complete, probably.

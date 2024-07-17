@@ -91,13 +91,13 @@ export default {
                     </div>
                     <h3>Apie pakelius</h3>
                     <p>
-                        Pakelį sudaro 3-5 panašaus sunkumo ir tematikos lygiai. Vieno pakelio lygiai neprivalo būti sukurti to pačio kūrėjo - galima daryti neoficialius priedus į kokią nors išbandymų seriją arba net sukurti naują seriją iš kokio vieno lygio sąraše jei labai patinka jo tema. Temos panašumas gali būti su žaidimo režimu, stiliumi, gameplay, arba kitokiais aspektais (pvz. pavadinimais arba kad išbandymai yra sukurti kelių žmonių pagalba). Lygiai gali būti iš skirtingų difficulty ranges, jei ta riba pereinama nedaug, pvz jei 2 lygiai kažkur 42-37 vietose (lengvo sunkumo), o vienas 34 vietoje (vidutinio sunkumo). Tokiais atvėjais pakelis bus skaitomas to sunkumo, kurio difficulty range lygių yra daugiau.
+                        Pakelį sudaro 3-5 panašios tematikos lygiai. Vieno pakelio lygiai neprivalo būti sukurti to pačio kūrėjo - galima daryti neoficialius priedus į kokią nors challenge seriją arba net sukurti naują seriją iš kokio vieno lygio liste jei labai patinka jo tema. Temos panašumas gali būti su gamemode, stiliumi, gameplay, arba kitokiais aspektais (pvz. pavadinimais arba kad išbandymai yra sukurti kelių žmonių pagalba). Maximum vietų skirtumas tarp lygių yra 20. 
                     </p>
                     <h3>Kaip gauti pakelių roles?</h3>
                     <p>
-                        Norint gauti pakelio role, į #⁠pakelių-prašymas parašykit kokios role norit ir patikrinsim ar tikrai įveikėte pakelyje esančius lygius. (jei lygis yra legacy ir įveikėt jį PO jo iškritimo iš listo, turėsit būtinai atsiųst completion video į anksčiau minėtą kanalą)
+                        Norint gauti pakelio role, į #⁠pakelių-prašymas parašykit kokios role norit ir patikrinsim ar tikrai įveikėte pakelyje esančius lygius. Jei lygis yra legacy ir įveikėt jį PO jo iškritimo iš listo, turėsit būtinai atsiųst completion video į anksčiau minėtą kanalą
                     </p>
-                    <p> Pakelių funkcija sukurta KrisGra. </p>
+                    <p> Pakelių funkciją sukurė KrisGra. </p>
                 </div>
             </div>
         </main>

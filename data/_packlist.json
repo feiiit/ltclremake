@@ -33,7 +33,7 @@
             "Degtine",
             "Jack_Daniels"
         ],
-        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+        "colour": "linear-gradient(90deg, rgba(115,111,80,255) 0%, rgba(115,111,80,255) 50%, rgba(115,111,80,255) 100%)"
     },
   {
         "name": "triple a",
@@ -42,7 +42,7 @@
             "askeral",
             "admixture"
         ],
-        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+        "colour": "linear-gradient(90deg, rgba(54,138,192,255) 0%, rgba(54,138,192,255) 50%, rgba(54,138,192,255) 100%)"
     },
   {
         "name": "slick pack",
@@ -60,7 +60,7 @@
             "I_LOVE_IKEA",
             "LIDL"
         ],
-        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+        "colour": "linear-gradient(90deg, rgba(219,164,222,255) 0%, rgba(219,164,222,255) 50%, rgba(219,164,222,255) 100%)"
     },
   {
         "name": "rng",
@@ -69,7 +69,7 @@
             "Have_Fun",
             "kandyman_chamber"
         ],
-        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+        "colour": "linear-gradient(90deg, rgba(46,200,111,255) 0%, rgba(46,200,111,255) 50%, rgba(46,200,111,255) 100%)"
     },
   {
         "name": "click sync",
@@ -78,6 +78,6 @@
             "Adrenalinas",
             "SurFaced"
         ],
-        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+        "colour": "linear-gradient(90deg, rgba(137,180,7,255) 0%, rgba(137,180,7,255) 50%, rgba(137,180,7,255) 100%)"
     }
 ]

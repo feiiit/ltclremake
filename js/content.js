@@ -53,7 +53,6 @@ export async function fetchEditors() {
 
 export async function fetchLeaderboard() {
     const list = await fetchList();
-    const packsList = await fetchPacks();
     const scoreMap = {};
     const errs = [];
     list.forEach(([level, err], rank) => {
@@ -113,7 +112,7 @@ export async function fetchLeaderboard() {
     });
 
     //Pack implementation to player profile (WIP)
-    packsList.levels.forEach((record) => {
+    list.pack.levels.forEach((record) => {
         const completedPacks = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),
         )
         {

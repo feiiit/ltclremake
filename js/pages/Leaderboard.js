@@ -9,7 +9,6 @@ export default {
     },
     data: () => ({
         leaderboard: [],
-        packs: [],
         loading: true,
         selected: 0,
         err: [],

@@ -141,13 +141,16 @@ export async function fetchLeaderboard() {
 
             const { packs } = scoreMap[user];
             for (let pack in packsList) {
-                for (let level in pack.levels) {
+                for (let pack in packs) {
+                    this.selectedPack = await fetchPackLevels(this.pack.name);
+                    for(let level in selectedPack)
                     if (!scoreMap[user].completed.includes(level)) {
                         return;
                     }
+                    packs.push(pack);
+                    return;
                 }
-                packs.push(pack);
-                return;
+
             }
         };
     })

@@ -53,6 +53,7 @@ export async function fetchEditors() {
 
 export async function fetchLeaderboard() {
     const list = await fetchList();
+    const listPack = await fetchPack();
     const scoreMap = {};
     const errs = [];
     list.forEach(([level, err], rank) => {
@@ -111,32 +112,25 @@ export async function fetchLeaderboard() {
         });
     });
 
-    //Pack implementation to player profile (WIP)
-    list.pack.levels.forEach((record) => {
-        const completedPacks = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),
-        )
-        {
-            scoreMap[user] ??= {
-                verified: [],
-                completed: [],
-                progressed: [],
-                packs: [],
-            };
+    // //Pack implementation to player profile (WIP)
+    // packResult.forEach((levels) => {
+    //     const completedPacks = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),
+    //     )
+    //     {
+    //         const { packs } = scoreMap[user];
+    //         for (let pack in packsList) {
+    //             for (let pack in packs) {
+    //                 for(let level in pack)
+    //                 if (!scoreMap[user].completed.includes(level)) {
+    //                     return;
+    //                 }
+    //                 packs.push(pack);
+    //                 return;
+    //             }
 
-            const { packs } = scoreMap[user];
-            for (let pack in packsList) {
-                for (let pack in packs) {
-                    for(let level in pack)
-                    if (!scoreMap[user].completed.includes(level)) {
-                        return;
-                    }
-                    packs.push(pack);
-                    return;
-                }
-
-            }
-        };
-    })
+    //         }
+    //     };
+    // })
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores, completedPacks]) => {
         const { verified, completed, progressed } = scores;

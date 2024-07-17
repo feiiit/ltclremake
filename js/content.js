@@ -53,7 +53,7 @@ export async function fetchEditors() {
 
 export async function fetchLeaderboard() {
     const list = await fetchList();
-    const packList = await fetchPacks();
+    const packList = await fetchPackLevels();
     //const listPack = await fetchPack();
     const scoreMap = {};
     const errs = [];

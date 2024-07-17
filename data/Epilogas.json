@@ -43,6 +43,12 @@
         {
             "user": "ta1p",
             "percent": 100
+        },
+        {
+          "user": "wagneris",
+          "link": "",
+          "percent": 100,
+          "hz": ""
         }
         
     ]

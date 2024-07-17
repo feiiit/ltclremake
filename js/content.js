@@ -177,8 +177,8 @@ export async function fetchPackLevels(packname) {
                     }
                 })
             );
-        } catch (e) {
+            } catch (e) {
             console.error(`Failed to load packs.`, e);
             return null;
         }
-    }
+    }}

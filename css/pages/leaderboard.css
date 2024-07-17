@@ -86,12 +86,12 @@
     text-align: end;
 }
 
-.page-leaderboard .player .packs {
+.page-leaderboard .player .listpacks {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4em;
 }
-.page-leaderboard .player .packs .tag {
+.page-leaderboard .player .listpacks .tag {
     display: flex;
     flex-shrink: 0;
     background-size: 100% 100% !important;

@@ -1,7 +1,3 @@
-/**
- * Numbers of decimal digits to round to
- */
-const scale = 2;
 
 // /**
 //  * Calculate the score awarded when having a certain percentage on a list level
@@ -51,6 +47,15 @@ export function score(rank){
     }
   }
 }
-export function round(num){
-  return Math.round(num*100)/100;
+
+const scale = 2; //Select how many decimal digits to round to
+
+/** Returns a rounded number by decimal point, set by scale
+ * @param {Number} num      Number to round
+ * @param {Number} scale    Number of decimal points to round to
+ * @returns {Number}        Rounded number
+ */
+export function round(num, scale)
+{
+    return Math.round(num*(10^scale))/(10^scale);
 }

@@ -55,17 +55,11 @@ export default {
                     <iframe class="video" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
-                            <div class="type-title-sm">ID</div>
+                            <div class="type-title-sm">Lygio ID</div>
                             <p>{{ selectedPackLevels[selectedLevel][0].level.id }}</p>
                         </li>
-                        <li>
-                            <div class="type-title-sm">Password</div>
-                            <p>{{ selectedPackLevels[selectedLevel][0].level.password || 'Free to Copy' }}</p>
-                        </li>
                     </ul>
-                    <h2>Records</h2>
-                    <p v-if="selected + 1 <= 150"><strong>{{ selectedPackLevels[selectedLevel][0].level.percentToQualify }}%</strong> or better to qualify</p>
-                    <p v-else>100% or better to qualify</p>
+                    <h2>Rekordai</h2>
                     <table class="records">
                         <tr v-for="record in selectedPackLevels[selectedLevel][0].records" class="record">
                             <td class="percent">

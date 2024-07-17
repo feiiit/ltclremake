@@ -1,5 +1,5 @@
 import { fetchLeaderboard } from '../content.js';
-import { localize, getFontColour } from '../util.js';
+import { localize } from '../util.js';
 
 import Spinner from '../components/Spinner.js';
 
@@ -47,7 +47,7 @@ export default {
                         <h3>{{ entry.total }}</h3>
                         <p>Pakelių Bonusai: {{ entry.packBonus }} points</p>
                         <div class="packs" v-if="entry.packs.length > 0">
-                            <div v-for="pack in entry.packs" class="tag" :style="{background:pack.colour}">
+                            <div v-for="pack in entry.packs" class="tag" :style="{background:pack.colour, color:getFontColour(pack.colour)}">
                                 {{pack.name}}
                             </div>
                         </div>

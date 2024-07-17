@@ -173,14 +173,6 @@ export async function fetchLeaderboard() {
 
 
 
-export async function fetchPacks() {
-    try {
-        const packResult = await fetch(`${dir}/_packlist.json`);
-        const packsList = await packResult.json();
-        return packsList;
-    } catch {
-        return null;
-    }}
 
 export async function fetchPackLevels(packname) {
         const packResult = await fetch(`${dir}/_packlist.json`);

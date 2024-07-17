@@ -30,6 +30,23 @@
     height: 100%;
     display: flex;
 }
+.packs-nav button:hover {
+    border-top-right-radius: 0.75em;
+    border-top-left-radius: 0.75em;
+    border: none;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: start;
+    word-break: normal;
+    text-shadow: 8px 8px 12px black;
+    color: white;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 100%;
+    background-size: 100% 100% !important;
+}
 
 .pack-list .list-container,
 .pack-list .level-container,

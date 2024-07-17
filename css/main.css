@@ -11,7 +11,7 @@
 }
 
 .MOTD {
-position: relative;
+position: absolute;
 top: 20px;
 width: 100%;
 height: 20px;

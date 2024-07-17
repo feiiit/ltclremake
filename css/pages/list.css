@@ -5,7 +5,9 @@
 }
 .page-list .list-container {
     padding-inline: 1rem;
-    background-color: #1f1f1f; 
+}
+.page-list .level-container {
+    background-color: #171717; 
 }
 .page-list .meta-container {
     padding-right: 2rem;

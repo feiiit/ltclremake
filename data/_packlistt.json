@@ -1,0 +1,83 @@
+[
+    {
+        "name": "elments",
+        "levels": [
+            "snad",
+            "grsas",
+            "wtaer"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    },
+  {
+        "name": "pachmas",
+        "levels": [
+            "pykinimas",
+            "triedalas",
+            "myzalas"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    },
+  {
+        "name": "kamuoliukai",
+        "levels": [
+            "wtaer",
+            "bic_lighter",
+            "kamuoliuko_isbandyma"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    },
+  {
+        "name": "alkoholis",
+        "levels": [
+            "absolut",
+            "degtine",
+            "jack_daniels"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    },
+  {
+        "name": "triple_a",
+        "levels": [
+            "aurisa",
+            "askeral",
+            "admixture"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    },
+  {
+        "name": "slick_pack",
+        "levels": [
+            "slick_challenge",
+            "slicker_challenge",
+            "slickest_challenge"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    },
+  {
+        "name": "parduotuve",
+        "levels": [
+            "maxima_is_cool",
+            "i_love_ikea",
+            "lidl"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    },
+  {
+        "name": "rng",
+        "levels": [
+            "melyninis_miau",
+            "have_fun",
+            "kandyman_chamber"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    },
+  {
+        "name": "click_sync",
+        "levels": [
+            "fcl_is_biased",
+            "adrenalinas",
+            "surfaced"
+        ],
+        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+    }
+]

@@ -103,7 +103,7 @@
 .pack-list .level-container .level {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    gap: 2rem;
     padding-right: 2rem;
     max-width: 48rem;
 }
@@ -126,7 +126,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 .pack-list .level-container .level .records {
     table-layout: fixed;

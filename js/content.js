@@ -175,8 +175,6 @@ export async function fetchPackLevels(packname) {
             const levelResult = await fetch(`${dir}/${path}.json`);
             try {
                 const level = await levelResult.json();
-                console.log(cycle);
-                cycle++;
                 return [
                     {
                         level,

@@ -1,6 +1,7 @@
 import { fetchPacks, fetchPackLevels } from "../content.js";
 import { getFontColour, embed } from "../util.js";
 import { score } from "../score.js";
+import { store } from "../main.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -18,7 +19,7 @@ export default {
             <div class="packs-nav">
                 <div>
                     <button @click="switchLevels(i)" v-for="(pack, i) in packs" :style="{background: pack.colour}" class="type-label-lg">
-                        <p>{{pack.name}}</p>
+                        <p :style="{color:getFontColour(pack.colour)}">{{pack.name}}</p>
                     </button>
                 </div>
             </div>
@@ -28,22 +29,30 @@ export default {
                         <td class="rank">
                             <p class="type-label-lg">#{{ i + 1 }}</p>
                         </td>
-                        <td class="level" :class="{ 'active': selectedLevel == i, 'error': !level }">
-                            <button :style= "[selectedLevel == i ? {background: pack.colour} : {}]" @click="selectedLevel = i">
-                                <span class="type-label-lg">{{ level[0].level.name || \`Error (\.json)\` }}</span>
+                        <td class="level" :class="{ 'active': selectedLevel == i, 'error': !level[0] }">
+                            <button :style= "[selectedLevel == i ? {background: pack.colour, color: getFontColour(pack.colour)} : {}]" @click="selectedLevel = i">
+                                <span class="type-label-lg">{{ level[0]?.level.name || \`Error (\${level[1]}.json)\` }}</span>
                             </button>
                         </td>
                     </tr>
                 </table>
             </div>
             <div class="level-container">
-                <div class="level" v-if="selectedPackLevels[selectedLevel]">
+                <div class="level" v-if="selectedPackLevels[selectedLevel][0]">
                     <h1>{{ selectedPackLevels[selectedLevel][0].level.name }}</h1>
                     <LevelAuthors :author="selectedPackLevels[selectedLevel][0].level.author" :creators="selectedPackLevels[selectedLevel][0].level.creators" :verifier="selectedPackLevels[selectedLevel][0].level.verifier"></LevelAuthors>
                     <div style="display:flex">
                         <div v-for="pack in selectedPackLevels[selectedLevel][0].level.packs" class="tag" :style="{background:pack.colour, color:getFontColour(pack.colour)}">{{pack.name}}</div>
                     </div>
-                    <iframe class="video" :src="embed(selectedPackLevels[selectedLevel][0].level.verification)" frameborder="0"></iframe>
+                    <div v-if="selectedPackLevels[selectedLevel][0].level.showcase" class="tabs">
+                        <button class="tab type-label-lg" :class="{selected: !toggledShowcase}" @click="toggledShowcase = false">
+                            <span class="type-label-lg">Verification</span>
+                        </button>
+                        <button class="tab" :class="{selected: toggledShowcase}" @click="toggledShowcase = true">
+                            <span class="type-label-lg">Showcase</span>
+                        </button>
+                    </div>
+                    <iframe class="video" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
                             <div class="type-title-sm">ID</div>
@@ -58,18 +67,15 @@ export default {
                     <p v-if="selected + 1 <= 150"><strong>{{ selectedPackLevels[selectedLevel][0].level.percentToQualify }}%</strong> or better to qualify</p>
                     <p v-else>100% or better to qualify</p>
                     <table class="records">
-                        <tr v-for="record in selectedPackLevels[selectedLevel][0].level.records" class="record">
+                        <tr v-for="record in selectedPackLevels[selectedLevel][0].records" class="record">
                             <td class="percent">
-                                <p>{{ record.percent }}%</p>
+                                <p>100%</p>
                             </td>
                             <td class="user">
                                 <a :href="record.link" target="_blank" class="type-label-lg">{{ record.user }}</a>
                             </td>
                             <td class="mobile">
                                 <img v-if="record.mobile" :src="\`/assets/phone-landscape\${store?.dark ? '-dark' : ''}.svg\`" alt="Mobile">
-                            </td>
-                            <td class="hz">
-                                <p>{{ record.hz }}Hz</p>
                             </td>
                         </tr>
                     </table>
@@ -83,19 +89,21 @@ export default {
                     <div class="errors" v-show="errors.length > 0">
                         <p class="error" v-for="error of errors">{{ error }}</p>
                     </div>
-                    <h3>About the packs</h3>
+                    <h3>Apie pakelius</h3>
                     <p>
-                        These are list packs all chosen by the staff team that you can beat levels for and get the packs attached to your profile
+                        Pakelį sudaro 3-5 panašaus difficulty ir theme lygiai. Vieno pakelio lygiai neprivalo būti sukurti vieno to pačio creator - galit daryt unofficial additions į kokį nors challenge series arba net sukurti nauja series iš kokio vieno lygio liste jei labai patinka jo concept. Theme panašumas gali būti su gamemodes, style, gameplay, arba kitokiais aspektais (pvz. tiesiog challenge pavadinimais arba simple fact kad challenges pakelyje yra collabai). Lygiai gali būti iš skirtingų difficulty ranges, jei ta riba pereinama nedaug, pvz jei 2 lygiai kažkur 42-37 vietose (lengvo sunkumo), o vienas 34 vietoje (vidutinio sunkumo). Tokiais atvėjais pakelis bus skaitomas to sunkumo, kurio difficulty range lygių yra daugiau.
                     </p>
-                    <h3>How can I get these packs?</h3>
+                    <h3>Kaip gauti pakelių roles?</h3>
                     <p>
-                        It's as simple as just beating the levels and getting your records added! The packs will automatically appear on your profile when all levels have been completed
+                        Norint gauti pakelio role, į #⁠pakelių-prašymas parašykit kokios role norit ir patikrinsim ar tikrai įveikėt pakelyje esančius lygius. (jei lygis yra legacy ir įveikėt jį PO jo iškritimo iš listo, turėsit būtinai atsiųst completion video į anksčiau minėtą kanalą)
                     </p>
+                    <p> Pakelių funkcija sukurta KrisGra. </p>
                 </div>
             </div>
         </main>
     `,
     data: () => ({
+        store,
         packs: [],
         errors: [],
         selected: 0,
@@ -103,10 +111,29 @@ export default {
         selectedPackLevels: [],
         loading: true,
         loadingPack: true,
+        toggledShowcase: false,
     }),
     computed: {
         pack() {
             return this.packs[this.selected];
+        },
+        video() {
+            if (
+                !this.selectedPackLevels[this.selectedLevel][0].level.showcase
+            ) {
+                return embed(
+                    this.selectedPackLevels[this.selectedLevel][0].level
+                        .verification
+                );
+            }
+
+            return embed(
+                this.toggledShowcase
+                    ? this.selectedPackLevels[this.selectedLevel][0].level
+                          .showcase
+                    : this.selectedPackLevels[this.selectedLevel][0].level
+                          .verification
+            );
         },
     },
     async mounted() {
@@ -115,20 +142,20 @@ export default {
             this.packs[this.selected].name
         );
 
-        // Error handling todo: make error handling
-        // if (!this.packs) {
-        //     this.errors = [
-        //         "Failed to load list. Retry in a few minutes or notify list staff.",
-        //     ];
-        // } else {
-        //     this.errors.push(
-        //         ...this.packs
-        //             .filter(([_, err]) => err)
-        //             .map(([_, err]) => {
-        //                 return `Failed to load level. (${err}.json)`;
-        //             })
-        //     );
-        // }
+        // Error handling
+        if (!this.packs) {
+            this.errors = [
+                "Nepavyko pakrauti sąrašo. Pabandykite po kelių minučių arba praneškite list modams.",
+            ];
+        } else {
+            this.errors.push(
+                ...this.selectedPackLevels
+                    .filter(([_, err]) => err)
+                    .map(([_, err]) => {
+                        return `Nepavyko pakrauti lygio. (${err}.json)`;
+                    })
+            );
+        }
 
         // Hide loading spinner
         this.loading = false;
@@ -143,7 +170,21 @@ export default {
             this.selectedPackLevels = await fetchPackLevels(
                 this.packs[this.selected].name
             );
-
+            // Error handling
+            this.errors.length = 0;
+            if (!this.packs) {
+                this.errors = [
+                    "Nepavyko pakrauti sąrašo. Pabandykite po kelių minučių arba praneškite list modams.",
+                ];
+            } else {
+                this.errors.push(
+                    ...this.selectedPackLevels
+                        .filter(([_, err]) => err)
+                        .map(([_, err]) => {
+                            return `Nepavyko pakrauti lygio. (${err}.json)`;
+                        })
+                );
+            }
             this.loadingPack = false;
         },
         score,

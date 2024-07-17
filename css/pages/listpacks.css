@@ -2,7 +2,7 @@
     z-index: 1;
     position: absolute;
     background-color: var(--color-background-hover);
-    height: 50px;
+    height: 75px;
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%;

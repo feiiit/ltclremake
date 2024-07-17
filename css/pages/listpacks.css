@@ -77,7 +77,7 @@
 }
 .pack-list .list .level.active button {
     background-color: var(--color-primary);
-    color: var(--color-on-primary);
+    color: white;
 }
 .pack-list .level-container .level {
     display: flex;

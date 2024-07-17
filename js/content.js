@@ -146,7 +146,7 @@ export async function fetchLeaderboard() {
 
 
 
-export async function fetchpacksComplete() {
+export async function fetchPacks() {
     try {
         const packResult = await fetch(`${dir}/_packlist.json`);
         const packsCompleteList = await packResult.json();

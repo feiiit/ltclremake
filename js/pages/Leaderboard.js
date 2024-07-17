@@ -45,7 +45,6 @@ export default {
                     <div class="player">
                         <h1>#{{ selected + 1 }} {{ entry.user }}</h1>
                         <h3>{{ entry.total }}</h3>
-                        <p>Pakelių Bonusai: {{ entry.packBonus }} points</p>
                         <div class="packs" v-if="entry.packs.length > 0">
                             <div v-for="pack in entry.packs" class="tag" :style="{background:pack.colour, color:getFontColour(pack.colour)}">
                                 {{pack.name}}

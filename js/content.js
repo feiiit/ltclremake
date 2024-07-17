@@ -53,6 +53,7 @@ export async function fetchEditors() {
 
 export async function fetchLeaderboard() {
     const list = await fetchList();
+    const packsList = await fetchPacks();
     const scoreMap = {};
     const errs = [];
     list.forEach(([level, err], rank) => {
@@ -125,6 +126,31 @@ export async function fetchLeaderboard() {
     });
     // Sort by total score
     return [res.sort((a, b) => b.total - a.total), errs];
+
+    //Pack implementation to player profile (WIP)
+    packsList.levels.forEach((record) => {
+        const user = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),
+        )
+        {
+            scoreMap[user] ??= {
+                verified: [],
+                completed: [],
+                progressed: [],
+                packs: [],
+            };
+
+            const { packs } = scoreMap[user];
+            for (let pack in packsList) {
+                for (let level in pack.levels) {
+                    if (!scoreMap[user].completed.includes(level)) {
+                        return;
+                    }
+                }
+                packs.push(pack);
+                return;
+            }
+        };
+    })
 }
 
 
@@ -136,36 +162,38 @@ export async function fetchPacks() {
         return packsList;
     } catch {
         return null;
-    }}
+    }
+}
 
 export async function fetchPackLevels(packname) {
-        const packResult = await fetch(`${dir}/_packlist.json`);
-        const packsList = await packResult.json();
-        const selectedPack = await packsList.find((pack) => pack.name == packname);
-        try {
-            return await Promise.all(
-                selectedPack.levels.map(async (path, rank) => {
-                    const levelResult = await fetch(`${dir}/${path}.json`);
-                    try {
-                        const level = await levelResult.json();
-                        return [
-                            {
-                                level,
-                                path,
-                                records: level.records.sort(
-                                    (a, b) => b.percent - a.percent,
-                                ),
-                            },
-                            null,
-                        ];
-                    } catch {
-                        console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
-                        return [null, path];
-                    }
-                })
-            );
-            } catch (e) {
-            console.error(`Nepavyko užkrauti pakelių.`, e);
-            return null;
-        }
+    const packResult = await fetch(`${dir}/_packlist.json`);
+    const packsList = await packResult.json();
+    const selectedPack = await packsList.find((pack) => pack.name == packname);
+    try {
+        return await Promise.all(selectedPack.levels.map(async (path, rank) =>
+        {
+            const levelResult = await fetch(`${dir}/${path}.json`);
+            try {
+                const level = await levelResult.json();
+                return [
+                    {
+                        level,
+                        path,
+                        records: level.records.sort(
+                            (a, b) => b.percent - a.percent,
+                        ),
+                    },
+                    null,
+                ];
+            } catch {
+                console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
+                return [null, path];
+            }
+        })
+        );
     }
+    catch (e) {
+        console.error(`Nepavyko užkrauti pakelių.`, e);
+        return null;
+    }
+}

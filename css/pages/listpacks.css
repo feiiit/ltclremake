@@ -60,8 +60,8 @@
     background-color: var(--color-background);
     text-color: white;
     border: none;
-    border-radius: 2rem;
-    padding: 5rem;
+    border-radius: 3rem;
+    padding: 2rem;
     text-align: start;
     word-break: normal;
     overflow-wrap: anywhere;

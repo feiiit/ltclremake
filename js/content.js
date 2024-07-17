@@ -53,8 +53,7 @@ export async function fetchEditors() {
 
 export async function fetchLeaderboard() {
     const list = await fetchList();
-    const packList = await fetchPackLevels();
-    //const listPack = await fetchPack();
+    const packResult = await (await fetch(`${dir}/_packlist.json`)).json();
     const scoreMap = {};
     const errs = [];
     list.forEach(([level, err], rank) => {
@@ -113,27 +112,6 @@ export async function fetchLeaderboard() {
         });
     });
 
-    //Pack implementation to player profile (WIP)
-    // packResult.forEach((levels) => {
-    //     const completedPacks = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),
-    //     )
-    //     {
-    //         const { packs } = scoreMap[user];
-    //         for (let pack in packsList) {
-    //             for (let pack in packs) {
-    //                 for(let level in pack)
-    //                 if (!scoreMap[user].completed.includes(level)) {
-    //                     return;
-    //                 }
-    //                 packs.push(pack);
-    //                 return;
-    //             }
-
-    //         }
-    //     };
-    // })
-
-
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores]) => {
         const { verified, completed, progressed } = scores;
@@ -150,7 +128,20 @@ export async function fetchLeaderboard() {
     // Sort by total score
     return [res.sort((a, b) => b.total - a.total), errs];
 
+    for (let user of Object.entries(scoreMap)) {
+        let levels = [...user[1]["verified"], ...user[1]["completed"]].map(
+            (x) => x["path"]
+        );
+    
+        for (let pack of packResult) {
+            if (pack.levels.every((e1) => levels.includes(e1))) {
+                user[1]["packs"].push(pack);
+            }
+        }
+    }
+
 }
+
 
 
 
@@ -165,7 +156,6 @@ export async function fetchPacks() {
 }
 
 export async function fetchPackLevels(packname) {
-    let cycle = 0;
     const packResult = await fetch(`${dir}/_packlist.json`);
     const packsList = await packResult.json();
     const selectedPack = await packsList.find((pack) => pack.name == packname);

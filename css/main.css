@@ -20,7 +20,7 @@
         } 
 }
 @keyframes color-change {
-  0% { color: yellow; }
+  25% { color: yellow; }
   50% { color: green; }
   75% { color: red; }
   100% { color: yellow; }

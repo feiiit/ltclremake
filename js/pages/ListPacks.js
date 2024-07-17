@@ -19,7 +19,7 @@ export default {
             <div class="packs-nav">
                 <div>
                     <button @click="switchLevels(i)" v-for="(pack, i) in packs" :style="{background: pack.colour}" class="type-label-lg">
-                        <p :style="{color:getFontColour(pack.colour)}">{{pack.name}}</p>
+                        <p>{{pack.name}}</p>
                     </button>
                 </div>
             </div>

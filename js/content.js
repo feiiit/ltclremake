@@ -112,7 +112,7 @@ export async function fetchLeaderboard() {
         });
     });
 
-    // //Pack implementation to player profile (WIP)
+    //Pack implementation to player profile (WIP)
     // packResult.forEach((levels) => {
     //     const completedPacks = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),
     //     )
@@ -131,6 +131,9 @@ export async function fetchLeaderboard() {
     //         }
     //     };
     // })
+    for(let pack in packResult){
+        console.log(pack.name);
+    }
 
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores]) => {

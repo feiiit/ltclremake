@@ -132,9 +132,8 @@ export async function fetchLeaderboard() {
     //         }
     //     };
     // })
-    for(let pack in packList){
-        console.log(pack);
-    }
+    console.log(packList);
+
 
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores]) => {

@@ -6,15 +6,15 @@ export function score(rank){
   if(rank => 1){ //rank has to be above 1
     if(rank < 11)//if rank is 10 or above
     { 
-      return round(top10Score, scale);
+      return round(top10Score);
     }
     else if(rank > 10 & rank < 51)//if rank is between 11 and 50
     { 
-      return round(top11_50Score, scale)
+      return round(top11_50Score)
     }
     else if(rank > 50 && rank < 76)//if rank is between 51 and 75
     { 
-      return round(top51_75Score, scale);
+      return round(top51_75Score);
     }
     else //return 0 if rank goes beyond 75 (it counts as legacy)
     {
@@ -30,7 +30,7 @@ const scale = 2; //Select how many decimal digits to round to
  * @param {Number} scale    Number of decimal points to round to
  * @returns {Number}        Rounded number
  */
-export function round(num, scale)
+export function round(num)
 {
     return Math.round(num*(10**scale))/(10**scale);
 }

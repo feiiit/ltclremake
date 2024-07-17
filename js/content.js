@@ -131,10 +131,10 @@ export async function fetchLeaderboard() {
     //         }
     //     };
     // })
+
     // Wrap in extra Object containing the user and total score
-    const res = Object.entries(scoreMap).map(([user, scores, completedPacks]) => {
+    const res = Object.entries(scoreMap).map(([user, scores]) => {
         const { verified, completed, progressed } = scores;
-        const { packs } = completedPacks;
         const total = [verified, completed, progressed]
             .flat()
             .reduce((prev, cur) => prev + cur.score, 0);
@@ -143,7 +143,6 @@ export async function fetchLeaderboard() {
             user,
             total: round(total),
             ...scores,
-            ...packs,
         };
     });
     // Sort by total score

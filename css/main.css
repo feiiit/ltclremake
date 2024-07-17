@@ -21,8 +21,9 @@
 }
 @keyframes color-change {
   0% { color: yellow; }
-  50% { color: green; }
-  100% { color: red; }
+  25% { color: green; }
+  50% { color: red; }
+  100% { color: yellow; }
 }
 
 main.dark,
@@ -83,7 +84,8 @@ width: 100%;
 height: 18px;
 display: flex;
 overflow: hidden;
-animation: marquee 20s linear infinite, color-change 3s infinite;
+animation: marquee 20s linear infinite, color-change 3s ease-in-out infinite;
+text-shadow: 2px 3px 3px rgba(0,0,0,0.6);
 background: var(--color-primary);
 }
 header .logo {

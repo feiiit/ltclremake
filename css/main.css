@@ -70,13 +70,6 @@ header {
         padding-inline: 0;
     }
 }
-header .logo {
-    justify-self: end;
-    align-self: center;
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
-}
 header .MOTD {
 position: absolute;
 margin-top: 50px;
@@ -87,6 +80,15 @@ display: flex;
 overflow: hidden;
 animation: marquee 20s linear infinite; 
 background: var(--color-primary);
+z-index: -1;
+}
+header .logo {
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    z-index: 1;
 }
 header .nav {
     flex: 1;

@@ -41,6 +41,7 @@ export default {
                     <h1>{{ level.name }}</h1>
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
+                    <button @click="location.href="level.nong">
                     <ul class="stats">
                         <li>
                             <div class="type-title-sm">Taškų vertė</div>

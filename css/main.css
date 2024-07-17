@@ -73,9 +73,9 @@ header {
 header .MOTD {
 position: absolute;
 margin-top: 55px;
-top: -56px;
+top: -57px;
 width: 100%;
-height: 20px;
+height: 19px;
 display: flex;
 overflow: hidden;
 animation: marquee 20s linear infinite; 

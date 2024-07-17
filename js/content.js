@@ -1,5 +1,4 @@
 import { round, score } from './score.js';
-import { getFontColour } from '../util.js';
 
 /**
  * Path to directory containing `_list.json` and all levels

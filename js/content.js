@@ -181,4 +181,4 @@ export async function fetchPackLevels(packname) {
             console.error(`Failed to load packs.`, e);
             return null;
         }
-    }}
+    }

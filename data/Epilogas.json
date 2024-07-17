@@ -3,7 +3,7 @@
     "name": "Epilogas",
     "author": "taiga",
     "creators": [],
-    "verifier": "xtrapnation",
+    "verifier": "xtrapnationx",
     "verification": "https://youtu.be/wbPnJ4OcRgY",
     "percentToQualify": "100",
     "password": "0",
@@ -46,9 +46,7 @@
         },
         {
           "user": "wagneris",
-          "link": "",
-          "percent": 100,
-          "hz": ""
+          "percent": 100
         }
         
     ]

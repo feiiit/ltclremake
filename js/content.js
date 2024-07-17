@@ -114,7 +114,7 @@ export async function fetchLeaderboard() {
 
     //Pack implementation to player profile (WIP)
     packsList.levels.forEach((record) => {
-        const packs = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),
+        const completedPacks = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),
         )
         {
             scoreMap[user] ??= {
@@ -139,18 +139,18 @@ export async function fetchLeaderboard() {
         };
     })
     // Wrap in extra Object containing the user and total score
-    const res = Object.entries(scoreMap).map(([user, scores, packs]) => {
+    const res = Object.entries(scoreMap).map(([user, scores, completedPacks]) => {
         const { verified, completed, progressed } = scores;
-        const { packs } = packs;
+        const { packs } = completedPacks;
         const total = [verified, completed, progressed]
             .flat()
             .reduce((prev, cur) => prev + cur.score, 0);
 
         return {
             user,
-            packs,
             total: round(total),
             ...scores,
+            ...packs,
         };
     });
     // Sort by total score

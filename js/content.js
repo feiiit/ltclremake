@@ -115,7 +115,7 @@ export async function fetchLeaderboard() {
     //Player completed packs
     for (let user of Object.entries(player)) {
         let levels = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
-            (x) => x["path"]
+            (x) => x["level"]
         );
     
         for (let pack of packResult) {

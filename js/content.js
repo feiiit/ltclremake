@@ -133,7 +133,7 @@ export async function fetchLeaderboard() {
     //     };
     // })
     for(let pack in packList){
-        console.log(pack.name);
+        console.log(pack);
     }
 
     // Wrap in extra Object containing the user and total score

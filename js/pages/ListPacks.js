@@ -30,7 +30,7 @@ export default {
                             <p class="type-label-lg">#{{ i + 1 }}</p>
                         </td>
                         <td class="level" :class="{ 'active': selectedLevel == i, 'error': !level[0] }">
-                            <button :style= "[selectedLevel == i ? {background: #1d1d1d} : {}]" @click="selectedLevel = i">
+                            <button :style= "[selectedLevel == i ? {background: "#1d1d1d"} : {}]" @click="selectedLevel = i">
                                 <span class="type-label-lg">{{ level[0]?.level.name || \`Error (\${level[1]}.json)\` }}</span>
                             </button>
                         </td>

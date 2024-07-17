@@ -13,9 +13,9 @@
 .MOTD {
 position: absolute;
 margin-top: 50px;
-top: -55px;
+top: -51px;
 width: 100%;
-height: 30px;
+height: 25px;
 display: flex;
 overflow: hidden;
 animation: marquee 20s linear infinite; 

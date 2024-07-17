@@ -3,9 +3,8 @@
 .page-list .meta-container {
     padding-block: 2rem;
 }
-.page-list .level-container {
-    background-color: #100f11;
-    padding-left: 2rem;
+.page-list .list-container {
+    padding-inline: 1rem;
 }
 .page-list .meta-container {
     padding-right: 2rem;

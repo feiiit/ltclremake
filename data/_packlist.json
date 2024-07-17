@@ -42,7 +42,7 @@
             "askeral",
             "admixture"
         ],
-        "colour": "linear-gradient(90deg, rgba(54,138,192,255) 0%, rgba(54,138,192,255) 50%, rgba(54,138,192,255) 100%)"
+        "colour": "linear-gradient(90deg, rgba(113,80,161,255) 0%, rgba(113,80,161,255) 50%, rgba(113,80,161,255) 100%)"
     },
   {
         "name": "slick pack",
@@ -51,7 +51,7 @@
             "Slicker_Challenge",
             "Slickest_Challenge"
         ],
-        "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
+        "colour": "linear-gradient(90deg, rgba(58,118,156,255) 0%, rgba(58,118,156,255) 50%, rgba(58,118,156,255) 100%)"
     },
   {
         "name": "parduotuve",

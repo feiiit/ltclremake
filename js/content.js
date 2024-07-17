@@ -123,12 +123,6 @@ export async function fetchLeaderboard() {
             ...scores,
         };
     });
-        for (let pack of packResult) {
-            if (pack.levels.every((e1) => levels.includes(e1))) {
-                user[1]["packs"].push(pack);
-            }
-        }
-
     // Sort by total score
     return [res.sort((a, b) => b.total - a.total), errs];
 }

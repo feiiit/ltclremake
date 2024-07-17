@@ -53,9 +53,10 @@ export async function fetchEditors() {
 
 export async function fetchLeaderboard() {
     const list = await fetchList();
-
+    const packResult = await (await fetch(`${dir}/_packlist.json`)).json();
     const scoreMap = {};
     const errs = [];
+    const packMultiplier = 1.5;
     list.forEach(([level, err], rank) => {
         if (err) {
             errs.push(err);
@@ -70,6 +71,7 @@ export async function fetchLeaderboard() {
             verified: [],
             completed: [],
             progressed: [],
+            packs: [],
         };
         const { verified } = scoreMap[verifier];
         verified.push({
@@ -88,6 +90,7 @@ export async function fetchLeaderboard() {
                 verified: [],
                 completed: [],
                 progressed: [],
+                packs: [],
             };
             const { completed, progressed } = scoreMap[user];
             if (record.percent === 100) {
@@ -120,6 +123,46 @@ export async function fetchLeaderboard() {
         return {
             user,
             total: round(total),
+            ...scores,
+        };
+    });
+    for (let user of Object.entries(scoreMap)) {
+        let levels = [...user[1]["verified"], ...user[1]["completed"]].map(
+            (x) => x["path"]
+        );
+        for (let pack of packResult) {
+            if (pack.levels.every((e1) => levels.includes(e1))) {
+                user[1]["packs"].push(pack);
+            }
+        }
+    const res = Object.entries(scoreMap).map(([user, scores]) => {
+        const { verified, completed, progressed } = scores;
+
+        let packScore = 0;
+        let packScoreMultiplied = 0;
+        for (let pack of scores["packs"]) {
+            const packLevelScores = [];
+            const allUserLevels = [
+                ...scores["verified"],
+                ...scores["completed"],
+            ];
+            for (let level of pack["levels"]) {
+                let userLevel = allUserLevels.find((lvl) => lvl.path == level);
+                packLevelScores.push(userLevel.score);
+            }
+            packLevelScores.forEach((score) => (packScore += score));
+            packScoreMultiplied = packScore * packMultiplier;
+        }
+
+        let totalWithoutBonus = [verified, completed, progressed]
+            .flat()
+            .reduce((prev, cur) => prev + cur.score, 0);
+        const total = totalWithoutBonus - packScore + packScoreMultiplied
+
+        return {
+            user,
+            total: round(total),
+            packBonus: round(total - totalWithoutBonus),
             ...scores,
         };
     });

@@ -132,7 +132,6 @@ export async function fetchLeaderboard() {
     //         }
     //     };
     // })
-    console.log(packList);
 
 
     // Wrap in extra Object containing the user and total score
@@ -189,7 +188,8 @@ export async function fetchPackLevels(packname) {
                     null,
                 ];
             } catch {
-                console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
+                //console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
+                console.log(cycle);
                 return [null, path];
             }
         })

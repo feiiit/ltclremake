@@ -56,7 +56,7 @@
 }
 .pack-list .list .level button {
     background-color: var(--color-background);
-    color: white
+    color: white;
     border: none;
     border-radius: 0.5rem;
     padding: 1rem;

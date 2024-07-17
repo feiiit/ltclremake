@@ -42,7 +42,7 @@ export default {
                     <h1>{{ selectedPackLevels[selectedLevel][0].level.name }}</h1>
                     <LevelAuthors :author="selectedPackLevels[selectedLevel][0].level.author" :creators="selectedPackLevels[selectedLevel][0].level.creators" :verifier="selectedPackLevels[selectedLevel][0].level.verifier"></LevelAuthors>
                     <div style="display:flex">
-                        <div v-for="pack in selectedPackLevels[selectedLevel][0].level.packs" class="tag" :style="{background:pack.colour, pack.colour}">{{pack.name}}</div>
+                        <div v-for="pack in selectedPackLevels[selectedLevel][0].level.packs" class="tag" :style="{background:pack.colour, color: getFontColour(pack.colour)}">{{pack.name}}</div>
                     </div>
                     <div v-if="selectedPackLevels[selectedLevel][0].level.showcase" class="tabs">
                         <button class="tab type-label-lg" :class="{selected: !toggledShowcase}" @click="toggledShowcase = false">

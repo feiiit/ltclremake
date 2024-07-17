@@ -6,7 +6,7 @@
             "grsas",
             "wtaer"
         ],
-        "colour": "linear-gradient(90deg, rgba(42,117,70,255) 0%, rgba(42,117,50,255) 50%, rgba(042,117,70,255) 100%)"
+        "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263196146822676530/elments.png?ex=66995a96&is=66980916&hm=29274cdcca4faadbfad770ebb9fdafacf0df9ac2ae2bd08efbc77cea0cf816f6&')"
     },
   {
         "name": "pachmas",
@@ -24,7 +24,7 @@
             "Bic_Lighter",
             "kamuoliuko_isbandyma"
         ],
-        "colour": "linear-gradient(90deg, rgba(35,98,139,255) 0%, rgba(35,98,119,255) 50%, rgba(35,98,139,255) 100%)"
+        "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192492724064316/kamuoliukai.png?ex=6699572f&is=669805af&hm=0c4174293d05234afa12d65015adc96e4ca6e4f9b8dcc9ec840449e15c83de74&')"
     },
   {
         "name": "alkoholis",
@@ -33,7 +33,7 @@
             "Degtine",
             "Jack_Daniels"
         ],
-        "colour": "linear-gradient(90deg, rgba(115,111,80,255) 0%, rgba(115,111,80,255) 50%, rgba(115,111,80,255) 100%)"
+        "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192251526287452/alkoholis.png?ex=669956f5&is=66980575&hm=8db46c5aa8df0da9b45d22b20b6ce0b2f7c001120bdf19286742807f2682a6e5&')"
     },
   {
         "name": "triple a",
@@ -42,7 +42,7 @@
             "askeral",
             "admixture"
         ],
-        "colour": "linear-gradient(90deg, rgba(113,80,161,255) 0%, rgba(113,80,161,255) 50%, rgba(113,80,161,255) 100%)"
+        "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263195316522324031/triplea.png?ex=669959d0&is=66980850&hm=c5c066c14cd195cc26eddc052620f8a148aa4e76497b2e2714bcf0e6a144f2b4&')"
     },
   {
         "name": "slick pack",
@@ -51,7 +51,7 @@
             "Slicker_Challenge",
             "Slickest_Challenge"
         ],
-        "colour": "linear-gradient(90deg, rgba(58,118,156,255) 0%, rgba(58,118,156,255) 50%, rgba(58,118,156,255) 100%)"
+        "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192805430399079/slick_pack.png?ex=66995779&is=669805f9&hm=407834c2b1eaf85201bec7a9b45db524b47dbd8ab96ccb1b3b61e57d6b8f6144&')"
     },
   {
         "name": "parduotuve",
@@ -78,6 +78,6 @@
             "Adrenalinas",
             "SurFaced"
         ],
-        "colour": "linear-gradient(90deg, rgba(137,180,7,255) 0%, rgba(137,180,7,255) 50%, rgba(137,180,7,255) 100%)"
+        "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263193344331481088/click_sync.png?ex=669957fa&is=6698067a&hm=b74ddb1ab536e3d0508b0ffb90ca66f0dd765420508a7b19c745ec1fa4eec7fd&')"
     }
 ]

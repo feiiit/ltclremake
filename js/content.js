@@ -53,10 +53,10 @@ export async function fetchEditors() {
 
 export async function fetchLeaderboard() {
     const list = await fetchList();
-    const packResult = await (await fetch(`${dir}/_packlist.json`)).json();
     const scoreMap = {};
     const errs = [];
     const packMultiplier = 1.5;
+    const scoreLookup = score(list.length)
     list.forEach(([level, err], rank) => {
         if (err) {
             errs.push(err);

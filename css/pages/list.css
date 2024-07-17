@@ -7,7 +7,8 @@
     padding-inline: 1rem;
 }
 .page-list .level-container {
-    background-color: #171717; 
+    background-color: #100f11;
+    padding-right: 2rem;
 }
 .page-list .meta-container {
     padding-right: 2rem;

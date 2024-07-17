@@ -50,7 +50,9 @@ export default {
                             <div class="type-title-sm">Lygio ID</div>
                             <p>{{ level.id }}</p>
                         </li>
+                        <td class="nong">
                     <button onclick="level.nong"> </button>
+                    </td>
                     </ul>
                     <h2>Rekordai</h2>
                     <table class="records">

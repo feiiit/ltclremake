@@ -29,13 +29,13 @@ export async function fetchList() {
                         null,
                     ];
                 } catch {
-                    console.error(`Failed to load level #${rank + 1} ${path}.`);
+                    console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path}.`);
                     return [null, path];
                 }
             }),
         );
     } catch {
-        console.error(`Failed to load list.`);
+        console.error(`Nepavyko užkrauti sąrašo.`);
         return null;
     }
 }
@@ -165,13 +165,13 @@ export async function fetchPackLevels(packname) {
                             null,
                         ];
                     } catch {
-                        console.error(`Failed to load level #${rank + 1} ${path} (${packname}).`);
+                        console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
                         return [null, path];
                     }
                 })
             );
             } catch (e) {
-            console.error(`Failed to load packs.`, e);
+            console.error(`Nepavyko užkrauti pakelių.`, e);
             return null;
         }
     }

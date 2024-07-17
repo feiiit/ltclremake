@@ -9,6 +9,7 @@ export default {
     },
     data: () => ({
         leaderboard: [],
+        packs: [],
         loading: true,
         selected: 0,
         err: [],
@@ -105,6 +106,7 @@ export default {
     async mounted() {
         const [leaderboard, err] = await fetchLeaderboard();
         this.leaderboard = leaderboard;
+        this.packs = packs;
         this.err = err;
         // Hide loading spinner
         this.loading = false;

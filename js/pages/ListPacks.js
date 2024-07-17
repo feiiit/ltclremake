@@ -91,11 +91,11 @@ export default {
                     </div>
                     <h3>Apie pakelius</h3>
                     <p>
-                        Pakelį sudaro 3-5 panašaus difficulty ir theme lygiai. Vieno pakelio lygiai neprivalo būti sukurti vieno to pačio creator - galit daryt unofficial additions į kokį nors challenge series arba net sukurti nauja series iš kokio vieno lygio liste jei labai patinka jo concept. Theme panašumas gali būti su gamemodes, style, gameplay, arba kitokiais aspektais (pvz. tiesiog challenge pavadinimais arba simple fact kad challenges pakelyje yra collabai). Lygiai gali būti iš skirtingų difficulty ranges, jei ta riba pereinama nedaug, pvz jei 2 lygiai kažkur 42-37 vietose (lengvo sunkumo), o vienas 34 vietoje (vidutinio sunkumo). Tokiais atvėjais pakelis bus skaitomas to sunkumo, kurio difficulty range lygių yra daugiau.
+                        Pakelį sudaro 3-5 panašaus sunkumo ir tematikos lygiai. Vieno pakelio lygiai neprivalo būti sukurti to pačio kūrėjo - galima daryti neoficialius priedus į kokią nors išbandymų seriją arba net sukurti naują seriją iš kokio vieno lygio sąraše jei labai patinka jo tema. Temos panašumas gali būti su žaidimo režimu, stiliumi, gameplay, arba kitokiais aspektais (pvz. pavadinimais arba kad išbandymai yra sukurti kelių žmonių pagalba). Lygiai gali būti iš skirtingų difficulty ranges, jei ta riba pereinama nedaug, pvz jei 2 lygiai kažkur 42-37 vietose (lengvo sunkumo), o vienas 34 vietoje (vidutinio sunkumo). Tokiais atvėjais pakelis bus skaitomas to sunkumo, kurio difficulty range lygių yra daugiau.
                     </p>
                     <h3>Kaip gauti pakelių roles?</h3>
                     <p>
-                        Norint gauti pakelio role, į #⁠pakelių-prašymas parašykit kokios role norit ir patikrinsim ar tikrai įveikėt pakelyje esančius lygius. (jei lygis yra legacy ir įveikėt jį PO jo iškritimo iš listo, turėsit būtinai atsiųst completion video į anksčiau minėtą kanalą)
+                        Norint gauti pakelio role, į #⁠pakelių-prašymas parašykit kokios role norit ir patikrinsim ar tikrai įveikėte pakelyje esančius lygius. (jei lygis yra legacy ir įveikėt jį PO jo iškritimo iš listo, turėsit būtinai atsiųst completion video į anksčiau minėtą kanalą)
                     </p>
                     <p> Pakelių funkcija sukurta KrisGra. </p>
                 </div>
@@ -145,7 +145,7 @@ export default {
         // Error handling
         if (!this.packs) {
             this.errors = [
-                "Nepavyko pakrauti sąrašo. Pabandykite po kelių minučių arba praneškite list modams.",
+                "Nepavyko pakrauti sąrašo. Pabandykite po kelių minučių arba praneškite sąrašo moderatoriams.",
             ];
         } else {
             this.errors.push(
@@ -174,7 +174,7 @@ export default {
             this.errors.length = 0;
             if (!this.packs) {
                 this.errors = [
-                    "Nepavyko pakrauti sąrašo. Pabandykite po kelių minučių arba praneškite list modams.",
+                    "Nepavyko pakrauti sąrašo. Pabandykite po kelių minučių arba praneškite sąrašo moderatoriams.",
                 ];
             } else {
                 this.errors.push(

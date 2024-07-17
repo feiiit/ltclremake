@@ -17,7 +17,7 @@
     padding-right: 25px;
     text-align: start;
     word-break: normal;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 4px black;
     overflow-wrap: anywhere;
     cursor: pointer;
     flex-shrink: 0;

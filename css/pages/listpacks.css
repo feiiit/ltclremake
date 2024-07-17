@@ -103,7 +103,6 @@
 .pack-list .level-container .level {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     padding-right: 2rem;
     max-width: 48rem;
 }

@@ -165,7 +165,7 @@ export async function fetchPacks() {
 }
 
 export async function fetchPackLevels(packname) {
-    let cycle = 0
+    let cycle = 0;
     const packResult = await fetch(`${dir}/_packlist.json`);
     const packsList = await packResult.json();
     const selectedPack = await packsList.find((pack) => pack.name == packname);
@@ -188,15 +188,15 @@ export async function fetchPackLevels(packname) {
                     null,
                 ];
             } catch {
-                //console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
-                console.log(cycle);
+                console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
                 return [null, path];
             }
         })
         );
     }
     catch (e) {
-        console.error(`Nepavyko užkrauti pakelių.`, e);
+        //console.error(`Nepavyko užkrauti pakelių.`, e);
+        console.log(cycle);
         return null;
     }
 }

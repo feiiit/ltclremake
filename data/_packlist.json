@@ -60,7 +60,7 @@
             "I_LOVE_IKEA",
             "LIDL"
         ],
-        "colour": "linear-gradient(90deg, rgba(219,164,222,255) 0%, rgba(219,164,222,255) 50%, rgba(219,164,222,255) 100%)"
+        "colour": "url('https://ve.lt/sites/default/files/styles/straipsnis_1x_640x422/public/2023-12/maxima.jpg?h=de6d83f5&itok=TPo0gVoT')"
     },
   {
         "name": "rng",

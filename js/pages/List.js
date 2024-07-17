@@ -41,7 +41,6 @@ export default {
                     <h1>{{ level.name }}</h1>
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
-                    <button onclick="level.nong"> </button>
                     <ul class="stats">
                         <li>
                             <div class="type-title-sm">Taškų vertė</div>
@@ -51,6 +50,7 @@ export default {
                             <div class="type-title-sm">Lygio ID</div>
                             <p>{{ level.id }}</p>
                         </li>
+                    <button onclick="level.nong"> </button>
                     </ul>
                     <h2>Rekordai</h2>
                     <table class="records">

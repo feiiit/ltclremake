@@ -17,7 +17,7 @@
     padding-right: 25px;
     text-align: start;
     word-break: normal;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 2px black;
     color: white;
     overflow-wrap: anywhere;
     cursor: pointer;
@@ -39,7 +39,7 @@
     padding-right: 25px;
     text-align: start;
     word-break: normal;
-    text-shadow: 8px 8px 12px black;
+    text-shadow: 8px 8px 2px black;
     color: white;
     overflow-wrap: anywhere;
     cursor: pointer;

@@ -47,7 +47,7 @@ export default {
                         <h3>{{ entry.total }}</h3>
                         <p>Pakelių Bonusai: {{ entry.packBonus }} points</p>
                         <div class="packs" v-if="entry.packs.length > 0">
-                            <div v-for="pack in entry.packs" class="tag" :style="{background:pack.colour,}">
+                            <div v-for="pack in entry.packs" class="tag" :style="{background:pack.colour}">
                                 {{pack.name}}
                             </div>
                         </div>

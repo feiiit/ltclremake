@@ -76,8 +76,8 @@
     color: var(--color-on-background-hover);
 }
 .pack-list .list .level.active button {
-    background-color: rgba(0,0,0,.5);
-    text-color: white;
+    background-color: rgba(255,255,255,.5);
+    text-color: black;
 }
 .pack-list .level-container .level {
     display: flex;

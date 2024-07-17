@@ -10,19 +10,19 @@ export async function fetchList() {
     const packResult = await fetch(`${dir}/_packlist.json`);
     try {
         const list = await listResult.json();
-        const packsList = await packResult.json();
+        const packsCompleteList = await packResult.json();
         return await Promise.all(
             list.map(async (path, rank) => {
                 const levelResult = await fetch(`${dir}/${path}.json`);
                 try {
                     const level = await levelResult.json();
-                    let packs = packsList.filter((x) =>
+                    let packsComplete = packsCompleteList.filter((x) =>
                         x.levels.includes(path)
                     );
                     return [
                         {
                             ...level,
-                            packs,
+                            packsComplete,
                             path,
                             records: level.records,
                         },
@@ -54,7 +54,7 @@ export async function fetchEditors() {
 export async function fetchLeaderboard() {
     const list = await fetchList();
     const packResult = await (await fetch(`${dir}/_packlist.json`)).json();
-    const scoreMap = {};
+    const player = {};
     const errs = [];
     list.forEach(([level, err], rank) => {
         if (err) {
@@ -63,17 +63,17 @@ export async function fetchLeaderboard() {
         }
 
         // Verification
-        const verifier = Object.keys(scoreMap).find(
+        const verifier = Object.keys(player).find(
             (u) => u.toLowerCase() === level.verifier.toLowerCase(),
         ) || level.verifier;
-        scoreMap[verifier] ??= {
-            verified: [],
-            completed: [],
-            progressed: [],
-            packs: [],
+        player[verifier] ??= {
+            verifiedLevels: [],
+            completedLevels: [],
+            progressOnLevels: [],
+            packsComplete: [],
         };
-        const { verified } = scoreMap[verifier];
-        verified.push({
+        const { verifiedLevels } = player[verifier];
+        verifiedLevels.push({
             rank: rank + 1,
             level: level.name,
             score: score(rank + 1, 100, level.percentToQualify),
@@ -82,18 +82,18 @@ export async function fetchLeaderboard() {
 
         // Records
         level.records.forEach((record) => {
-            const user = Object.keys(scoreMap).find(
+            const user = Object.keys(player).find(
                 (u) => u.toLowerCase() === record.user.toLowerCase(),
             ) || record.user;
-            scoreMap[user] ??= {
-                verified: [],
-                completed: [],
-                progressed: [],
-                packs: [],
+            player[user] ??= {
+                verifiedLevels: [],
+                completedLevels: [],
+                progressOnLevels: [],
+                packsComplete: [],
             };
-            const { completed, progressed } = scoreMap[user];
+            const { completedLevels, progressOnLevels } = player[user];
             if (record.percent === 100) {
-                completed.push({
+                completedLevels.push({
                     rank: rank + 1,
                     level: level.name,
                     score: score(rank + 1, 100, level.percentToQualify),
@@ -102,7 +102,7 @@ export async function fetchLeaderboard() {
                 return;
             }
 
-            progressed.push({
+            progressOnLevels.push({
                 rank: rank + 1,
                 level: level.name,
                 percent: record.percent,
@@ -111,24 +111,24 @@ export async function fetchLeaderboard() {
             });
         });
     });
-    
+
     //Player completed packs
-    for (let user of Object.entries(scoreMap)) {
-        let levels = [...user[1]["verified"], ...user[1]["completed"]].map(
+    for (let user of Object.entries(player)) {
+        let levels = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
             (x) => x["path"]
         );
     
         for (let pack of packResult) {
             if (pack.levels.every((packLevel) => levels.includes(packLevel))) {
-                user[1]["packs"].push(pack);
+                user[1]["packsComplete"].push(pack);
             }
         }
     }
 
     // Wrap in extra Object containing the user and total score
-    const res = Object.entries(scoreMap).map(([user, scores]) => {
-        const { verified, completed, progressed } = scores;
-        const total = [verified, completed, progressed]
+    const res = Object.entries(player).map(([user, scores]) => {
+        const { verifiedLevels, completedLevels, progressOnLevels } = scores;
+        const total = [verifiedLevels, completedLevels, progressOnLevels]
             .flat()
             .reduce((prev, cur) => prev + cur.score, 0);
 
@@ -146,11 +146,11 @@ export async function fetchLeaderboard() {
 
 
 
-export async function fetchPacks() {
+export async function fetchpacksComplete() {
     try {
         const packResult = await fetch(`${dir}/_packlist.json`);
-        const packsList = await packResult.json();
-        return packsList;
+        const packsCompleteList = await packResult.json();
+        return packsCompleteList;
     } catch {
         return null;
     }
@@ -158,8 +158,8 @@ export async function fetchPacks() {
 
 export async function fetchPackLevels(packname) {
     const packResult = await fetch(`${dir}/_packlist.json`);
-    const packsList = await packResult.json();
-    const selectedPack = await packsList.find((pack) => pack.name == packname);
+    const packsCompleteList = await packResult.json();
+    const selectedPack = await packsCompleteList.find((pack) => pack.name == packname);
     try {
         return await Promise.all(selectedPack.levels.map(async (path, rank) =>
         {

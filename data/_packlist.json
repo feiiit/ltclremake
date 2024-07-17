@@ -15,7 +15,7 @@
             "TRIEDALAS",
             "myzalas"
         ],
-        "colour": "linear-gradient(90deg, rgba(194,124,14,255) 0%, rgba(194,124,4,255) 50%, rgba(194,124,14,255) 100%)"
+        "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263189803181281340/pachmas.png?ex=669954ae&is=6698032e&hm=31cb11d6c2bd7fb1b98d8d87f9bb5136cff4315fd00ba37d6bdb52443365e56e&')"
     },
   {
         "name": "kamuoliukai",

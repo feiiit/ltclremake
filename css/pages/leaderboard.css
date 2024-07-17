@@ -91,7 +91,7 @@
     flex-wrap: wrap;
     gap: 0.4em;
 }
-.page-leaderboard .player .packs .tag {
+.page-leaderboard .player .packs .tab {
     display: flex;
     flex-shrink: 0;
     background-size: 100% 100% !important;

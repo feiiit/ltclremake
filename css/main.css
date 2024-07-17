@@ -10,8 +10,10 @@
     --color-on-error: white;
 }
 
-.MOTD {
+header.MOTD {
 position: relative;
+top: -1;
+z-index: 1;
 width: 100%;
 height: 40px;
 display: flex;

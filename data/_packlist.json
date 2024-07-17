@@ -69,7 +69,7 @@
             "Have_Fun",
             "kandyman_chamber"
         ],
-        "colour": "linear-gradient(90deg, rgba(46,200,111,255) 0%, rgba(46,200,111,255) 50%, rgba(46,200,111,255) 100%)"
+        "colour": "url('https://www.primeapi.com/cmscdn/cdn/cms/GZ/Roulette_Wheels_and_Table_Layout_fb3f29d7da.png.webp') 100%)"
     },
   {
         "name": "click sync",

@@ -18,6 +18,7 @@
     text-align: start;
     word-break: normal;
     text-shadow: 2px 2px 4px black;
+    color: white;
     overflow-wrap: anywhere;
     cursor: pointer;
     flex-shrink: 0;

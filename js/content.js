@@ -166,12 +166,14 @@ export async function fetchPacks() {
 }
 
 export async function fetchPackLevels(packname) {
+    let cycle = 0
     const packResult = await fetch(`${dir}/_packlist.json`);
     const packsList = await packResult.json();
     const selectedPack = await packsList.find((pack) => pack.name == packname);
     try {
         return await Promise.all(selectedPack.levels.map(async (path, rank) =>
         {
+            console.log(cycle++)
             const levelResult = await fetch(`${dir}/${path}.json`);
             try {
                 const level = await levelResult.json();

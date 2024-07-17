@@ -10,6 +10,11 @@
     --color-on-error: white;
 }
 
+.MOTD {
+background: #1c1b1f;
+padding: 0.5em;
+}
+
 main.dark,
 header.dark {
     color-scheme: dark;

@@ -83,10 +83,10 @@ top: -58px;
 width: 100%;
 height: 18px;
 display: flex;
-overflow-x: hidden;
 animation: marquee 20s linear infinite, color-change 3s ease-in-out infinite;
 text-shadow: 2px 3px 3px rgba(0,0,0,0.6);
 background: var(--color-primary);
+overflow-x: hidden;
 }
 header .logo {
     justify-self: end;

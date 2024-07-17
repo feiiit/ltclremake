@@ -8,6 +8,7 @@
     --color-on-primary: white;
     --color-error: #de0000;
     --color-on-error: white;
+    overflow-x: hidden;
 }
 
 @keyframes marquee { 

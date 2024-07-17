@@ -57,5 +57,5 @@ const scale = 2; //Select how many decimal digits to round to
  */
 export function round(num, scale)
 {
-    return Math.round(num*(10^scale))/(10^scale);
+    return Math.round(num*(10**scale))/(10**scale);
 }

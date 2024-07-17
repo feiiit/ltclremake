@@ -11,8 +11,8 @@
   {
         "name": "pachmas",
         "levels": [
-            "pykinimas",
-            "triedalas",
+            "Pykinimas",
+            "TRIEDALAS",
             "myzalas"
         ],
         "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
@@ -21,7 +21,7 @@
         "name": "kamuoliukai",
         "levels": [
             "wtaer",
-            "bic_lighter",
+            "Bic_Lighter",
             "kamuoliuko_isbandyma"
         ],
         "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
@@ -29,14 +29,14 @@
   {
         "name": "alkoholis",
         "levels": [
-            "absolut",
-            "degtine",
-            "jack_daniels"
+            "ABSOLUT",
+            "Degtine",
+            "Jack_Daniels"
         ],
         "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
     },
   {
-        "name": "triple_a",
+        "name": "triple a",
         "levels": [
             "aurisa",
             "askeral",
@@ -45,38 +45,38 @@
         "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
     },
   {
-        "name": "slick_pack",
+        "name": "slick pack",
         "levels": [
-            "slick_challenge",
-            "slicker_challenge",
-            "slickest_challenge"
+            "Slick_Challenge",
+            "Slicker_Challenge",
+            "Slickest_Challenge"
         ],
         "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
     },
   {
         "name": "parduotuve",
         "levels": [
-            "maxima_is_cool",
-            "i_love_ikea",
-            "lidl"
+            "MAXIMA_IS_COOL",
+            "I_LOVE_IKEA",
+            "LIDL"
         ],
         "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
     },
   {
         "name": "rng",
         "levels": [
-            "melyninis_miau",
-            "have_fun",
+            "Melyninis_Miau",
+            "Have_Fun",
             "kandyman_chamber"
         ],
         "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
     },
   {
-        "name": "click_sync",
+        "name": "click sync",
         "levels": [
-            "fcl_is_biased",
-            "adrenalinas",
-            "surfaced"
+            "FCL_IS_BIASED",
+            "Adrenalinas",
+            "SurFaced"
         ],
         "colour": "linear-gradient(90deg, rgba(0,53,250,1) 0%, rgba(0,24,97,1) 50%, rgba(0,53,250,1) 100%)"
     }

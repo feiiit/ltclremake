@@ -11,6 +11,9 @@
 }
 
 .MOTD {
+display: flex;
+overflow: hidden;
+animation: marquee 10s linear infinite; 
 background: #1c1b1f;
 padding: 0.5em;
 }

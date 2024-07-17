@@ -9,10 +9,10 @@
 }
 
 .packs-nav button {
-    border-top-right-radius: 0.50em;
-    border-top-left-radius: 0.50em;
+    border-top-right-radius: 0.75em;
+    border-top-left-radius: 0.75em;
     border: none;
-    padding: 10px;
+    padding: 20px;
     padding-left: 25px;
     padding-right: 25px;
     text-align: start;

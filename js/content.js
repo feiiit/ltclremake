@@ -173,7 +173,6 @@ export async function fetchPackLevels(packname) {
     try {
         return await Promise.all(selectedPack.levels.map(async (path, rank) =>
         {
-            console.log(cycle++)
             const levelResult = await fetch(`${dir}/${path}.json`);
             try {
                 const level = await levelResult.json();
@@ -186,6 +185,8 @@ export async function fetchPackLevels(packname) {
                         ),
                     },
                     null,
+                    console.log(cycle);
+                    cycle++;
                 ];
             } catch {
                 console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);

@@ -89,15 +89,15 @@ export default {
                     <div class="errors" v-show="errors.length > 0">
                         <p class="error" v-for="error of errors">{{ error }}</p>
                     </div>
-                    <h3>About the packs</h3>
+                    <h3>Apie pakelius</h3>
                     <p>
-                        These are list packs all chosen by the staff team that you can beat levels for and get the packs attached to your profile.
+                        Pakelį sudaro 3-5 panašaus difficulty ir theme lygiai. Vieno pakelio lygiai neprivalo būti sukurti vieno to pačio creator - galit daryt unofficial additions į kokį nors challenge series arba net sukurti nauja series iš kokio vieno lygio liste jei labai patinka jo concept. Theme panašumas gali būti su gamemodes, style, gameplay, arba kitokiais aspektais (pvz. tiesiog challenge pavadinimais arba simple fact kad challenges pakelyje yra collabai). Lygiai gali būti iš skirtingų difficulty ranges, jei ta riba pereinama nedaug, pvz jei 2 lygiai kažkur 42-37 vietose (lengvo sunkumo), o vienas 34 vietoje (vidutinio sunkumo). Tokiais atvėjais pakelis bus skaitomas to sunkumo, kurio difficulty range lygių yra daugiau.
                     </p>
-                    <h3>How can I get these packs?</h3>
+                    <h3>Kaip gauti pakelių roles?</h3>
                     <p>
-                        You get packs by beating all levels that are under them.
+                        Norint gauti pakelio role, į #⁠pakelių-prašymas parašykit kokios role norit ir patikrinsim ar tikrai įveikėt pakelyje esančius lygius. (jei lygis yra legacy ir įveikėt jį PO jo iškritimo iš listo, turėsit būtinai atsiųst completion video į anksčiau minėtą kanalą)
                     </p>
-                    <p> Thanks to KrisGra for helping to make the packs functionality. </p>
+                    <p> Pakelių funkcija sukurta KrisGra. </p>
                 </div>
             </div>
         </main>
@@ -145,14 +145,14 @@ export default {
         // Error handling
         if (!this.packs) {
             this.errors = [
-                "Failed to load list. Retry in a few minutes or notify list staff.",
+                "Nepavyko pakrauti sąrašo. Pabandykite po kelių minučių arba praneškite list modams.",
             ];
         } else {
             this.errors.push(
                 ...this.selectedPackLevels
                     .filter(([_, err]) => err)
                     .map(([_, err]) => {
-                        return `Failed to load level. (${err}.json)`;
+                        return `Nepavyko pakrauti lygio. (${err}.json)`;
                     })
             );
         }
@@ -174,14 +174,14 @@ export default {
             this.errors.length = 0;
             if (!this.packs) {
                 this.errors = [
-                    "Failed to load list. Retry in a few minutes or notify list staff.",
+                    "Nepavyko pakrauti sąrašo. Pabandykite po kelių minučių arba praneškite list modams.",
                 ];
             } else {
                 this.errors.push(
                     ...this.selectedPackLevels
                         .filter(([_, err]) => err)
                         .map(([_, err]) => {
-                            return `Failed to load level. (${err}.json)`;
+                            return `Nepavyko pakrauti lygio. (${err}.json)`;
                         })
                 );
             }

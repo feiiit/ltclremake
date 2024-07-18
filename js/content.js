@@ -40,7 +40,6 @@ export async function fetchList() {
     }
 }
 
-
 export async function fetchEditors() {
     try {
         const editorsResults = await fetch(`${dir}/_editors.json`);
@@ -57,7 +56,7 @@ export async function fetchLeaderboard() {
     const player = {};
     const errs = [];
     list.forEach(([level, err], rank) => {
-        if (err) {git 
+        if (err) {
             errs.push(err);
             return;
         }
@@ -78,6 +77,7 @@ export async function fetchLeaderboard() {
             level: level.name,
             score: score(rank + 1, 100, level.percentToQualify),
             link: level.verification,
+            path: level.path
         });
 
         // Records
@@ -90,6 +90,7 @@ export async function fetchLeaderboard() {
                 completedLevels: [],
                 progressOnLevels: [],
                 packsComplete: [],
+                path: level.path
             };
             const { completedLevels } = player[user];
             if (record.percent === 100) {
@@ -98,6 +99,7 @@ export async function fetchLeaderboard() {
                     level: level.name,
                     score: score(rank + 1, 100, level.percentToQualify),
                     link: record.link,
+                    path: level.path
                 });
                 return;
             }
@@ -108,6 +110,7 @@ export async function fetchLeaderboard() {
                 percent: record.percent,
                 score: score(rank + 1, record.percent, level.percentToQualify),
                 link: record.link,
+                path: level.path
             });
         });
     });

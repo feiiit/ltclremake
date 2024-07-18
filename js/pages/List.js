@@ -56,7 +56,7 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                     </ul>
-                    <div class="NONGdownload" v-if="level.NONG != undefined">
+                    <div v-if="level.NONG != undefined">
                         <a :href="level.NONG">
                             <Btn class="NONGdownloadButton">Atsisiųsti dainą</Btn>
                         </a>

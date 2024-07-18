@@ -71,9 +71,6 @@
     align-items: center;
     gap: 1rem;
 }
-.page-list .level-container .NONGdownload {
-    justify-content: center;
-}
 .page-list .level-container .NONGdownloadButton {
     width: 100px;
 }

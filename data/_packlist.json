@@ -22,7 +22,7 @@
         "levels": [
             "wtaer",
             "Bic Lighter",
-            "kamuoliuko isbandyma"
+            "kamuoliuko_isbandyma"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192492724064316/kamuoliukai.png?ex=6699572f&is=669805af&hm=0c4174293d05234afa12d65015adc96e4ca6e4f9b8dcc9ec840449e15c83de74&')"
     },
@@ -31,7 +31,7 @@
         "levels": [
             "ABSOLUT",
             "Degtine",
-            "Jack Daniels"
+            "Jack_Daniels"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192251526287452/alkoholis.png?ex=669956f5&is=66980575&hm=8db46c5aa8df0da9b45d22b20b6ce0b2f7c001120bdf19286742807f2682a6e5&')"
     },
@@ -47,17 +47,17 @@
   {
         "name": "slick pack",
         "levels": [
-            "Slick Challenge",
-            "Slicker Challenge",
-            "Slickest Challenge"
+            "Slick_Challenge",
+            "Slicker_Challenge",
+            "Slickest_Challenge"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192805430399079/slick_pack.png?ex=66995779&is=669805f9&hm=407834c2b1eaf85201bec7a9b45db524b47dbd8ab96ccb1b3b61e57d6b8f6144&')"
     },
   {
         "name": "parduotuve",
         "levels": [
-            "MAXIMA IS COOL",
-            "I LOVE IKEA",
+            "MAXIMA_IS_COOL",
+            "I_LOVE_IKEA",
             "LIDL"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1014977290364522568/1263188510215766079/parduotuve.png?ex=66995379&is=669801f9&hm=759c3af278b8ffc411fb43eef813f666da6f8c5f0cf6d72921a4d9264a9462dd&')"
@@ -65,16 +65,16 @@
   {
         "name": "rng",
         "levels": [
-            "Melyninis Miau",
-            "Have Fun",
-            "kandyman chamber"
+            "Melyninis_Miau",
+            "Have_Fun",
+            "kandyman_chamber"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263188864328269885/RNG.png?ex=669953ce&is=6698024e&hm=92c55d2f0ce973270f037be9452f3bf6f02abc34eab7b52aa302fe1eb2a11db4&')"
     },
   {
         "name": "click sync",
         "levels": [
-            "FCL IS BIASED",
+            "FCL_IS_BIASED",
             "Adrenalinas",
             "SurFaced"
         ],
@@ -83,7 +83,7 @@
   {
         "name": "trumpas bangavimas",
         "levels": [
-            "3 seconds RGB",
+            "3_seconds_RGB",
             "Fever_dream",
             "musu lygis"
         ],

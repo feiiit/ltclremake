@@ -112,18 +112,18 @@ export async function fetchLeaderboard() {
         });
     });
 
-    // //player completed packs
-    // for (let user of Object.entries(player)) {
-    //     let completions = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
-    //         (x) => x["level"]
-    //     );
+    //Player completed packs
+    for (let user of Object.entries(player)) {
+        let completions = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
+            (x) => x["level"]
+        );
     
-    //     for (let pack of packResult) {
-    //         if (pack.levels.every((packLevel) => completions.includes(packLevel))) {
-    //             user[1]["packsComplete"].push(pack);
-    //         }
-    //     }
-    // }
+        for (let pack of packResult) {
+            if (pack.levels.every((packLevel) => completions.includes(packLevel))) {
+                user[1]["packsComplete"].push(pack);
+            }
+        }
+    }
 
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(player).map(([user, scores]) => {
@@ -149,8 +149,8 @@ export async function fetchLeaderboard() {
 export async function fetchPacks() {
     try {
         const packResult = await fetch(`${dir}/_packlist.json`);
-        const packsCompleteList = await packResult.json();
-        return packsCompleteList;
+        const packsList = await packResult.json();
+        return packsList;
     } catch {
         return null;
     }
@@ -158,11 +158,10 @@ export async function fetchPacks() {
 
 export async function fetchPackLevels(packname) {
     const packResult = await fetch(`${dir}/_packlist.json`);
-    const packsCompleteList = await packResult.json();
-    const selectedPack = await packsCompleteList.find((pack) => pack.name == packname);
+    const packsList = await packResult.json();
+    const selectedPack = await packsList.find((pack) => pack.name == packname);
     try {
-        return await Promise.all(selectedPack.levels.map(async (path, rank) =>
-        {
+        return await Promise.all(selectedPack.levels.map(async (path, rank) =>{
             const levelResult = await fetch(`${dir}/${path}.json`);
             try {
                 const level = await levelResult.json();
@@ -184,7 +183,7 @@ export async function fetchPackLevels(packname) {
         );
     }
     catch (e) {
-        //console.error(`Nepavyko užkrauti pakelių.`, e);
+        console.error(`Nepavyko užkrauti pakelių.`, e);
         return null;
     }
 }

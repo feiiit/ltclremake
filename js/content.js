@@ -7,7 +7,7 @@ const dir = '/data';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
-    const packResult = await fetch(`${dir}/_packlist.json`);
+    const packResult = await (await fetch(`${dir}/_packlist.json`)).json();
     try {
         const list = await listResult.json();
         const packsList = await packResult.json();

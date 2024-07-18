@@ -131,7 +131,7 @@ export async function fetchLeaderboard() {
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(player).map(([user, scores]) => {
         const { verifiedLevels, completedLevels} = scores;
-        const total = [verifiedLevels, completedLevels, progressOnLevels]
+        const total = [verifiedLevels, completedLevels]
             .flat()
             .reduce((prev, cur) => prev + cur.score, 0);
 

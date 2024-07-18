@@ -78,7 +78,7 @@ export default {
                         <!-- Uncompleted level display after giving up -->
                         <template v-if="givenUp && showRemaining">
                             <div class="level" v-for="(level, i) in levels.slice(progression.length, levels.length+1)">
-                            <template v-if="(currentPercentage + 5*i < 105)>
+                            <template v-if="(currentPercentage + 5*i < 105)">
                                 <a :href="level.video" target="_blank" class="video">
                                     <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
                                 </a>

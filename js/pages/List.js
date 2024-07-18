@@ -5,7 +5,7 @@ import { fetchEditors, fetchList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
-
+import Btn from "../components/Btn.js";
 const roleIconMap = {
     owner: "crown",
     admin: "user-gear",
@@ -17,7 +17,7 @@ const roleIconMap = {
 
 
 export default {
-    components: { Spinner, LevelAuthors },
+    components: { Spinner, LevelAuthors, Btn },
     template: `
         <main v-if="loading">
             <Spinner></Spinner>
@@ -56,8 +56,8 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                     </ul>
-                    <div class="NONG-button" v-if="level.NONG != undefined"
-                        <button class="NONGdownload" onclick="location.href = level.NONG;">Atsisiųsti dainą</button>
+                    <div class="NONG-button" v-if="level.NONG != undefined">
+                        <Btn class="NONGdownload" onclick="location.href = level.NONG;">Atsisiųsti dainą</button>
                     </div>
                     <h2>Rekordai</h2>
                     <table class="records">

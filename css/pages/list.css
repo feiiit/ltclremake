@@ -71,19 +71,13 @@
     align-items: center;
     gap: 1rem;
 }
+.page-list .level-container .level .nong {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
 .page-list .level-container .level .nong button {
     width: 300px;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    font: inherit;
-    padding: 1rem;
-    margin: 0;
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
-    border-radius: 0.6rem;
-    box-shadow: 0 1px 0.5rem 0 rgba(0, 0, 102, 0.5);
-    transition: transform 100ms ease;
 }
 .page-list .level-container .level .packs {
     display: flex;

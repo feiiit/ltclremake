@@ -112,18 +112,18 @@ export async function fetchLeaderboard() {
         });
     });
 
-    //Player completed packs
-    for (let user of Object.entries(player)) {
-        let completions = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
-            (x) => x["levels"]
-        );
+    // //Player completed packs
+    // for (let user of Object.entries(player)) {
+    //     let completions = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
+    //         (x) => x["levels"]
+    //     );
     
-        for (let pack of packResult) {
-            if (pack.levels.every((packLevel) => completions.includes(packLevel))) {
-                user[1]["packsComplete"].push(pack);
-            }
-        }
-    }
+    //     for (let pack of packResult) {
+    //         if (pack.levels.every((packLevel) => completions.includes(packLevel))) {
+    //             user[1]["packsComplete"].push(pack);
+    //         }
+    //     }
+    // }
 
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(player).map(([user, scores]) => {

@@ -48,7 +48,7 @@ export default {
                         <h3>{{ entry.total }}</h3>
                         <div class="packs" v-if="entry.packsComplete.length > 0">
                             <div v-for="pack in entry.packsComplete" class="tag" :style="{background:pack.colour, color:getFontColour(pack.colour)}">
-                                {{pack.name}}
+                            {{pack.name}
                             </div>
                         </div>
                         <h2 v-if="entry.verifiedLevels.length > 0">Verifyinti challenges ({{ entry.verifiedLevels.length}})</h2>
@@ -98,5 +98,6 @@ export default {
     },
     methods: {
         localize,
+        getFontColour,
     },
 };

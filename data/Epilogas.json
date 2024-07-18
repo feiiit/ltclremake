@@ -47,7 +47,11 @@
         {
           "user": "wagneris",
           "percent": 100
-        }
+        },
+        {
+            "user": "Kovaldas",
+            "percent": 100
+          }
         
     ]
 }

@@ -98,6 +98,6 @@ export default {
     },
     methods: {
         localize,
-        getFontColour,
+        getFontColour
     },
 };

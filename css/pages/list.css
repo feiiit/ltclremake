@@ -71,7 +71,7 @@
     align-items: center;
     gap: 1rem;
 }
-.page-list .level-container .NONGdownloadArea button {
+.page-list .level-container .level .NONGdownloadArea button {
     width: 300px;
     align-items: center;
     border: none;

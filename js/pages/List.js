@@ -15,12 +15,15 @@ const roleIconMap = {
     trial: "user-lock",
 };
 
+
+
 export default {
     components: { Spinner, LevelAuthors, Btn },
     template: `
         <main v-if="loading">
             <Spinner></Spinner>
         </main>
+        <!--Left side, Level List-->
         <main v-else class="page-list">
             <div class="list-container">
                 <table class="list" v-if="list">
@@ -30,13 +33,15 @@ export default {
                             <p v-else class="type-label-lg">Legacy</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
-                            <Btn>
+                            <button @click="selected = i">
                                 <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
-                            </Btn>
+                            </button>
                         </td>
                     </tr>
                 </table>
             </div>
+
+            <!--Middle, Level info-->
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
@@ -53,7 +58,7 @@ export default {
                         </li>
                     </ul>
                     <div class="NONG-button" v-if="level.NONG != undefined"
-                        <Btn class="NONGdownload" onclick="location.href = level.NONG;">Atsisiųsti dainą</Btn>
+                        <a href="level.NONG"><Btn class="NONGdownload" onclick="location.href = level.NONG;">Atsisiųsti dainą</Btn></a>
                     </div>
                     <h2>Rekordai</h2>
                     <table class="records">
@@ -77,6 +82,8 @@ export default {
                     <p>eina na... (ノಠ益ಠ)ノ彡┻━┻</p>
                 </div>
             </div>
+
+            <!--Right side, List rules and information-->
             <div class="meta-container">
                 <div class="meta">
                     <div class="errors" v-show="errors.length > 0">

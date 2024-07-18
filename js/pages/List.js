@@ -52,7 +52,7 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                     </ul>
-                    <div class="NONG-button" v-if="level.NONG.length > 0"
+                    <div class="NONG-button" v-if="level.NONG.length != null || level.NONG.length > 0"
                         <Btn class="NONGdownload" onclick="location.href = level.NONG;">Atsisiųsti dainą</Btn>
                     </div>
                     <h2>Rekordai</h2>

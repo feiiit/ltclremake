@@ -51,7 +51,7 @@ export default {
                                 {{pack.name}}
                             </div>
                         </div>
-                        <h2 v-if="entry.verified.length > 0">Verifyinti challenges ({{ entry.verifiedLevels.length}})</h2>
+                        <h2 v-if="entry.verifiedLevels.length > 0">Verifyinti challenges ({{ entry.verifiedLevels.length}})</h2>
                         <table class="table">
                             <tr v-for="score in entry.verifiedLevels">
                                 <td class="rank">

@@ -57,7 +57,7 @@ export default {
                         </li>
                     </ul>
                     <div class="NONG-button" v-if="level.NONG != undefined">
-                        <a href="level.NONG">
+                        <a :href="level.NONG">
                             <Btn>Atsisiųsti dainą</Btn>
                         </a>
                     </div>
@@ -197,6 +197,7 @@ export default {
 
         this.loading = false;
     },
+    
     methods: {
         embed,
         score,

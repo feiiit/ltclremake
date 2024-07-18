@@ -7,7 +7,7 @@ const dir = '/data';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
-    const packResult = await (await fetch(`${dir}/_packlist.json`)).json();
+    const packResult = await fetch(`${dir}/_packlist.json`);
     try {
         const list = await listResult.json();
         const packsList = await packResult.json();
@@ -53,11 +53,11 @@ export async function fetchEditors() {
 
 export async function fetchLeaderboard() {
     const list = await fetchList();
-    const packResult = await (await fetch(`${dir}/_packlist.json`)).json();
+    const packResult = await fetch(`${dir}/_packlist.json`);//await (await fetch(`${dir}/_packlist.json`)).json();
     const player = {};
     const errs = [];
     list.forEach(([level, err], rank) => {
-        if (err) {
+        if (err) {git 
             errs.push(err);
             return;
         }

@@ -21,9 +21,9 @@
         } 
 }
 @keyframes color-change {
-  33% { color: yellow; }
-  66% { color: green; }
-  100% { color: red; }
+16.5% { color: green; }
+  49.5% { color: red; }
+  83.5% { color: yellow; }
 }
 
 main.dark,

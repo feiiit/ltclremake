@@ -67,9 +67,8 @@ export async function fetchLeaderboard() {
         ) || level.verifier;
         player[verifier] ??= {
             verifiedLevels: [],
-            
+            completedLevels: [],   
             packsComplete: [],
-            path: level.path
         };
         const { verifiedLevels } = player[verifier];
         verifiedLevels.push({
@@ -86,8 +85,8 @@ export async function fetchLeaderboard() {
                 (u) => u.toLowerCase() === record.user.toLowerCase(),
             ) || record.user;
             player[user] ??= {
-                verifiedLevels: [],          
-                progressOnLevels: [],
+                verifiedLevels: [],
+                completedLevels: [],          
                 packsComplete: [],
             };
             const { completedLevels } = player[user];

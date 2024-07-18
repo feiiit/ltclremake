@@ -21,7 +21,7 @@
         "name": "kamuoliukai",
         "levels": [
             "wtaer",
-            "Bic Lighter",
+            "Bic_Lighter",
             "kamuoliuko_isbandyma"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192492724064316/kamuoliukai.png?ex=6699572f&is=669805af&hm=0c4174293d05234afa12d65015adc96e4ca6e4f9b8dcc9ec840449e15c83de74&')"
@@ -85,7 +85,7 @@
         "levels": [
             "3_seconds_RGB",
             "Fever_dream",
-            "musu lygis"
+            "musu_lygis"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263279531188420730/trumpas_bangavimas.png?ex=6699a83e&is=669856be&hm=0ed645bb970dce4280fe037d3383fda0eb5a0b0a777228b2a7ef8452bafdbd55&')"
     }

@@ -76,7 +76,7 @@
 }
 .pack-list .list .level button {
     background-color: var(--color-background);
-    text-color: white;
+    color: white;
     border: none;
     border-radius: 3rem;
     padding: 1rem;
@@ -98,7 +98,7 @@
 }
 .pack-list .list .level.active button {
     background-color: rgba(255,255,255,.5);
-    text-color: black;
+    color: black;
 }
 .pack-list .level-container .level {
     display: flex;
@@ -190,5 +190,5 @@
     color: white;
     text-shadow: 2px 2px 4px black;
     background-color: #5d5d5d;
-    padding: 7px;
+    padding: 10px;
 }

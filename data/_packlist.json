@@ -21,8 +21,8 @@
         "name": "kamuoliukai",
         "levels": [
             "wtaer",
-            "Bic_Lighter",
-            "kamuoliuko_isbandyma"
+            "Bic Lighter",
+            "kamuoliuko isbandyma"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192492724064316/kamuoliukai.png?ex=6699572f&is=669805af&hm=0c4174293d05234afa12d65015adc96e4ca6e4f9b8dcc9ec840449e15c83de74&')"
     },
@@ -31,7 +31,7 @@
         "levels": [
             "ABSOLUT",
             "Degtine",
-            "Jack_Daniels"
+            "Jack Daniels"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192251526287452/alkoholis.png?ex=669956f5&is=66980575&hm=8db46c5aa8df0da9b45d22b20b6ce0b2f7c001120bdf19286742807f2682a6e5&')"
     },
@@ -47,17 +47,17 @@
   {
         "name": "slick pack",
         "levels": [
-            "Slick_Challenge",
-            "Slicker_Challenge",
-            "Slickest_Challenge"
+            "Slick Challenge",
+            "Slicker Challenge",
+            "Slickest Challenge"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263192805430399079/slick_pack.png?ex=66995779&is=669805f9&hm=407834c2b1eaf85201bec7a9b45db524b47dbd8ab96ccb1b3b61e57d6b8f6144&')"
     },
   {
         "name": "parduotuve",
         "levels": [
-            "MAXIMA_IS_COOL",
-            "I_LOVE_IKEA",
+            "MAXIMA IS COOL",
+            "I LOVE IKEA",
             "LIDL"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1014977290364522568/1263188510215766079/parduotuve.png?ex=66995379&is=669801f9&hm=759c3af278b8ffc411fb43eef813f666da6f8c5f0cf6d72921a4d9264a9462dd&')"
@@ -65,16 +65,16 @@
   {
         "name": "rng",
         "levels": [
-            "Melyninis_Miau",
-            "Have_Fun",
-            "kandyman_chamber"
+            "Melyninis Miau",
+            "Have Fun",
+            "kandyman chamber"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263188864328269885/RNG.png?ex=669953ce&is=6698024e&hm=92c55d2f0ce973270f037be9452f3bf6f02abc34eab7b52aa302fe1eb2a11db4&')"
     },
   {
         "name": "click sync",
         "levels": [
-            "FCL_IS_BIASED",
+            "FCL IS BIASED",
             "Adrenalinas",
             "SurFaced"
         ],
@@ -83,9 +83,9 @@
   {
         "name": "trumpas bangavimas",
         "levels": [
-            "3_seconds_RGB",
+            "3 seconds RGB",
             "Fever_dream",
-            "musu_lygis"
+            "musu lygis"
         ],
         "colour": "url('https://cdn.discordapp.com/attachments/1263188821361557556/1263279531188420730/trumpas_bangavimas.png?ex=6699a83e&is=669856be&hm=0ed645bb970dce4280fe037d3383fda0eb5a0b0a777228b2a7ef8452bafdbd55&')"
     }

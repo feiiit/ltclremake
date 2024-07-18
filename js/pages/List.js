@@ -5,7 +5,6 @@ import { fetchEditors, fetchList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
-import Btn from '../components/Btn.js';
 
 const roleIconMap = {
     owner: "crown",
@@ -18,7 +17,7 @@ const roleIconMap = {
 
 
 export default {
-    components: { Spinner, LevelAuthors, Btn },
+    components: { Spinner, LevelAuthors },
     template: `
         <main v-if="loading">
             <Spinner></Spinner>

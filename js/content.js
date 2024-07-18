@@ -101,15 +101,6 @@ export async function fetchLeaderboard() {
                 });
                 return;
             }
-
-            progressOnLevels.push({
-                rank: rank + 1,
-                level: level.name,
-                percent: record.percent,
-                score: score(rank + 1, record.percent, level.percentToQualify),
-                link: record.link,
-                path: level.path
-            });
         });
     });
 

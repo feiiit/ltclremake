@@ -47,7 +47,7 @@ export default {
                         <h1>#{{ selected + 1 }} {{ entry.user }}</h1>
                         <h3>{{ entry.total }}</h3>
                         <div class="packs" v-if="entry.packsComplete.length > 0">
-                            <div v-for="pack in entry.packsComplete" class="tag" :style="{background:pack.colour, color:getFontColour(pack.colour), scale:1.3}">
+                            <div v-for="pack in entry.packsComplete" class="tag" :style="{background:pack.colour, color:getFontColour(pack.colour)}">
                             {{pack.name}}
                             </div>
                         </div>

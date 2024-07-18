@@ -57,9 +57,11 @@ export default {
                         </li>
                     </ul>
                     <div v-if="level.NONG != undefined">
-                        <a :href="level.NONG">
-                            <Btn class="NONGdownloadButton">Atsisiųsti dainą</Btn>
-                        </a>
+                        <div class="NONGbuttonArea">
+                            <a :href="level.NONG">
+                                <Btn class="NONGdownloadButton">Atsisiųsti dainą</Btn>
+                            </a>
+                        <div>
                     </div>
                     <h2>Rekordai</h2>
                     <table class="records">

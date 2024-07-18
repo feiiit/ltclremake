@@ -71,8 +71,12 @@
     align-items: center;
     gap: 1rem;
 }
-.page-list .level-container .NONGdownloadButton {
+.page-list .level-container .NONGdownloadArea {
+    justify-content: center;
+}
+.page-list .level-container .NONGdownloadArea .NONGdownloadButton {
     width: 100px;
+    align-items: center;
 }
 .page-list .level-container .level .packs {
     display: flex;

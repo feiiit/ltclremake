@@ -10,13 +10,13 @@ export async function fetchList() {
     const packResult = await fetch(`${dir}/_packlist.json`);
     try {
         const list = await listResult.json();
-        const packsCompleteList = await packResult.json();
+        const packsList = await packResult.json();
         return await Promise.all(
             list.map(async (path, rank) => {
                 const levelResult = await fetch(`${dir}/${path}.json`);
                 try {
                     const level = await levelResult.json();
-                    let packsComplete = packsCompleteList.filter((x) =>
+                    let packs = packsList.filter((x) =>
                         x.levels.includes(path)
                     );
                     return [
@@ -115,7 +115,7 @@ export async function fetchLeaderboard() {
     //Player completed packs
     for (let user of Object.entries(player)) {
         let completions = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
-            (x) => x["user"]
+            (x) => x["levels"]
         );
     
         for (let pack of packResult) {
@@ -177,13 +177,13 @@ export async function fetchPackLevels(packname) {
                         null,
                     ];
                 } catch {
-                    console.error(`Failed to load level #${rank + 1} ${path} (${packname}).`);
+                    console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
                     return [null, path];
                 }
             })
         );
     } catch (e) {
-        console.error(`Failed to load packs.`, e);
+        console.error(`Nepavyko užkrauti pakelių.`, e);
         return null;
     }
 }

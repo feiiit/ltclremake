@@ -49,6 +49,6 @@ export function shuffle(array) {
     return array;
 }
 export function underscoreToWhitespace(name){
-    let replaced = name.replace("_", " ");
+    let replaced = name.replaceAll("_", " ");
     return replaced;
 }

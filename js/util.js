@@ -48,3 +48,11 @@ export function shuffle(array) {
 
     return array;
 }
+export function underscoreToWhitespace(name){
+    for(let i = 0; i < name.length; i++){
+        if (name[i] === "_"){
+            name[i] = " ";
+        }
+    }
+    return name;
+}

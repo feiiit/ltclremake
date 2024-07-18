@@ -103,45 +103,45 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h4>Completionų submittinimo taisyklės:</h4>
+                    <h4>Completion'ų submittinimo taisyklės:</h4>
                     <p>
-                        Turi būti nufilmuotas completion (obviously) ir su aiškiai girdimais clickais.
+                        Jis turi būti nufilmuotas ir su aiškiai girdimais clickais.
                     </p>
                     <p>
-                        Turi būti matoma mirtis prieš completion attempt. (jei sugebėjai one attemptint po practice arba iškart
-              įeinant į level, turi parodyt ir tai)
+                        Turi būti matoma mirtis prieš completiono attemptą. (jei sugebėjai įveikt per vieną attempt'ą po practice arba iškart
+              įeinant į lygį, turi parodyt ir tai)
                     </p>
                     <p>
-                        Turi būti matomas end screen ir "Level Complete" tekstas.
+                        Turi būti matomas pabaigos ekranas ir "Level Complete" tekstas.
                     </p>
                     <p>
-                        Nenaudokit bug routes ir skips, arba jei labai buggy levelis tai bent naudokit kuo įmanoma mažiau.
+                        Nenaudokit bug route'ų ir skipų, arba jei labai bugovas levelis tai bent naudokit kuo įmanoma mažiau.
                     </p>
                     <h4>Challengų submittinimo taisyklės:</h4>
                     <p>
                         Challenge negali būti layout. Turi būti kažkiek dekoruotas, normaliai sustruktūruotas ir būt bent šiek
-              tiek visually appealing. OBJECT SPAM =/= DEKORACIJA, nebent ji done right (pavyzdžiui Slick Challenge
-              series, Say Gex). Default layout blocks naudot galima, bet tada turi būti labai geri ir pilnai užpildyti
-              structures, ir/arba normalesnis background deco. Ar jūsų lygio dekoracija gerai atrodo nusprendžia list
+              tiek visually appealing. OBJEKTŲ SPAM =/= DEKORACIJA, nebent ji padaryta tinkamai (pavyzdžiui Slick Challenge
+              series, Say Gex). Default layout blokus naudot galima, bet tada turi būti labai geros ir pilnai užpildytos
+              struktūros, ir/arba normalesnė fono dekoracija. Ar jūsų lygio dekoracija gerai atrodo nusprendžia list
               modai kolektyviai.
                     </p>
                     <p>
-                        Challenge turi būti orginalus. Jis negali būti tiesiog buffed arba/ir tik šiek tiek pakeista kito
-              challenge versija, ir negali būti kito lygio dalis, nesvarbu ar tas lygis jis unreleased ar ne.
+                        Challenge turi būti originalus. Jis negali būti tiesiog pabuffinta arba/ir tik šiek tiek pakeista kito
+              challenge versija, ir negali būti kito lygio dalis, nesvarbu ar tas lygis išleistas ar ne.
                     </p>
                     <p>
-                        Verificationai turi būti keliami į YouTube. Ar public ar unlisted, jau jūsų sprendimas.
+                        Patvirtinimai turi būti keliami į YouTube. Ar viešas ar neįtrauktas į sąrašą, jau jūsų sprendimas.
                     </p>
                     <p>
-                        Jei daromas redeco update lygiui ir tas redeco labai mažai pakeičia difficulty arba išvis nekeičia,
-              reverification nebūtinas.
+                        Jei daromas perdekoravimo atnaujinimas lygiui ir jis labai mažai pakeičia sunkumą arba išvis nekeičia,
+              patvirtinti iš naujo nebūtina.
                     </p>
                     <p>
                         Challenge turi būti pilnai lietuviškas - gameplay sukurtas lietuvio, dekoracija sukurta lietuvio. Tik
-              verification gali būti ne lietuvio.
+              patvirtinimas gali būti ne lietuvio.
                     </p>
                     <p>
-                        Naudok common sense ir neieškok loop holes taisyklėse.
+                        Naudok bendrą išprusimą ir neieškok spragų taisyklėse.
                     </p>
                 </div>
             </div>
@@ -180,7 +180,7 @@ export default {
         // Error handling
         if (!this.list) {
             this.errors = [
-                "Nepavyko pakrauti listo. Arba bandykite vėliau arba parašykit listo modam.",
+                "Nepavyko pakrauti listo. Arba bandykite vėliau arba parašykit listo moderatoriam.",
             ];
         } else {
             this.errors.push(

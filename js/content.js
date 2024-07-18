@@ -161,29 +161,29 @@ export async function fetchPackLevels(packname) {
     const packsList = await packResult.json();
     const selectedPack = await packsList.find((pack) => pack.name == packname);
     try {
-        return await Promise.all(selectedPack.levels.map(async (path, rank) =>{
-            const levelResult = await fetch(`${dir}/${path}.json`);
-            try {
-                const level = await levelResult.json();
-                return [
-                    {
-                        level,
-                        path,
-                        records: level.records.sort(
-                            (a, b) => b.percent - a.percent,
-                        ),
-                    },
-                    null,
-                ];
-            } catch {
-                console.error(`Nepavyko užkrauti lygio: #${rank + 1} ${path} (${packname}).`);
-                return [null, path];
-            }
-        })
+        return await Promise.all(
+            selectedPack.levels.map(async (path, rank) => {
+                const levelResult = await fetch(`${dir}/${path}.json`);
+                try {
+                    const level = await levelResult.json();
+                    return [
+                        {
+                            level,
+                            path,
+                            records: level.records.sort(
+                                (a, b) => b.percent - a.percent,
+                            ),
+                        },
+                        null,
+                    ];
+                } catch {
+                    console.error(`Failed to load level #${rank + 1} ${path} (${packname}).`);
+                    return [null, path];
+                }
+            })
         );
-    }
-    catch (e) {
-        console.error(`Nepavyko užkrauti pakelių.`, e);
+    } catch (e) {
+        console.error(`Failed to load packs.`, e);
         return null;
     }
 }

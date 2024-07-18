@@ -16,7 +16,7 @@ const roleIconMap = {
 };
 
 export default {
-    components: { Spinner, LevelAuthors },
+    components: { Spinner, LevelAuthors, Btn },
     template: `
         <main v-if="loading">
             <Spinner></Spinner>
@@ -30,9 +30,9 @@ export default {
                             <p v-else class="type-label-lg">Legacy</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
-                            <button @click="selected = i">
+                            <Btn>
                                 <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
-                            </button>
+                            </Btn>
                         </td>
                     </tr>
                 </table>

@@ -67,8 +67,7 @@ export async function fetchLeaderboard() {
         ) || level.verifier;
         player[verifier] ??= {
             verifiedLevels: [],
-            completedLevels: [],
-            progressOnLevels: [],
+            
             packsComplete: [],
             path: level.path
         };
@@ -87,8 +86,7 @@ export async function fetchLeaderboard() {
                 (u) => u.toLowerCase() === record.user.toLowerCase(),
             ) || record.user;
             player[user] ??= {
-                verifiedLevels: [],
-                completedLevels: [],
+                verifiedLevels: [],          
                 progressOnLevels: [],
                 packsComplete: [],
             };

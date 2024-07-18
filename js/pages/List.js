@@ -58,7 +58,7 @@ export default {
                     </ul>
                     <div class="NONGbuttonArea" v-if="level.NONG != undefined">
                         <a :href="level.NONG">
-                            <button class="NONGdownloadButton">Atsisiųsti dainą</button>
+                            <button>Atsisiųsti dainą</button>
                         </a>
                     </div>
                     <h2>Rekordai</h2>

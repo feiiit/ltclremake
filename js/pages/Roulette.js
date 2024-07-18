@@ -84,7 +84,8 @@ export default {
                                 <div class="meta">
                                     <p>#{{ level.rank }}</p>
                                     <h2>{{ level.name }}</h2>
-                                    <p style="color: #d50000; font-weight: 700">{{ currentPercentage + 5*i }}%</p>
+                                    <p v-if="currentPercentage + 5*i > 100" style="color: #d50000; font-weight: 700">100%</p>
+                                    <p v-else style="color: #d50000; font-weight: 700">{{ currentPercentage + 5*i }}%</p>
                                 </div>
                             </div>
                         </template>

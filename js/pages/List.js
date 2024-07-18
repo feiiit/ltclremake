@@ -5,6 +5,7 @@ import { fetchEditors, fetchList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
+import Btn from '../components/Btn.js';
 
 const roleIconMap = {
     owner: "crown",
@@ -40,11 +41,6 @@ export default {
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
-                    <div class="packs" v-if="level.packs.length > 0">
-                        <div v-for="pack in level.packs" class="tag" :style="{background:pack.colour}">
-                            <p>{{pack.name}}</p>
-                        </div>
-                    </div>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
@@ -56,6 +52,9 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                     </ul>
+                    <div class="NONG-button" v-if="level.NONG.length > 0"
+                        <Btn class="NONGdownload" onclick="location.href = level.NONG;">Atsisiųsti dainą</Btn>
+                    </div>
                     <h2>Rekordai</h2>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">

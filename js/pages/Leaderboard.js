@@ -52,7 +52,7 @@ export default {
                             {{pack.name}}
                             </div>
                         </div>
-                        <h2 v-if="entry.verifiedLevels.length > 0">Verifyinti challenges ({{ entry.verifiedLevels.length}})</h2>
+                        <h2 v-if="entry.verifiedLevels.length > 0">Patvirtinti challenge'ai({{ entry.verifiedLevels.length}})</h2>
                         <table class="table">
                             <tr v-for="score in entry.verifiedLevels">
                                 <td class="rank">
@@ -66,7 +66,7 @@ export default {
                                 </td>
                             </tr>
                         </table>
-                        <h2 v-if="entry.completedLevels.length > 0">Įveikti challenges ({{ entry.completedLevels.length }})</h2>
+                        <h2 v-if="entry.completedLevels.length > 0">Įveikti challenge'ai ({{ entry.completedLevels.length }})</h2>
                         <table class="table">
                             <tr v-for="score in entry.completedLevels">
                                 <td class="rank">

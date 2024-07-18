@@ -89,9 +89,9 @@ export default {
                     <p>
                         Pakelį sudaro 3-5 panašios tematikos lygiai. Vieno pakelio lygiai neprivalo būti sukurti to pačio kūrėjo - galima daryti neoficialius priedus į kokią nors challenge seriją arba net sukurti naują seriją iš kokio vieno lygio list'e jei labai patinka jo tema. Temos panašumas gali būti su gamemode, stiliumi, gameplay, arba kitokiais aspektais (pvz. pavadinimais arba kad challenge'ai yra sukurti kelių žmonių pagalba). Maximum vietų skirtumas tarp lygių viename pakelyje yra 20. 
                     </p>
-                    <h3>Kaip gauti pakelių roles?</h3>
+                    <h3>Kaip gauti pakelius?</h3>
                     <p>
-                        Norint gauti pakelio role, į #⁠pakelių-prašymas parašykit kokios rolės norit ir patikrinsim ar tikrai įveikėte pakelyje esančius lygius. Jei lygis yra legacy ir įveikėt jį PO jo iškritimo iš listo, turėsit būtinai atsiųst completion video į anksčiau minėtą kanalą.
+                        Norint gauti pakelį, pereikite visus pakelyje esančius lygius ir į #⁠pakelių-prašymas parašykit kokį pakelį perėjote. Jei lygis yra legacy ir įveikėt jį po jo iškritimo iš list'o, turėsit būtinai atsiųst įveikimo video į anksčiau minėtą kanalą.
                     </p>
                     <p> Pakelių funkciją sukurė KrisGra. </p>
                 </div>

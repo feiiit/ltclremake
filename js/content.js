@@ -91,7 +91,7 @@ export async function fetchLeaderboard() {
                 progressOnLevels: [],
                 packsComplete: [],
             };
-            const { completedLevels, progressOnLevels } = player[user];
+            const { completedLevels } = player[user];
             if (record.percent === 100) {
                 completedLevels.push({
                     rank: rank + 1,
@@ -115,7 +115,7 @@ export async function fetchLeaderboard() {
     //Player completed packs
     for (let user of Object.entries(player)) {
         let completions = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
-            (x) => x["level"]
+            (x) => x["user"]
         );
     
         for (let pack of packResult) {

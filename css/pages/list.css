@@ -73,7 +73,9 @@
 }
 .page-list .level-container .NONGdownload {
     justify-content: center;
-    width: 30%;
+}
+.page-list .level-container .NONGdownloadButton {
+    width: 100px;
 }
 .page-list .level-container .level .packs {
     display: flex;

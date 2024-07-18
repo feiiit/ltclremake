@@ -16,7 +16,7 @@ export default {
     template: `
         <div class="level-authors">
             <template v-if="selfVerified">
-                <div class="type-title-sm">Sukūrė & verifyino</div>
+                <div class="type-title-sm">Sukūrė & patvirtino</div>
                 <p class="type-body">
                     <span>{{ author }}</span>
                 </p>
@@ -26,20 +26,20 @@ export default {
                 <p class="type-body">
                     <span>{{ author }}</span>
                 </p>
-                <div class="type-title-sm">Verifyino</div>
+                <div class="type-title-sm">Patvirtino</div>
                 <p class="type-body">
                     <span>{{ verifier }}</span>
                 </p>
             </template>
             <template v-else>
-                <div class="type-title-sm">Kūrėjai</div>
+                <div class="type-title-sm">Sukūrė</div>
                 <p class="type-body">
                     <template v-for="(creator, index) in creators" :key="\`creator-\$\{creator\}\`">
                         <span >{{ creator }}</span
                         ><span v-if="index < creators.length - 1">, </span>
                     </template>
                 </p>
-                <div class="type-title-sm">Verifyino</div>
+                <div class="type-title-sm">Patvirtino</div>
                 <p class="type-body">
                     <span>{{ verifier }}</span>
                 </p>

@@ -71,6 +71,10 @@
     align-items: center;
     gap: 1rem;
 }
+.page-list .level-container .NONGdownload {
+    justify-content: center;
+    width: 30%;
+}
 .page-list .level-container .level .packs {
     display: flex;
     flex-wrap: wrap;

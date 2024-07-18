@@ -70,6 +70,7 @@ export async function fetchLeaderboard() {
             completedLevels: [],
             progressOnLevels: [],
             packsComplete: [],
+            path: level.path
         };
         const { verifiedLevels } = player[verifier];
         verifiedLevels.push({
@@ -90,7 +91,6 @@ export async function fetchLeaderboard() {
                 completedLevels: [],
                 progressOnLevels: [],
                 packsComplete: [],
-                path: level.path
             };
             const { completedLevels } = player[user];
             if (record.percent === 100) {
@@ -115,22 +115,22 @@ export async function fetchLeaderboard() {
         });
     });
 
-    // //Player completed packs
-    // for (let user of Object.entries(player)) {
-    //     let completions = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
-    //         (x) => x["levels"]
-    //     );
+    //Player completed packs
+    for (let user of Object.entries(player)) {
+        let completions = [...user[1]["verifiedLevels"], ...user[1]["completedLevels"]].map(
+            (x) => x["levels"]
+        );
     
-    //     for (let pack of packResult) {
-    //         if (pack.levels.every((packLevel) => completions.includes(packLevel))) {
-    //             user[1]["packsComplete"].push(pack);
-    //         }
-    //     }
-    // }
+        for (let pack of packResult) {
+            if (pack.levels.every((packLevel) => completions.includes(packLevel))) {
+                user[1]["packsComplete"].push(pack);
+            }
+        }
+    }
 
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(player).map(([user, scores]) => {
-        const { verifiedLevels, completedLevels, progressOnLevels } = scores;
+        const { verifiedLevels, completedLevels} = scores;
         const total = [verifiedLevels, completedLevels, progressOnLevels]
             .flat()
             .reduce((prev, cur) => prev + cur.score, 0);
@@ -145,9 +145,6 @@ export async function fetchLeaderboard() {
     return [res.sort((a, b) => b.total - a.total), errs];
 
 }
-
-
-
 
 export async function fetchPacks() {
     try {

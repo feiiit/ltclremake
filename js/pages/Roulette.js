@@ -76,16 +76,15 @@ export default {
                         </div>
 
                         <!-- Uncompleted level display after giving up -->
-                        <template v-if="givenUp && showRemaining && (currentPercentage < 105)">
+                        <template v-if="givenUp && showRemaining">
                             <div class="level" v-for="(level, i) in levels.slice(progression.length, levels.length+1)">
                                 <a :href="level.video" target="_blank" class="video">
                                     <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
                                 </a>
-                                <div class="meta">
+                                <div class="meta" v-if="(currentPercentage + 5*i < 105)>
                                     <p>#{{ level.rank }}</p>
                                     <h2>{{ level.name }}</h2>
                                     <p v-if="currentPercentage + 5*i > 100" style="color: #d50000; font-weight: 700">100%</p>
-                                    <p v-if="currentPercentage + 5*i > 105" style="color: #d50000; font-weight: 700">100%</p>
                                     <p v-else style="color: #d50000; font-weight: 700">{{ currentPercentage + 5*i }}%</p>
                                 </div>
                             </div>

@@ -80,7 +80,7 @@ export default {
                                 <div class="meta">
                                     <p>#{{ level.rank }}</p>
                                     <h2>{{ level.name }}</h2>
-                                    <p style="color: #d50000; font-weight: 700">{{ currentPercentage + 4 + i }}%</p>
+                                    <p style="color: #d50000; font-weight: 700">{{ currentPercentage + 5i }}%</p>
                                 </div>
                             </div>
                         </template>
@@ -131,7 +131,7 @@ export default {
         {
             return this.levels[this.progression.length];
         },
-        currentPercentage() 
+        currentPercentage() //holds the current required percentage
         {
             if(this.progression[this.progression.length - 1] == null){
                 return 5;
@@ -145,7 +145,7 @@ export default {
                 return this.progression[this.progression.length - 1] + 5;
             }
         },
-        placeholder() //holds the current percentage for displaying the requirement for the next level in the roulette
+        placeholder() //holds the next percentage for displaying the requirement for the next level in the roulette
         {
             // if (this.currentPercentage >= 95)
             // {

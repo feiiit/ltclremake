@@ -71,7 +71,7 @@ export default {
                         <div v-if="givenUp || hasCompleted" class="results">
                             <h1>Rezultatai</h1>
                             <p>Lygių kiekis: {{ progression.length }}</p>
-                            <p>Aukščiausi procentai: {{ currentPercentage }}%</p>
+                            <p>Aukščiausi procentai: {{ currentPercentage - 5 }}%</p>
                             <Btn v-if="currentPercentage < 99 && !hasCompleted" @click.native.prevent="showRemaining = true">Parodyti likusius lygius</Btn>
                         </div>
 

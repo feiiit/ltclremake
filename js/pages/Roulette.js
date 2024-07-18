@@ -81,7 +81,7 @@ export default {
                                 <a :href="level.video" target="_blank" class="video">
                                     <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
                                 </a>
-                                <div class="meta" v-if="(currentPercentage + 5*i < 105)>
+                                <div class="meta" v-if="(currentPercentage + 5*i < 105)">
                                     <p>#{{ level.rank }}</p>
                                     <h2>{{ level.name }}</h2>
                                     <p v-if="currentPercentage + 5*i > 100" style="color: #d50000; font-weight: 700">100%</p>

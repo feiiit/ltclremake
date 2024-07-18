@@ -37,7 +37,8 @@ export default {
             <section class="levels-container">
                 <div class="levels">
                     <template v-if="levels.length > 0">
-                        <!-- Įveikti lygiai -->
+
+                        <!-- Completed levels -->
                         <div class="level" v-for="(level, i) in levels.slice(0, progression.length)">
                             <a :href="level.video" class="video">
                                 <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
@@ -48,6 +49,7 @@ export default {
                                 <p style="color: #00b54b; font-weight: 700">{{ progression[i] }}%</p>
                             </div>
                         </div>
+
                         <!-- Current Level -->
                         <div class="level" v-if="!hasCompleted">
                             <a :href="currentLevel.video" target="_blank" class="video">
@@ -59,11 +61,12 @@ export default {
                                 <p>{{ currentLevel.id }}</p>
                             </div>
                             <form class="actions" v-if="!givenUp">
-                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 5" max=100>
+                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage" max=100>
                                 <Btn @click.native.prevent="onDone">Baigta</Btn>
                                 <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63;">Pasiduoti</Btn>
                             </form>
                         </div>
+
                         <!-- Results -->
                         <div v-if="givenUp || hasCompleted" class="results">
                             <h1>Rezultatai</h1>
@@ -71,9 +74,10 @@ export default {
                             <p>Aukščiausi procentai: {{ currentPercentage }}%</p>
                             <Btn v-if="currentPercentage < 99 && !hasCompleted" @click.native.prevent="showRemaining = true">Parodyti likusius lygius</Btn>
                         </div>
-                        <!-- Va, ką dar tau būtų reikėję žaist! -->
+
+                        <!-- Uncompleted level display after giving up -->
                         <template v-if="givenUp && showRemaining">
-                            <div class="level" v-for="(level, i) in levels.slice(progression.length + 1, levels.length - currentPercentage + progression.length)">
+                            <div class="level" v-for="(level, i) in levels.slice(progression.length + 1, levels.length+1)">
                                 <a :href="level.video" target="_blank" class="video">
                                     <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
                                 </a>

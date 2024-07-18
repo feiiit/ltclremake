@@ -46,6 +46,7 @@ export default {
                     <div class="player">
                         <h1>#{{ selected + 1 }} {{ entry.user }}</h1>
                         <h3>{{ entry.total }}</h3>
+                        <h2 v-if="entry.packsComplete.length > 0">Įveikti pakeliai ({{ entry.packsComplete.length}})</h2>
                         <div class="packs" v-if="entry.packsComplete.length > 0">
                             <div v-for="pack in entry.packsComplete" class="tag" :style="{background:pack.colour, color:getFontColour(pack.colour)}">
                             {{pack.name}}

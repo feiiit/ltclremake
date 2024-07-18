@@ -22,7 +22,7 @@ export async function fetchList() {
                     return [
                         {
                             ...level,
-                            packsComplete,
+                            packs,
                             path,
                             records: level.records,
                         },

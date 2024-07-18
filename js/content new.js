@@ -68,7 +68,6 @@ export async function fetchLeaderboard() {
         scoreMap[verifier] ??= {
             verified: [],
             completed: [],
-            progressed: [],
             packs: [],
         };
         const { verified } = scoreMap[verifier];

@@ -21,10 +21,9 @@
         } 
 }
 @keyframes color-change {
-  25% { color: yellow; }
-  50% { color: green; }
-  75% { color: red; }
-  100% { color: yellow; }
+  33% { color: yellow; }
+  66% { color: green; }
+  100% { color: red; }
 }
 
 main.dark,
@@ -83,7 +82,7 @@ margin-top: 60px;
 top: -58px;
 width: 100%;
 display: flex;
-animation: marquee 15s linear infinite, color-change 3s ease-in-out infinite;
+animation: marquee 20s linear infinite, color-change 5s ease-in-out infinite;
 text-shadow: 2px 3px 3px rgba(0,0,0,0.6);
 overflow-x: hidden;
 font-family: "Lexend Deca", sans-serif;

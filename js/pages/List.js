@@ -94,7 +94,7 @@ export default {
                         <p class="type-label-md">Puslapio layout pasiskolintas iš <a href="https://tsl.pages.dev/" target="_blank">TheShittyList</a></p>
                     </div>
                     <template v-if="editors">
-                        <h4>Listo modai:</h4>
+                        <h4>Listo moderatoriai:</h4>
                         <ol class="editors">
                             <li v-for="editor in editors">
                                 <img :src="\`/assets/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" :alt="editor.role">
@@ -117,7 +117,7 @@ export default {
                     <p>
                         Nenaudokit bug route'ų ir skipų, arba jei labai bugovas levelis tai bent naudokit kuo įmanoma mažiau.
                     </p>
-                    <h4>Challengų submittinimo taisyklės:</h4>
+                    <h4>Challenge'ų submittinimo taisyklės:</h4>
                     <p>
                         Challenge negali būti layout. Turi būti kažkiek dekoruotas, normaliai sustruktūruotas ir būt bent šiek
               tiek visually appealing. OBJEKTŲ SPAM =/= DEKORACIJA, nebent ji padaryta tinkamai (pavyzdžiui Slick Challenge
@@ -191,7 +191,7 @@ export default {
                     })
             );
             if (!this.editors) {
-                this.errors.push("Nepavyko pakrauti listo modų.");
+                this.errors.push("Nepavyko pakrauti listo moderatorių.");
             }
         }
 

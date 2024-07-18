@@ -111,7 +111,7 @@ export async function fetchLeaderboard() {
         );
     
         for (let pack of packResult) {
-            if (pack.levels.every((packLevel) => completions.includes(packLevel))) {
+            if (pack.levels.every((packLevel) => completions.includes(underscoreToWhitespace(packLevel)))) {
                 user[1]["packsComplete"].push(pack);
             }
         }

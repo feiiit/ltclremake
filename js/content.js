@@ -16,13 +16,13 @@ export async function fetchList() {
                 const levelResult = await fetch(`${dir}/${path}.json`);
                 try {
                     const level = await levelResult.json();
-                    let packs = packsList.filter((x) =>
-                        x.levels.includes(path)
-                    );
+                    // let packs = packsList.filter((x) =>
+                    //     x.levels.includes(path)
+                    // );
                     return [
                         {
                             ...level,
-                            packs,
+                            //packs,
                             path,
                             records: level.records,
                         },

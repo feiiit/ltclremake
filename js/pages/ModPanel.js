@@ -8,15 +8,30 @@ export default {
     components: { Spinner, Btn },
     data() {
         return {
-            loading: false,
+            loading: true,
             selectedFile: null,
             username: '',
+            jsonFiles: [], // List of JSON files
             modifiedJson: null
         };
     },
+    async created() {
+        this.loadJsonFiles();
+    },
     methods: {
-        onFileChange(event) {
-            this.selectedFile = event.target.files[0];
+        // Method to dynamically import JSON files
+        loadJsonFiles() {
+            // Use require.context to dynamically load JSON files from the ./data directory
+            const context = require.context('./data', false, /\.json$/);
+            this.jsonFiles = context.keys()
+                .filter(file => !file.startsWith('./_')) // Exclude files starting with _
+                .map(file => file.replace('./', '')); // Remove the './' from the file name
+
+            this.loading = false;
+        },
+        onFileSelect(event) {
+            const fileName = event.target.value;
+            this.selectedFile = `./data/${fileName}`;
         },
         async updateUsername() {
             if (!this.selectedFile || !this.username) {
@@ -25,9 +40,9 @@ export default {
             }
 
             try {
-                // Read the JSON file
-                const fileContent = await this.readFile(this.selectedFile);
-                let jsonData = JSON.parse(fileContent);
+                // Dynamically import the selected JSON file
+                const fileContent = await import(`${this.selectedFile}`);
+                let jsonData = fileContent.default;
 
                 // Define the template object
                 const userTemplate = {
@@ -51,14 +66,6 @@ export default {
                 alert("An error occurred while updating the JSON.");
             }
         },
-        readFile(file) {
-            return new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.onload = (event) => resolve(event.target.result);
-                reader.onerror = (error) => reject(error);
-                reader.readAsText(file);
-            });
-        },
         downloadJson() {
             if (!this.modifiedJson) {
                 alert("No modified JSON to download. Please update the username first.");
@@ -70,7 +77,7 @@ export default {
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
-            a.download = this.selectedFile ? this.selectedFile.name : "modified.json";
+            a.download = this.selectedFile ? this.selectedFile.split('/').pop() : "modified.json";
             a.click();
             URL.revokeObjectURL(url);  // Clean up the URL object
         }
@@ -85,7 +92,10 @@ export default {
                 <input type="text" id="username" v-model="username" name="username" required><br>
                 
                 <label for="jsonFile">Select JSON file:</label><br>
-                <input type="file" id="jsonFile" @change="onFileChange" accept=".json" required><br>
+                <select id="jsonFile" @change="onFileSelect" required>
+                    <option disabled selected value>Select a JSON file</option>
+                    <option v-for="file in jsonFiles" :key="file" :value="file">{{ file }}</option>
+                </select><br>
                 
                 <Btn type="submit">Update Username</Btn>
             </form>

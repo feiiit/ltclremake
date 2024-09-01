@@ -13,6 +13,8 @@ export default {
         <main v-else class="page-roulette">
             <form>
             <label for="username">Player's username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <input type="button" value="Click me" onclick="msg()">
             </form>
         </main>`
 };

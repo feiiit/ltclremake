@@ -1,6 +1,3 @@
-import { fetchList } from '../content.js';
-import { getThumbnailFromId, getYoutubeIdFromUrl, shuffle } from '../util.js';
-
 import Spinner from '../components/Spinner.js';
 import Btn from '../components/Btn.js';
 
@@ -19,19 +16,25 @@ export default {
         this.loadJsonFiles();
     },
     methods: {
-        // Method to dynamically import JSON files
-        loadJsonFiles() {
-            // Use require.context to dynamically load JSON files from the ./data directory
-            const context = require.context('./data', false, /\.json$/);
-            this.jsonFiles = context.keys()
-                .filter(file => !file.startsWith('./_')) // Exclude files starting with _
-                .map(file => file.replace('./', '')); // Remove the './' from the file name
+        async loadJsonFiles() {
+            try {
+                // Using import.meta.glob to get the list of JSON files
+                const files = import.meta.glob('./data/*.json', { eager: true });
 
-            this.loading = false;
+                this.jsonFiles = Object.keys(files)
+                    .filter(file => !file.includes('/_'))
+                    .map(file => file.replace('./data/', '')); // Remove the './data/' from the file name
+
+                this.loading = false;
+            } catch (error) {
+                console.error("Error loading JSON files:", error);
+                alert("Failed to load JSON files.");
+                this.loading = false;
+            }
         },
         onFileSelect(event) {
             const fileName = event.target.value;
-            this.selectedFile = `./data/${fileName}`;
+            this.selectedFile = fileName ? `./data/${fileName}` : null;
         },
         async updateUsername() {
             if (!this.selectedFile || !this.username) {
@@ -40,8 +43,8 @@ export default {
             }
 
             try {
-                // Dynamically import the selected JSON file
-                const fileContent = await import(`${this.selectedFile}`);
+                // Import the selected JSON file dynamically
+                const fileContent = await import(`./data/${this.selectedFile}`);
                 let jsonData = fileContent.default;
 
                 // Define the template object

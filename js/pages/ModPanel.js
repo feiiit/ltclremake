@@ -18,7 +18,9 @@ export default {
     methods: {
         async fetchFileFromServer() {
             try {
-                const fileContent = "./data/undisclosed.json"
+                const response = await fetch(this.serverFileUrl);
+                if (!response.ok) throw new Error('Network response was not ok');
+                const fileContent = "./data/undisclosed.json".json();
                 this.modifiedJson = fileContent;
             } catch (error) {
                 console.error("Error fetching file from server:", error);

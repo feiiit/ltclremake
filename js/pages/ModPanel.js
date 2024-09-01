@@ -11,6 +11,9 @@ export default {
             <Spinner></Spinner>
         </main>
         <main v-else class="page-roulette">
-            hi
+            <form>
+            <label for="username">Player's username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            </form>
         </main>`
 };

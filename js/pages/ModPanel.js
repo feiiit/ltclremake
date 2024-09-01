@@ -27,7 +27,7 @@ export default {
             try {
                 // Read the JSON file
                 const fileContent = await this.readFile(this.selectedFile);
-                const jsonData = JSON.parse(fileContent);
+                let jsonData = JSON.parse(fileContent);
 
                 // Define the template object
                 const userTemplate = {
@@ -35,11 +35,19 @@ export default {
                     "percent": 100
                 };
 
-                // Add the template object to the JSON data
-                if (!jsonData.users) {
-                    jsonData.users = [];
+                // Ensure that jsonData is an array or object, and append the template correctly
+                if (Array.isArray(jsonData)) {
+                    jsonData.push(userTemplate);
+                } else if (typeof jsonData === 'object') {
+                    // If the root is an object, append the userTemplate in a meaningful way
+                    // Assuming you want to add this as a new entry in a list or at a root level
+                    if (!jsonData.entries) {
+                        jsonData.entries = [];
+                    }
+                    jsonData.entries.push(userTemplate);
+                } else {
+                    throw new Error("Unsupported JSON structure");
                 }
-                jsonData.users.push(userTemplate);
 
                 // Store the modified JSON to download later
                 this.modifiedJson = jsonData;

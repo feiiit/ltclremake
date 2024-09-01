@@ -35,14 +35,11 @@ export default {
                     "percent": 100
                 };
 
-                // Directly add the template object to the JSON structure
-                if (Array.isArray(jsonData)) {
-                    jsonData.push(userTemplate);
-                } else if (typeof jsonData === 'object') {
-                    // If the root is an object, merge the userTemplate into it
-                    Object.assign(jsonData, userTemplate);
+                // Ensure the "records" array exists and add the template object to it
+                if (jsonData.records && Array.isArray(jsonData.records)) {
+                    jsonData.records.push(userTemplate);
                 } else {
-                    throw new Error("Unsupported JSON structure");
+                    throw new Error('The "records" section is missing or is not an array.');
                 }
 
                 // Store the modified JSON to download later
@@ -51,6 +48,7 @@ export default {
                 alert("Username added successfully!");
             } catch (error) {
                 console.error("Error updating username:", error);
+                alert("An error occurred while updating the JSON.");
             }
         },
         readFile(file) {

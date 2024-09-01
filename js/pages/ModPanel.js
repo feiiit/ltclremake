@@ -85,6 +85,7 @@ export default {
                 <input type="text" id="username" v-model="username" name="username" required><br>
                 
                 <label for="jsonFile">Select JSON file:</label><br>
+                <a href="./data/undisclosed.json">undisclosed</a>
                 <input type="file" id="jsonFile" @change="onFileChange" accept=".json" required><br>
                 
                 <Btn type="submit">Update Username</Btn>

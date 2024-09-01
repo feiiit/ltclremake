@@ -10,7 +10,7 @@ export default {
         <main v-if="loading">
             <Spinner></Spinner>
         </main>
-        <main v-else class="admin">
-
+        <main v-else class="page-roulette">
+            hi
         </main>`
 };

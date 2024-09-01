@@ -1,109 +1,85 @@
-import Spinner from '../components/Spinner.js';
-import Btn from '../components/Btn.js';
+import { ref, onMounted } from 'vue';
+import Spinner from '../components/Spinner.vue';
+import Btn from '../components/Btn.vue';
 
 export default {
     components: { Spinner, Btn },
-    data() {
-        return {
-            loading: true,
-            selectedFile: null,
-            username: '',
-            jsonFiles: [], // List of JSON files
-            modifiedJson: null
-        };
-    },
-    async created() {
-        this.loadJsonFiles();
-    },
-    methods: {
-        async loadJsonFiles() {
+    setup() {
+        const loading = ref(true);
+        const selectedFile = ref('');
+        const username = ref('');
+        const jsonFiles = ref([]);
+        const modifiedJson = ref(null);
+
+        // Load JSON files dynamically using require.context
+        const loadJsonFiles = () => {
             try {
-                // Using import.meta.glob to get the list of JSON files
-                const files = import.meta.glob('./data/*.json', { eager: true });
-
-                this.jsonFiles = Object.keys(files)
-                    .filter(file => !file.includes('/_'))
-                    .map(file => file.replace('./data/', '')); // Remove the './data/' from the file name
-
-                this.loading = false;
+                const context = require.context('@/data', false, /\.json$/);
+                jsonFiles.value = context.keys()
+                    .filter(file => !file.includes('/_')) // Exclude files starting with '_'
+                    .map(file => file.replace('./', '')); // Remove the './' prefix
+                loading.value = false;
             } catch (error) {
-                console.error("Error loading JSON files:", error);
-                alert("Failed to load JSON files.");
-                this.loading = false;
+                console.error('Error loading JSON files:', error);
+                alert('Failed to load JSON files.');
+                loading.value = false;
             }
-        },
-        onFileSelect(event) {
-            const fileName = event.target.value;
-            this.selectedFile = fileName ? `./data/${fileName}` : null;
-        },
-        async updateUsername() {
-            if (!this.selectedFile || !this.username) {
-                alert("Please select a file and enter a username.");
+        };
+
+        // Handle file selection
+        const updateUsername = async () => {
+            if (!selectedFile.value || !username.value) {
+                alert('Please select a file and enter a username.');
                 return;
             }
 
             try {
-                // Import the selected JSON file dynamically
-                const fileContent = await import(`./data/${this.selectedFile}`);
-                let jsonData = fileContent.default;
+                const filePath = `@/data/${selectedFile.value}`;
+                const fileContent = require(`${filePath}`);
+                let jsonData = fileContent;
 
                 // Define the template object
                 const userTemplate = {
-                    "user": this.username,
-                    "percent": 100
+                    user: username.value,
+                    percent: 100,
                 };
 
                 // Ensure the "records" array exists and add the template object to it
-                if (jsonData.records && Array.isArray(jsonData.records)) {
+                if (Array.isArray(jsonData.records)) {
                     jsonData.records.push(userTemplate);
                 } else {
                     throw new Error('The "records" section is missing or is not an array.');
                 }
 
                 // Store the modified JSON to download later
-                this.modifiedJson = jsonData;
+                modifiedJson.value = jsonData;
 
-                alert("Username added successfully!");
+                alert('Username added successfully!');
             } catch (error) {
-                console.error("Error updating username:", error);
-                alert("An error occurred while updating the JSON.");
+                console.error('Error updating username:', error);
+                alert('An error occurred while updating the JSON.');
             }
-        },
-        downloadJson() {
-            if (!this.modifiedJson) {
-                alert("No modified JSON to download. Please update the username first.");
+        };
+
+        // Handle downloading modified JSON
+        const downloadJson = () => {
+            if (!modifiedJson.value) {
+                alert('No modified JSON to download. Please update the username first.');
                 return;
             }
 
-            const jsonString = JSON.stringify(this.modifiedJson, null, 2);
-            const blob = new Blob([jsonString], { type: "application/json" });
+            const jsonString = JSON.stringify(modifiedJson.value, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
-            const a = document.createElement("a");
+            const a = document.createElement('a');
             a.href = url;
-            a.download = this.selectedFile ? this.selectedFile.split('/').pop() : "modified.json";
+            a.download = selectedFile.value ? selectedFile.value.split('/').pop() : 'modified.json';
             a.click();
-            URL.revokeObjectURL(url);  // Clean up the URL object
-        }
-    },
-    template: `
-        <main v-if="loading">
-            <Spinner></Spinner>
-        </main>
-        <main v-else class="page-roulette">
-            <form @submit.prevent="updateUsername">
-                <label for="username">Player's username:</label><br>
-                <input type="text" id="username" v-model="username" name="username" required><br>
-                
-                <label for="jsonFile">Select JSON file:</label><br>
-                <select id="jsonFile" @change="onFileSelect" required>
-                    <option disabled selected value>Select a JSON file</option>
-                    <option v-for="file in jsonFiles" :key="file" :value="file">{{ file }}</option>
-                </select><br>
-                
-                <Btn type="submit">Update Username</Btn>
-            </form>
+            URL.revokeObjectURL(url); // Clean up the URL object
+        };
 
-            <br>
-            <Btn @click="downloadJson">Download Modified JSON</Btn>
-        </main>`
+        onMounted(loadJsonFiles);
+
+        return { loading, selectedFile, username, jsonFiles, modifiedJson, updateUsername, downloadJson };
+    }
 };

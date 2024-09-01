@@ -11,32 +11,24 @@ export default {
             loading: false,
             selectedFile: null,
             username: '',
-            modifiedJson: null,
-            serverFileUrl: './data/myfile.json' // Default URL or set it dynamically
+            modifiedJson: null
         };
     },
     methods: {
-        async fetchFileFromServer() {
-            try {
-                const response = await fetch(this.serverFileUrl);
-                if (!response.ok) throw new Error('Network response was not ok');
-                const fileContent = await response.json();
-                this.modifiedJson = fileContent;
-            } catch (error) {
-                console.error("Error fetching file from server:", error);
-                alert("An error occurred while fetching the JSON from the server.");
-            }
+        onFileChange(event) {
+            this.selectedFile = event.target.files[0];
         },
         async updateUsername() {
-            if (!this.username) {
-                alert("Please enter a username.");
+            if (!this.selectedFile || !this.username) {
+                alert("Please select a file and enter a username.");
                 return;
             }
 
             try {
-                // Fetch the JSON file from the server
-                await this.fetchFileFromServer();
-                
+                // Read the JSON file
+                const fileContent = await this.readFile(this.selectedFile);
+                let jsonData = JSON.parse(fileContent);
+
                 // Define the template object
                 const userTemplate = {
                     "user": this.username,
@@ -44,18 +36,28 @@ export default {
                 };
 
                 // Ensure the "records" array exists and add the template object to it
-                if (this.modifiedJson.records && Array.isArray(this.modifiedJson.records)) {
-                    this.modifiedJson.records.push(userTemplate);
+                if (jsonData.records && Array.isArray(jsonData.records)) {
+                    jsonData.records.push(userTemplate);
                 } else {
                     throw new Error('The "records" section is missing or is not an array.');
                 }
 
-                // Notify user
+                // Store the modified JSON to download later
+                this.modifiedJson = jsonData;
+
                 alert("Username added successfully!");
             } catch (error) {
                 console.error("Error updating username:", error);
                 alert("An error occurred while updating the JSON.");
             }
+        },
+        readFile(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (event) => resolve(event.target.result);
+                reader.onerror = (error) => reject(error);
+                reader.readAsText(file);
+            });
         },
         downloadJson() {
             if (!this.modifiedJson) {
@@ -68,7 +70,7 @@ export default {
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
-            a.download = "modified.json";
+            a.download = this.selectedFile ? this.selectedFile.name : "modified.json";
             a.click();
             URL.revokeObjectURL(url);  // Clean up the URL object
         }
@@ -82,8 +84,8 @@ export default {
                 <label for="username">Player's username:</label><br>
                 <input type="text" id="username" v-model="username" name="username" required><br>
                 
-                <label for="jsonFile">Fetch JSON file from server:</label><br>
-                <button @click.prevent="fetchFileFromServer">Fetch JSON</button><br>
+                <label for="jsonFile">Select JSON file:</label><br>
+                <input type="file" id="jsonFile" @change="onFileChange" accept=".json" required><br>
                 
                 <Btn type="submit">Update Username</Btn>
             </form>

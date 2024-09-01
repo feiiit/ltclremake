@@ -28,18 +28,22 @@ export default {
                 const fileContent = await this.readFile(this.selectedFile);
                 const jsonData = JSON.parse(fileContent);
 
-                // Modify the JSON data
-                if (jsonData.usernames && jsonData.usernames.includes("TEMPLATE")) {
-                    const index = jsonData.usernames.indexOf("TEMPLATE");
-                    jsonData.usernames[index] = this.username;
-                } else {
-                    jsonData.usernames.push(this.username);
+                // Define the template object
+                const userTemplate = {
+                    "user": this.username,
+                    "percent": 100
+                };
+
+                // Add the template object to the JSON data
+                if (!jsonData.users) {
+                    jsonData.users = [];
                 }
+                jsonData.users.push(userTemplate);
 
                 // Save the modified JSON file (you'll need to implement this server-side)
                 await this.saveFile(this.selectedFile.name, jsonData);
 
-                alert("Username updated successfully!");
+                alert("Username added successfully!");
             } catch (error) {
                 console.error("Error updating username:", error);
             }
@@ -53,8 +57,7 @@ export default {
             });
         },
         async saveFile(filename, jsonData) {
-            // Implement the logic to save the modified JSON back to the server
-            // This could involve sending the data via an API to your backend
+            // This method will handle sending the modified JSON data to your server.
             // Example (using fetch):
             await fetch('/save-json', {
                 method: 'POST',

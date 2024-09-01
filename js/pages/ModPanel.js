@@ -10,7 +10,8 @@ export default {
         return {
             loading: false,
             selectedFile: null,
-            username: ''
+            username: '',
+            modifiedJson: null
         };
     },
     methods: {
@@ -40,8 +41,8 @@ export default {
                 }
                 jsonData.users.push(userTemplate);
 
-                // Save the modified JSON file (you'll need to implement this server-side)
-                await this.saveFile(this.selectedFile.name, jsonData);
+                // Store the modified JSON to download later
+                this.modifiedJson = jsonData;
 
                 alert("Username added successfully!");
             } catch (error) {
@@ -56,16 +57,20 @@ export default {
                 reader.readAsText(file);
             });
         },
-        async saveFile(filename, jsonData) {
-            // This method will handle sending the modified JSON data to your server.
-            // Example (using fetch):
-            await fetch('/save-json', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ filename, data: jsonData }),
-            });
+        downloadJson() {
+            if (!this.modifiedJson) {
+                alert("No modified JSON to download. Please update the username first.");
+                return;
+            }
+
+            const jsonString = JSON.stringify(this.modifiedJson, null, 2);
+            const blob = new Blob([jsonString], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = this.selectedFile ? this.selectedFile.name : "modified.json";
+            a.click();
+            URL.revokeObjectURL(url);  // Clean up the URL object
         }
     },
     template: `
@@ -82,5 +87,8 @@ export default {
                 
                 <Btn type="submit">Update Username</Btn>
             </form>
+
+            <br>
+            <Btn @click="downloadJson">Download Modified JSON</Btn>
         </main>`
 };

@@ -35,16 +35,12 @@ export default {
                     "percent": 100
                 };
 
-                // Ensure that jsonData is an array or object, and append the template correctly
+                // Directly add the template object to the JSON structure
                 if (Array.isArray(jsonData)) {
                     jsonData.push(userTemplate);
                 } else if (typeof jsonData === 'object') {
-                    // If the root is an object, append the userTemplate in a meaningful way
-                    // Assuming you want to add this as a new entry in a list or at a root level
-                    if (!jsonData.entries) {
-                        jsonData.entries = [];
-                    }
-                    jsonData.entries.push(userTemplate);
+                    // If the root is an object, merge the userTemplate into it
+                    Object.assign(jsonData, userTemplate);
                 } else {
                     throw new Error("Unsupported JSON structure");
                 }

@@ -1,48 +1,29 @@
-# Welcome to the Geometry Dash Shitty List template!
+# aredl-revamp
 
-# FAQ
+This template should help get you started developing with Vue 3 in Vite.
 
----
+## Recommended IDE Setup
 
-### Website FAQ
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-Can I use the Shitty List template?
+## Customize configuration
 
-- Sure. Credits to the shitty list are embedded onto this template so keep that in.
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-The website isn't loading! What can I do?
+## Project Setup
 
-- Since no webhost is perfect, downtime is expected. You can either wait till the
-  website is back online or you can do some behind the scene stuff and run it
-  locally.
+```sh
+npm install
+```
 
----
+### Compile and Hot-Reload for Development
 
-### Usage FAQ
+```sh
+npm run dev
+```
 
-How do I add levels to the list?
+### Compile and Minify for Production
 
-- Use one of the provided template json files and modify the details to fill in the details
-  accordingly. If there are any errors, the site will not load, or you will get a pop up
-  saying which level isn't loading.
-
-How do I add records to the list?
-
-- Again, use one of the given templates, and modify the details accordingly. For mobile
-  records, you can add the code `mobile: true` within the braces. Make sure there are no
-  excess or missing commas, or the website might not load properly.
-
-What are some common reasons for the website not loading?
-
-- The most common cause is missing commas and inverted commas, or extra commas at the end of
-  the last lines within list entries. A good way to find the error-causing lines can be found
-  by using `Inspect Element` and going to the `Console` tab.
-
----
-
-## More Coming Soon!
-
-## Repo Maintainers:
-
-- Prometheus
-- Emonadeo
+```sh
+npm run build
+```

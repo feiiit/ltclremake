@@ -1,0 +1,54 @@
+{
+	"id": 114990369,
+	"name": "Gaggatrondra",
+    "tags": [
+        "2.2",
+        "Long",
+        "NONG",
+        "Learny"
+    ],
+	"author": 9031199800,
+	"creators": [],
+	"verifier": 5312127109,
+	"verification": "https://www.youtube.com/watch?v=A4G41vw6Cf0",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 6964982611,
+			"link": "https://youtu.be/O65K5NF_58E?si=zw9tuwYzwtl9mHeF",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3939723626,
+			"link": "https://drive.google.com/drive/folders/1MycJJVaXLOXMAcTQ6EN2mYSIhSli_i3z?usp=sharing",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6626447859,
+			"link": "https://youtu.be/SwBU_OX17_w?si=6CDYXsOBwpNK2EOz",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6807948992,
+			"link": "https://www.youtube.com/watch?v=zDLI2uWhLWw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8904205120,
+			"link": "https://youtu.be/U3JDqF9d61Q",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5302990055,
+			"link": "https://youtu.be/TwngwEkWX9w?si=XXRVHsB1kYDOn-U4",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

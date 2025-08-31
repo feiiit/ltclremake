@@ -1,0 +1,40 @@
+{
+	"id": 92844445,
+	"name": "Pingas21",
+    "tags": [
+        "2.1",
+        "Long",
+        "Clicksync",
+        "Timings"
+    ],
+	"author": 1969117307,
+	"creators": [
+		1969117307,
+		5799915945,
+		3329284113
+	],
+	"verifier": 5799915945,
+	"verification": "https://youtu.be/hn894RT2Nfc?si=75Le_G3_ZAPFPZpM",
+	"percentToQualify": 100,
+	"song": 476613,
+	"records": [
+		{
+			"user": 6084509373,
+			"link": "https://youtu.be/TVOVRKFsnDk?si=_rqaKTzJ32vx_nsY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6862634670,
+			"link": "https://youtu.be/L3mJaRB4E5I?si=WyHvIUhgCJuBiwxS",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3740620269,
+			"link": "https://www.youtube.com/watch?v=q-pFrnCXSwc",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

@@ -1,0 +1,52 @@
+{
+	"id": 105627215,
+	"name": "Lightness",
+    "tags": [
+        "2.2",
+        "XXL",
+        "Fast-Paced",
+        "Learny",
+        "Flow",
+        "Nerve Control"
+    ],
+	"author": 3477515970,
+	"creators": [],
+	"verifier": 2781113736,
+	"verification": "https://www.youtube.com/watch?v=amA6yFcNQ_U",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"song": 10007054,
+	"records": [
+		{
+			"user": 2366076126,
+			"link": "https://youtu.be/F1Zx2vAqrus",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5995466831,
+			"link": "https://www.youtube.com/watch?v=N2KV-023VK0&t=73s",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9769362279,
+			"link": "https://www.youtube.com/watch?v=jsVGLhR81ig",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9433199179,
+			"link": "https://youtu.be/BN4aY2Gt9Ig?si=dmRXlJBqaKmGfd5q",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 2646679155,
+			"link": "https://drive.google.com/file/d/1eiq9vZ5d4aKhvB5WcTXsuaUED9UXFOuA/view?usp=sharing",
+			"percent": 100,
+			"hz": 360,
+			"mobile": true
+		}
+	]
+}

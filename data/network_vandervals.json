@@ -1,0 +1,67 @@
+{
+	"id": 90400834,
+	"name": "network (VanDerVals)",
+    "tags": [
+        "2.1",
+        "Medium",
+        "Clicksync",
+        "Fast-Paced",
+        "Flow"
+    ],
+	"author": 2589246673,
+	"creators": [],
+	"verifier": 2589246673,
+	"verification": "https://youtu.be/uA5i_jBW2hY?si=_Q1pAqVq03-4PkcO",
+	"percentToQualify": 100,
+	"song": 1199709,
+	"records": [
+		{
+			"user": 5394614771,
+			"link": "https://www.youtube.com/watch?v=nyBgPfN5jDA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3050190027,
+			"link": "https://youtu.be/LKwWIK8oFPk",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3740620269,
+			"link": "https://www.youtube.com/watch?v=yIOZM52yYUg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5814862864,
+			"link": "https://medal.tv/games/geometry-dash/clips/j5n344AsSaP7Y_k1-?invite=cr-MSx4bmksNzA4NTQzMDAs",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4854424575,
+			"link": "https://youtu.be/74Pe-pMuHr4",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8354715569,
+			"link": "https://youtu.be/WPbJkCfHxQg?si=XHE2-5VFmj7aMWPi",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3840185569,
+			"link": "https://youtu.be/GSWwPpq4Q1U?si=dE_oZ0W8tvOmkxkZ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7973652256,
+			"link": "https://youtu.be/JIKBKTwDLxE",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

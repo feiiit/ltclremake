@@ -1,0 +1,86 @@
+{
+	"id": 95481638,
+	"name": "The Gins II",
+	"author": 6778711760,
+	"creators": [
+		6778711760
+	],
+	"verifier": 6778711760,
+	"verification": "https://youtu.be/hJ9Y9HArMAI?si=ME9NYwcvTsO4yYZ1",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"records": [
+		{
+			"user": 8612459113,
+			"link": "https://www.youtube.com/watch?v=PiyEk4_t4tE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3757359420,
+			"link": "https://www.youtube.com/watch?v=6wm63d8ueAE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9895938056,
+			"link": "https://youtu.be/1h0_v4vZ-V8?si=KdV7vqyOByuZrrMx",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1870674826,
+			"link": "https://www.youtube.com/watch?v=b-BkW7FO2o4",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6868670792,
+			"link": "https://www.youtube.com/watch?v=rp3GwNvdb5U",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9074159804,
+			"link": "https://www.youtube.com/watch?v=SFLX6b3f-TE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9041327075,
+			"link": "https://www.youtube.com/watch?v=MJPa8ontrvc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7330715339,
+			"link": "https://youtu.be/nqQdP45cWdQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9120349112,
+			"link": "https://youtu.be/ljThVb7k6Ns",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9174196750,
+			"link": "https://www.youtube.com/watch?v=siFH0SkZJsY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7830624510,
+			"link": "https://youtu.be/40DKW46fFvY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7067306177,
+			"link": "https://youtu.be/6evU25zHudg?si=1wXSuNJqC5423ypa",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

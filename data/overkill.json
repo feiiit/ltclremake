@@ -1,0 +1,52 @@
+{
+	"id": 104027821,
+	"name": "OVERKILL",
+    "tags": [
+        "2.2",
+        "Clicksync",
+		"NONG",
+        "High CPS",
+        "Wave"
+    ],
+	"author": 1364843959,
+	"creators": [
+		1364843959,
+		7854954503
+	],
+	"verifier": 8605623731,
+	"verification": "https://www.youtube.com/watch?v=aBDP_9-Sm-w",
+	"percentToQualify": 100,
+	"password": "Free to Copy",
+	"records": [
+		{
+			"user": 5757119686,
+			"link": "https://youtu.be/RSjaS3bDe7o",
+			"percent": 100,
+			"hz": 480
+		},
+		{
+			"user": 8612459113,
+			"link": "https://youtu.be/RU1RWCrIVGw?si=goVYWgcTEV5XsAub",
+			"percent": 100,
+			"hz": 240
+		},
+		{
+			"user": 5611085886,
+			"link": "https://youtu.be/gdrQWHIsjI8",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1707752480,
+			"link": "https://youtu.be/TAXzAFyHD2U",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6808438796,
+			"link": "https://www.youtube.com/watch?v=UI0RMVH304M",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

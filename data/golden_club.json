@@ -1,0 +1,51 @@
+{
+	"id": 89490128,
+	"name": "Golden Club",
+    "tags": [
+        "2.1",
+        "Long",
+        "Overall",
+        "Timings",
+        "High CPS",
+        "Nerve Control",
+        "Wave"
+    ],
+	"author": 4253643300,
+	"creators": [],
+	"verifier": 5362479182,
+	"verification": "https://www.youtube.com/watch?v=YBs04o1ZVQY",
+	"percentToQualify": 100,
+	"song": 396093,
+	"records": [
+		{
+			"user": 2233668760,
+			"link": "https://youtu.be/a-JDjM6-Z58?si=nS7lLYVyvS08X2eG",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6804914118,
+			"link": "https://youtu.be/YWiWZNgq0bU",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5711090524,
+			"link": "https://www.youtube.com/watch?v=trw44P2e22E",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7973652256,
+			"link": "https://youtu.be/ta1ZXxfeGek",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1492178495,
+			"link": "https://www.youtube.com/watch?v=PAadYxRD1W0",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

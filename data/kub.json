@@ -1,0 +1,110 @@
+{
+	"id": 89145099,
+	"name": "KUB",
+    "tags": [
+        "2.1",
+        "Long",
+		"NONG",
+        "Timings",
+        "Cube"
+    ],
+	"author": 9380526463,
+	"creators": [
+		9380526463
+	],
+	"verifier": 8371835749,
+	"verification": "https://www.youtube.com/watch?v=e5DQ86rP3cw&t=0s",
+	"percentToQualify": 100,
+	"records": [
+		{
+			"user": 5988323197,
+			"link": "https://youtu.be/bXmIeB7iioA",
+			"percent": 100,
+			"hz": 240
+		},
+		{
+			"user": 9405692896,
+			"link": "https://www.youtube.com/watch?v=OV4oXQuMCAo",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1938127492,
+			"link": "https://youtu.be/jiRomWhEWpE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8216489547,
+			"link": "https://youtu.be/UkKNAZjKgMU",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8078038373,
+			"link": "https://youtu.be/O9Tnh8oE_ds",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8090506723,
+			"link": "https://www.youtube.com/watch?v=N6GtLkCVYeU",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1085618975,
+			"link": "https://youtu.be/9iYEA0n4Lp4",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5486054620,
+			"link": "https://youtu.be/C7j-01P4rwE?si=AiCJlARlf1ai5LFv",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4689297262,
+			"link": "https://www.youtube.com/watch?v=uUJI5kiiKZM",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4531491759,
+			"link": "https://youtu.be/D4yMDqBDQik?si=Qq9SEsSNZ3n5zxlN",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5456972340,
+			"link": "https://youtu.be/y1tL5vP2FdE?si=EGNHcffOI751tZbr",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5895311808,
+			"link": "https://youtu.be/oYxzkF8yFLA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7809170286,
+			"link": "https://youtu.be/P3PFY78ZWpc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1861875401,
+			"link": "https://youtu.be/hSba1tWK7Zc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1998480888,
+			"link": "https://youtu.be/JcP92VRPPUk",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

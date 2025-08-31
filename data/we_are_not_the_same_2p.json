@@ -1,0 +1,92 @@
+{
+	"id": 90104288,
+	"name": "We Are Not The Same (2P)",
+	"tags": [
+		"2.1",
+		"Long",
+		"2P",
+		"Chokepoints"
+	],
+	"author": 7684106352,
+	"creators": [
+		7684106352,
+		4959271065
+	],
+	"verifier": 7684106352,
+	"verification": "https://youtu.be/iFbiMw0GVzI?si=TzCax6KH_dicEmct",
+	"percentToQualify": 100,
+	"song": 555910,
+	"records": [
+		{
+			"user": 4959271065,
+			"link": "https://youtu.be/iFbiMw0GVzI?si=T-wMfUTvCBjLCvw1",
+			"percent": 100
+		},
+		{
+			"user": 6558732412,
+			"link": "https://youtu.be/_rM2rIo7V4w?si=m12sCuAZG1fPQH0c",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3050190027,
+			"link": "https://youtu.be/t_bQybKVPJ4",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3969992072,
+			"link": "https://www.youtube.com/watch?v=-dREhhh8S6U&t=89s&ab_channel=derf",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1938127492,
+			"link": "https://youtu.be/Gqh0MaykoDQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6584784894,
+			"link": "https://www.youtube.com/watch?v=ncsN01pT6i8",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7429622934,
+			"link": "https://youtu.be/XSQVKPL69V0",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8134204726,
+			"link": "https://www.youtube.com/watch?v=DGDZ3hPlg0E&lc=UgyUduRgq0udljH3M9t4AaABAg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8290982750,
+			"link": "https://youtu.be/SjFAPKPC-cI",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8299075170,
+			"link": "https://youtu.be/AhzjvAkvCZE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8286929680,
+			"link": "https://youtu.be/ZAEIAhVXhKg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7937190301,
+			"link": "https://youtu.be/Ajno1phnB2c",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

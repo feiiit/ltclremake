@@ -1,0 +1,88 @@
+{
+	"id": 90057148,
+	"name": "Terminal Rampancy",
+        "tags": [
+        "2.1",
+        "Long",
+        "Timings",
+        "Learny",
+        "Duals"
+    ],
+	"author": 4167477055,
+	"creators": [
+		4167477055
+	],
+	"verifier": 1008621689,
+	"verification": "https://youtu.be/29hRhhqQTLc",
+	"percentToQualify": 100,
+	"password": "",
+	"song": 383729,
+	"records": [
+		{
+			"user": 5011629074,
+			"link": "https://youtu.be/lNWm8E8qQHE",
+			"percent": 100,
+			"hz": 321
+		},
+		{
+			"user": 1198357423,
+			"link": "https://www.youtube.com/watch?v=1NgYN5bETpM&t=0s",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6626447859,
+			"link": "https://www.youtube.com/watch?v=Ady43JqdRqk",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9907091868,
+			"link": "https://youtu.be/E1H3BJHkhKo?si=8NK6ZVpz3q3RcHfh",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5578889141,
+			"link": "https://www.youtube.com/watch?v=m9-kf_OAw0g",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7559804072,
+			"link": "https://youtu.be/4lfehyseG_Q?si=ll5PimxXzqejqLaH",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3745640763,
+			"link": "https://www.youtube.com/watch?v=396SGmzE92c&list=PLUuluViHD2j4aJ8-qp6RY1StLX8j396z8&index=5",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6496837094,
+			"link": "https://youtu.be/U5YNHE0cwZE?si=6p2oTHQjeS1krdVE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7762112847,
+			"link": "https://youtu.be/impJd31N-JI?si=nOJuPBH4OZgofy6i",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5871290254,
+			"link": "https://youtu.be/04g-DYCCVhM?si=YpJyYKZXYzcnFyUa",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1032047992,
+			"link": "https://www.youtube.com/watch?v=YvRsV3Dhz40",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

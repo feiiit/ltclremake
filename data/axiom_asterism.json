@@ -1,0 +1,51 @@
+{
+	"id": 114340057,
+	"name": "Axiom Asterism",
+    "tags": [
+        "2.2",
+        "Long",
+        "Learny",
+        "Wave"
+    ],
+	"author": 3847339310,
+	"creators": [
+		3847339310,
+		2541669760
+	],
+	"verifier": 2541669760,
+	"verification": "https://youtu.be/LnFdka3HekA",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 7559804072,
+			"link": "https://www.youtube.com/watch?v=SSST8AnZ9V8",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4309093704,
+			"link": "https://youtu.be/3KcRLU0A8Rk?si=Szk_URzF7lyMTYBV",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3840185569,
+			"link": "https://youtu.be/livfKKbnW5A?si=BkB0zZW0vkfD_t34",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5757119686,
+			"link": "https://youtu.be/45_xAgAVkWw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7329038097,
+			"link": "https://youtu.be/2OES2Hzazdg?si=mzDDYFmBLLVl4QCk",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

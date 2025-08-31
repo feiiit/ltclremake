@@ -1,0 +1,50 @@
+{
+	"id": 88868682,
+	"name": "SAND SAILOR",
+    "tags": [
+        "2.1",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Learny",
+        "Precision",
+        "Cube",
+        "Ship",
+        "Duals"
+    ],
+	"author": 6748267498,
+	"creators": [
+		6748267498,
+		5037718573
+	],
+	"verifier": 1323149990,
+	"verification": "https://www.youtube.com/watch?v=QPmzn9X77Uo",
+	"percentToQualify": 100,
+	"song": 742681,
+	"records": [
+		{
+			"user": 3197896757,
+			"link": "https://youtu.be/AvFl_RNpvso",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9879633307,
+			"link": "https://www.youtube.com/watch?v=yKJxiaB264Q",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7452292815,
+			"link": "https://www.youtube.com/watch?v=dltWStsPlmk",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5769250037,
+			"link": "https://youtu.be/_eWEoqzn-00?si=9PMNd_cPkNT2jH7h",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

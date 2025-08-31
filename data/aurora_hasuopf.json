@@ -1,0 +1,34 @@
+{
+	"id": 108190614,
+	"name": "Aurora (hasuopf)",
+    "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Nerve Control",
+        "Cube",
+        "Ship"
+    ],
+	"author": 2513867863,
+	"creators": [
+		2513867863
+	],
+	"verifier": 5908120379,
+	"verification": "https://youtu.be/izIanwLeZGk?si=0nJ1MH5l4CYGLJMk",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"records": [
+		{
+			"user": 8187337355,
+			"link": "https://youtu.be/fYZh-QbZMZg?si=P93jz9_NYWjY_16w",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9520406778,
+			"link": "https://youtu.be/l8svvSnT2zc?si=ghaGBJrGIEq2q-_5",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"id": 93155813,
+	"name": "Rigel",
+    "tags": [
+        "2.1",
+        "Long",
+        "Circles",
+        "Fast-Paced",
+        "Wave"
+    ],
+	"author": 5473141132,
+	"creators": [
+		5473141132
+	],
+	"verifier": 5473141132,
+	"verification": "https://youtu.be/CkDTr84FEpI?si=B1S2ppaumIerGuct",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"song": 1181403,
+	"records": [
+		{
+			"user": 3840185569,
+			"link": "https://youtu.be/GBDxY1lFIHM?si=-ewxB3Khm-IDYTBM",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9396129504,
+			"link": "https://youtu.be/nVqNbepPD8Q?si=ZtQbdE1YwXjXJ8PS",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7859110537,
+			"link": "https://www.youtube.com/watch?v=Tj4Yu9-f9jM",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9246230842,
+			"link": "https://youtu.be/k3qhNXC-Veo?si=pFYdz3JQTEC1o6kG",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7640593967,
+			"link": "https://youtu.be/gdn3QMuZeqk?si=7-EURofUZdzooF32",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7825362162,
+			"link": "https://www.youtube.com/watch?v=_xtUI2HoZZM",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4502219941,
+			"link": "https://www.youtube.com/watch?v=W87xBFAPjAc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5262208158,
+			"link": "https://youtu.be/cWCWn0rL-vk?si=7uVmLofD9RNFnlOf",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5968711307,
+			"link": "https://www.youtube.com/watch?v=634VNF2rpsc",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

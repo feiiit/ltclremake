@@ -1,0 +1,45 @@
+{
+	"id": 112625737,
+	"name": "recollection",
+	"tags": [
+		"2.2",
+		"Long",
+		"Memory",
+		"Chokepoints",
+		"Overall"
+	],
+	"author": 2371963403,
+	"creators": [
+		2371963403
+	],
+	"verifier": 4123636997,
+	"verification": "https://youtu.be/vcZgvIEdRGk?si=Ys4j4i-YSeKbIdbo",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"records": [
+		{
+			"user": 8608948771,
+			"link": "https://youtu.be/qTJihrm4lgw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9334359459,
+			"link": "https://youtu.be/KyDWZrv6qKc?si=7QkwhnzhHKa3l68g",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9433199179,
+			"link": "https://youtu.be/nTCUyhTd6Mo?si=MHPuVkB59fc0CEeS",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5314542067,
+			"link": "https://youtu.be/Iz-DP_v8ww8",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

@@ -1,0 +1,106 @@
+{
+	"id": 114857275,
+	"name": "MORPHINE",
+	"tags": [
+		"2.2",
+		"Long",
+		"Flow",
+		"Chokepoints",
+		"Overall"
+	],
+	"author": 4200499813,
+	"creators": [
+		9053259029,
+		1038320995,
+		7125007115,
+		5012845636,
+		3861647245,
+		9485014603,
+		3523094835,
+		7419666430,
+		8075225073,
+		8155073021,
+		2459289155,
+		4200499813,
+		7405820364
+	],
+	"verifier": 3950323321,
+	"verification": "https://www.youtube.com/watch?v=jNO_YHjdCd0",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 3168595355,
+			"link": "https://youtu.be/1B1dYh2OyfA?si=IIKCG_b4mvdgsKU-",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8608948771,
+			"link": "https://youtu.be/PoYIvbzrzxQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1552473546,
+			"link": "https://youtu.be/whxIguG-lBw?si=1IKeZAuLT0VsXZNr",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9246230842,
+			"link": "https://youtu.be/HGq5IA2l0NE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9773797554,
+			"link": "https://youtu.be/eupaWWAl5QU?feature=shared",
+			"percent": 100,
+			"hz": 360,
+			"mobile": true
+		},
+		{
+			"user": 4439902560,
+			"link": "https://youtu.be/FQL3ekkMjYU?si=nO-Ei6DwpeHpynAP",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9549916967,
+			"link": "https://youtu.be/DUYX0AOPyk8",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1651835455,
+			"link": "https://www.youtube.com/watch?v=8wmyUP6XSbg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1053647436,
+			"link": "https://www.youtube.com/watch?v=SzN-hlXXlG0",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5611085886,
+			"link": "https://youtu.be/RcV5fyZEyPo",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6931485389,
+			"link": "https://youtu.be/9hQrTAAF_3I",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 2729069698,
+			"link": "https://youtu.be/biMOU8SmIPA",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

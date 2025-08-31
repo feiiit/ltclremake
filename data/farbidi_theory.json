@@ -1,0 +1,60 @@
+{
+	"id": 103373693,
+	"name": "FARBIDI THEORY",
+    "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Mirror",
+        "Cube",
+        "UFO",
+        "New Swing"
+    ],
+	"author": 1050632242,
+	"creators": [
+		8273075022,
+		8793317568,
+		5634672975,
+		1201670362,
+		6708573884,
+		9441614972,
+		4927582436
+	],
+	"verifier": 7235383035,
+	"verification": "https://www.youtube.com/watch?v=MQD6klwhcsM",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 5800152758,
+			"link": "https://www.youtube.com/watch?v=16TMIt0h7hc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6266816856,
+			"link": "https://www.youtube.com/watch?v=KxhM-5LLbiY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8777893227,
+			"link": "https://youtu.be/ibCJXg6WHzI",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8901367774,
+			"link": "https://youtu.be/RuLPUKnE4g8",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4725907886,
+			"link": "https://www.youtube.com/watch?v=j37Cz_SX0es",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

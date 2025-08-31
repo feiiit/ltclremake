@@ -1,0 +1,86 @@
+{
+	"id": 97364686,
+	"name": "Lithium",
+    "tags": [
+        "2.1",
+        "XL",
+        "Overall",
+        "Fast-Paced",
+        "Memory",
+        "Nerve Control"
+    ],
+	"author": 1861230410,
+	"creators": [
+		8438112350,
+		5710500460,
+		9994850135,
+		1861230410,
+		4063169885,
+		4770693078,
+		1239000296,
+		7231294739,
+		5037718573,
+		5209887705,
+		1352099286,
+		9127621185,
+		2392099922,
+		8944461324,
+		7429584444,
+		5690940914,
+		1783792473,
+		5542153440,
+		7777880991,
+		5011604199,
+		8861021981,
+		2938303513
+	],
+	"verifier": 3367798791,
+	"verification": "https://youtu.be/IfVM56qNVdA?si=5dqNkMNUTIqqfYp8",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"song": 555736,
+	"records": [
+		{
+			"user": 1032789438,
+			"link": "https://www.youtube.com/watch?v=vHuZiGFb9Es",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4081605783,
+			"link": "https://youtu.be/Y-VxRxfRtvs?si=R4GZeuVSYFWMTSXg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3153147806,
+			"link": "https://youtu.be/Wg2KlGSl-TQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7324692363,
+			"link": "https://www.youtube.com/watch?v=BftS0p8o2kM&t=1s",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7099339620,
+			"link": "https://youtu.be/xinpQLSMuYA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4724859843,
+			"link": "https://youtu.be/D-00nL8O-d4?si=hv9JxqTp2p9eoG7T",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8666148048,
+			"link": "https://youtu.be/PgFSfVCJV_0?si=c5VDJBQVjkDfE4Gr",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

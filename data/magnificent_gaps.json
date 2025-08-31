@@ -1,0 +1,64 @@
+{
+	"id": 110769422,
+	"name": "Magnificent Gaps",
+    "tags": [
+        "2.2",
+        "Long",
+        "2P",
+        "Chokepoints",
+        "Slow-Paced",
+        "Ship"
+    ],
+	"author": 3885646607,
+	"creators": [
+		4806114621
+	],
+	"verifier": 8055316686,
+	"verification": "https://www.youtube.com/watch?v=-L7ILKGoJPU",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 1834609087,
+			"link": "https://youtu.be/E8cZJA5Vmhk",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4530221665,
+			"link": "https://youtu.be/j3L1JwHfEWg?si=BtcVfcEBDzqH6w-a",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6333544869,
+			"link": "https://youtu.be/EydXhbQQYJ0",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6330419507,
+			"link": "https://youtu.be/5C-HjiMOLCI",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6274537191,
+			"link": "https://youtu.be/O9DZuB_Thcw?si=Zif9od5CTCkXgZko",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 2455786941,
+			"link": "https://youtu.be/SX2ybQyghR0",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7830624510,
+			"link": "https://youtu.be/_Q1W7IVD-fQ",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

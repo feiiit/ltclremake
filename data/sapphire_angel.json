@@ -1,0 +1,98 @@
+{
+	"id": 69617575,
+	"name": "Sapphire Angel",
+    "tags": [
+        "2.1",
+        "XXL",
+        "Timings",
+        "Chokepoints",
+        "Nerve Control",
+        "Wave"
+    ],
+	"author": 2394329204,
+	"creators": [],
+	"verifier": 8517684193,
+	"verification": "https://www.youtube.com/watch?v=yflBU6cD0EI",
+	"percentToQualify": 100,
+	"song": 513917,
+	"records": [
+		{
+			"user": 5412744808,
+			"link": "https://www.youtube.com/watch?v=-lI7BgZRrzA",
+			"percent": 100,
+			"hz": 144
+		},
+		{
+			"user": 7341732554,
+			"link": "https://youtu.be/dhCog9e4khk?si=TugcblORc8f3lYvj",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9405692896,
+			"link": "https://www.youtube.com/watch?v=8_W7PDePICE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1605313247,
+			"link": "https://youtu.be/233hyAiRnWE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 2718383349,
+			"link": "https://youtu.be/Cinvqa3RwIA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4317638521,
+			"link": "https://youtu.be/ah-nnZYKGlg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8047446085,
+			"link": "https://www.youtube.com/watch?v=8BvzL5YN_Kc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8723278042,
+			"link": "https://youtu.be/dmQDpbrj9IM?si=gNovvxxJMPdAeseW",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 2621539643,
+			"link": "https://www.youtube.com/watch?v=ya4Yva3kOJE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5091743978,
+			"link": "https://www.youtube.com/watch?v=mDhQjvbIK3Y",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8302736099,
+			"link": "https://youtu.be/HCuw7TuZdvQ?si=mKCgiG0gWcF4O600",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4886572813,
+			"link": "https://youtu.be/zHWVoC5nbv4",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6818679994,
+			"link": "https://youtu.be/Uy32FPtNySs",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

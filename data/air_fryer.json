@@ -1,0 +1,58 @@
+{
+	"id": 112468252,
+	"name": "Air Fryer",
+    "tags": [
+        "2.2",
+        "Long",
+        "Learny",
+        "High CPS",
+        "Ship"
+    ],
+	"author": 7882410752,
+	"creators": [
+		7882410752,
+		6076702762
+	],
+	"verifier": 6076702762,
+	"verification": "https://youtu.be/eRq4TwlVmPk",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 2612744215,
+			"link": "https://youtu.be/ixy5ird_3j8?si=dO4mAjW8olzkBwPA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3969992072,
+			"link": "https://youtu.be/t_Qd_HN5Qwc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 2455786941,
+			"link": "https://youtu.be/TJBDg90P-IY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3840185569,
+			"link": "https://www.youtube.com/watch?v=G34KlFbfUoY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5808948185,
+			"link": "https://youtu.be/3gUpUGK68U8",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8386913121,
+			"link": "https://youtu.be/0xGGcoVhjNA",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

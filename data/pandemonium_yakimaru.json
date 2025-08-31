@@ -1,0 +1,70 @@
+{
+	"id": 72082021,
+	"name": "Pandemonium (Yakimaru)",
+    "tags": [
+        "2.0",
+        "XL",
+        "Circles",
+        "Nerve Control",
+        "Wave"
+    ],
+	"author": 2176148637,
+	"creators": [
+		2176148637,
+		1637528663
+	],
+	"verifier": 7673489317,
+	"verification": "https://www.youtube.com/watch?v=ewvGLBX4ee4",
+	"percentToQualify": 100,
+	"song": 685746,
+	"records": [
+		{
+			"user": 5589328288,
+			"link": "https://youtu.be/6XkbOirRwQE?si=x9AzRLuWTBW36BQM",
+			"percent": 100,
+			"hz": 240
+		},
+		{
+			"user": 5067954587,
+			"link": "https://www.youtube.com/watch?v=LpRHd3Q948Q",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7823877256,
+			"link": "https://youtu.be/1CD62zRmTIs?si=dhHVJaXHrxQUrWLg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3624252313,
+			"link": "https://youtu.be/TYWd2iogiKs?si=J8qVFAlkoT56pNs6",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8552915716,
+			"link": "https://www.youtube.com/watch?v=X1mbIK1uQzA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8904205120,
+			"link": "https://youtu.be/gHUktGM3zsU?si=V1Kg6vlqCpx67XIs",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7600446238,
+			"link": "https://youtu.be/zqU5PEmjGqA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9746953199,
+			"link": "https://www.youtube.com/watch?v=SoLj8a_Tlh8",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

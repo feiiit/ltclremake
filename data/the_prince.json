@@ -1,0 +1,50 @@
+{
+	"id": 99693231,
+	"name": "THE PRINCE",
+    "tags": [
+        "2.2",
+        "XL",
+        "NONG",
+        "Timings",
+        "Memory"
+    ],
+	"author": 6341275175,
+	"creators": [],
+	"verifier": 3969241535,
+	"verification": "https://youtu.be/ClB4Xc_69lA",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"song": 969351,
+	"records": [
+		{
+			"user": 1907036226,
+			"link": "https://www.youtube.com/watch?v=SUiWX1KggBw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1913396482,
+			"link": "https://youtu.be/Tam5wZvI8-0?si=A_FBirjpihU4KJKo",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9433199179,
+			"link": "https://youtu.be/bu5dtUfI1hU?si=PU8e_p5QauBL6kQD",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7600446238,
+			"link": "https://youtu.be/14bylubFFq4",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8041825815,
+			"link": "https://youtu.be/m_f4NxA145o",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"id": 111266375,
+	"name": "inMind",
+	"author": 2249757201,
+	"creators": [
+		2249757201
+	],
+	"verifier": 2249757201,
+	"verification": "https://youtu.be/Ewv8aUGC0Rk?si=zYHCkaOpYQlLrgiu",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"song": 921956,
+	"records": [
+		{
+			"user": 8097444196,
+			"link": "https://youtu.be/Q6KBj3mchjY?si=Q_i7X1mG9BnbyvFf",
+			"percent": 100,
+			"hz": 360,
+			"mobile": true
+		},
+		{
+			"user": 3504422141,
+			"link": "https://youtu.be/2uZ5KCJ3-vA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9433199179,
+			"link": "https://youtu.be/3OgN2s9uybg?si=Fu8y8pdSDTeVnu6i",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

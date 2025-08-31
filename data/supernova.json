@@ -1,0 +1,88 @@
+{
+	"id": 104895221,
+	"name": "Supernova",
+    "tags": [
+        "2.2",
+        "Long",
+        "Overall",
+        "Fast-Paced",
+        "Ship",
+        "Wave"
+    ],
+	"author": 1073203191,
+	"creators": [
+		2855835226,
+		3160384183,
+		1073203191,
+		5993807071,
+		2068053467,
+		8987002793
+	],
+	"verifier": 9559006482,
+	"verification": "https://youtu.be/KWE1Mjo7gf8?si=rpccHO5D9aaBIJNG",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"records": [
+		{
+			"user": 2482424178,
+			"link": "https://youtu.be/wWfTJJBQsoE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8097444196,
+			"link": "https://youtu.be/_wwo9jvLCkk?si=pro_YlS7dLrde2bL",
+			"percent": 100,
+			"hz": 360,
+			"mobile": true
+		},
+		{
+			"user": 4824398482,
+			"link": "https://youtu.be/VzpDPIyfm-M?si=UATuFrPlUxmoK4UX",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3093943652,
+			"link": "https://medal.tv/games/geometry-dash/clips/jI7YxKHWu2lu6NctE?invite=cr-MSxTZW0sMTc1MTg4OTQs",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4886572813,
+			"link": "https://youtu.be/oPJyzhkPMCA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7268700769,
+			"link": "https://youtu.be/KYvVomOo6Xc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8290982750,
+			"link": "https://youtu.be/67xUWBJmRtQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1951133750,
+			"link": "https://youtu.be/E0FbMKOQuTA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9433199179,
+			"link": "https://youtu.be/PraSbXgoSWc?si=E3gZkiDgKV32o0GY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3027953834,
+			"link": "https://www.youtube.com/watch?v=_VLeIP3UmiE",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"id": 111596039,
+	"name": "0 mind",
+    "tags": [
+        "2.2",
+        "Long",
+        "Clicksync",
+        "Timings",
+        "Learny",
+        "Gimmicky",
+        "Cube",
+        "Ball",
+        "Spider"
+    ],
+	"author": 3092674440,
+	"creators": [
+		3092674440
+	],
+	"verifier": 8867478587,
+	"verification": "https://youtu.be/bDPl2INK0do?si=hN6edOWoNhfnqPCQ",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"records": [
+		{
+			"user": 4034973733,
+			"link": "https://youtu.be/TLt7DWoMle0",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 2902580574,
+			"link": "https://youtu.be/6WX_3s7J7tE",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8199551609,
+			"link": "https://youtu.be/lvQ5rPvJaWw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9433199179,
+			"link": "https://youtu.be/vsYt1O8mlwA?si=glgTS-4zrvm5psrF",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

@@ -1,0 +1,70 @@
+{
+	"id": 114607963,
+	"name": "Noble Plague",
+    "tags": [
+        "2.2",
+        "Long",
+        "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Wave"
+    ],
+	"author": 7335740857,
+	"creators": [
+		7335740857
+	],
+	"verifier": 6048114869,
+	"verification": "https://youtu.be/o9sFsbyAGB8?si=JYvDVPrDsUiKlH4u",
+	"percentToQualify": 100,
+	"password": "Free Copy",
+	"records": [
+		{
+			"user": 1901582634,
+			"link": "https://youtu.be/Bv9VBzQfqLk?si=2KfKPN8kV1DFcHRc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 2674551082,
+			"link": "https://www.youtube.com/watch?v=tm0bc-fTcoQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7609642795,
+			"link": "https://youtu.be/7faGATZKyjU",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8436547132,
+			"link": "https://medal.tv/games/geometry-dash/clips/jDUJ7z8RzBHnq67eb?invite=cr-MSx1WTQsMTkxMzU0MTQ3LA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9762756242,
+			"link": "https://youtu.be/5oSJt-0_mmw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7830624510,
+			"link": "https://youtu.be/k2tTyYUqi_g",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7869305899,
+			"link": "https://www.youtube.com/watch?v=OtifCvWG7EE&ab_channel=Taublix",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7878610721,
+			"link": "https://youtu.be/KDFN_kCyTNA",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

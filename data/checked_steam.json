@@ -1,0 +1,47 @@
+{
+	"id": 105748155,
+	"name": "Checked Steam",
+	"tags": [
+		"2.2",
+		"Long",
+		"NONG",
+		"Chokepoints",
+		"High CPS",
+		"Gimmicky",
+		"Slow-Paced",
+		"Precision",
+		"Wave"
+	],
+	"author": 2440839839,
+	"creators": [],
+	"verifier": 2233668760,
+	"verification": "https://youtu.be/cq6047eYGXs?si=W8V6OsbC4-gs6ISN",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 8027183889,
+			"link": "https://www.youtube.com/watch?v=rifu0L6iekc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8290935851,
+			"link": "https://youtu.be/rtH35JCU3ys?si=kQn7TmiGNZhBQkNZ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6266816856,
+			"link": "https://youtu.be/TEsziEvj0ik?si=iNc89MVziEVrxdeq",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5011629074,
+			"link": "https://youtu.be/UD9MpywC_XU?si=_CKmcV26b0BvIoC5",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

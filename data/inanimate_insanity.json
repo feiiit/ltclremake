@@ -1,0 +1,25 @@
+{
+    "id": 82225395,
+    "name": "inanimate INSANITY",
+    "tags": [
+        "2.1",
+        "XL",
+        "Timings",
+        "Chokepoints",
+        "Gimmicky"
+    ],
+    "author": 4134831238,
+    "creators": [],
+    "verifier": 1693365186,
+    "verification": "https://www.youtube.com/watch?v=IMk5aEi6iJc",
+    "percentToQualify": 100,
+    "song": 183180,
+    "records": [
+        {
+            "user": 3377410347,
+            "link": "https://youtu.be/Uz6ThXeQVKg?si=pci6iAzPJe5PEePJ",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

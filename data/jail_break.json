@@ -1,0 +1,57 @@
+{
+	"id": 111336924,
+	"name": "Jail Break",
+	"tags": [
+		"2.2",
+		"Long",
+		"Chokepoints",
+		"Timings",
+		"Overall"
+	],
+	"author": 4986443004,
+	"creators": [
+		4986443004
+	],
+	"verifier": 4986443004,
+	"verification": "https://youtu.be/8RmAbrvFPt0?si=WdKRMjV2O0vNobXZ",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 9658052783,
+			"link": "https://youtu.be/sdKo_TSsFL0?si=oCrnBluDRuYRLeq_",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1673601465,
+			"link": "https://www.youtube.com/watch?v=0uya5PGnjSQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1016442764,
+			"link": "https://www.youtube.com/watch?v=Yd8SiMLo_iQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8608948771,
+			"link": "https://youtu.be/-kTRu2SzwZY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9433199179,
+			"link": "https://youtu.be/4-U2bIZLd_s?si=kTYXUxVTKLh26k8r",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4439902560,
+			"link": "https://youtu.be/nA8zPJ6k9TE?si=iK6tOBIwDUhrl1_0",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

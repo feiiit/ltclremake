@@ -1,0 +1,50 @@
+{
+	"id": 110769842,
+	"name": "project girlboss",
+	    "tags":[
+        "2.2",
+        "Long",
+        "Gimmicky",
+        "Duals",
+        "Memory"
+    ],
+	"author": 1380395625,
+	"creators": [],
+	"verifier": 2062304635,
+	"verification": "https://youtu.be/byfotx3S5OA?si=5Lfrl__yWnKQxC71",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"song": 878374,
+	"records": [
+		{
+			"user": 7099339620,
+			"link": "https://youtu.be/Av88rjuAJMQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8041825815,
+			"link": "https://youtu.be/xOnRl2FbunM",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9433199179,
+			"link": "https://youtu.be/Y12UZBVyosA?si=keeQuE9Ts6quN77t",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4121201308,
+			"link": "https://www.youtube.com/watch?v=IvUAPFLrqBI",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1787732959,
+			"link": "https://youtu.be/bpSUk-wfm4U",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

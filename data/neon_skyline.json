@@ -1,0 +1,55 @@
+{
+	"id": 88822041,
+	"name": "Neon Skyline",
+    "tags": [
+        "2.1",
+        "Long",
+        "NONG",
+        "Timings",
+        "Chokepoints",
+        "Learny"
+    ],
+	"author": 4450487850,
+	"creators": [],
+	"verifier": 1977624064,
+	"verification": "https://www.youtube.com/watch?v=HvGjIAeLv_8&pp=ygUVbmVvbiBza3lsaW5lIHZlcmlmaWVk",
+	"percentToQualify": 100,
+	"records": [
+		{
+			"user": 7452292815,
+			"link": "https://www.youtube.com/watch?v=31TeFWpBslc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7688909842,
+			"link": "https://www.youtube.com/watch?v=HVY9ppv0wSI",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6328546719,
+			"link": "https://www.youtube.com/watch?v=d82NiiVG7Fk",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9007829327,
+			"link": "https://www.youtube.com/watch?v=w3_gaIS5KDw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3693363592,
+			"link": "https://youtu.be/5Im4YdcBcA0?si=g9Vasbjxu4frKs7V",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7937190301,
+			"link": "https://www.youtube.com/watch?v=9_jKjl6BnjM",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

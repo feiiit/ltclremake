@@ -1,0 +1,104 @@
+{
+	"id": 113544846,
+	"name": "S3NT1M3NT",
+	"tags": [
+		"2.2",
+		"Medium",
+		"Fast-Paced",
+		"Clicksync",
+		"Chokepoints",
+		"Overall"
+	],
+	"author": 4480972695,
+	"creators": [],
+	"verifier": 4480972695,
+	"verification": "https://youtu.be/sIAmLIJCDwM?si=mYU9YyoOpM2bITPm",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"records": [
+		{
+			"user": 4250301169,
+			"link": "https://www.youtube.com/watch?v=3fd2teYdwWg&t=57s",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8041825815,
+			"link": "https://youtu.be/G8YD7AYUKoI?si=Ffwbs1WL6hbnwaS_",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5164016369,
+			"link": "https://youtu.be/9hp0dAoS5Yw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4147457921,
+			"link": "https://youtu.be/u29f5qkeJbs?si=7A_9h0RrjFlv8oAM",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7429622934,
+			"link": "https://www.youtube.com/watch?v=Oq-NPbTRYrg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9236356861,
+			"link": "https://youtu.be/VhkjjoBb-x0?si=Pw050yhPpv58dxyc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8608948771,
+			"link": "https://youtu.be/uKRzH4MB7pQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 4886572813,
+			"link": "https://youtu.be/kwmoh1w0_mw",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8216489547,
+			"link": "https://youtu.be/OhlqJbanzKQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 5757119686,
+			"link": "https://youtu.be/cAN6yvuofWQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 9714725178,
+			"link": "https://www.youtube.com/watch?v=llJCYRM4bcs",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3740620269,
+			"link": "https://youtu.be/4McShQjrCxY",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8485402626,
+			"link": "https://youtu.be/MhQYCBwjK1c",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1482327994,
+			"link": "https://youtu.be/O4UxJhc3q1Q?si=p52AxeM32HffkwHG",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

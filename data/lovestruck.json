@@ -1,0 +1,56 @@
+{
+	"id": 107764640,
+	"name": "Lovestruck",
+	"tags": [
+		"2.2",
+		"Long",
+		"Memory",
+		"Fast-Paced",
+		"Overall"
+	],
+	"author": 6015376129,
+	"creators": [
+		6015376129,
+		5816304874,
+		4161783605,
+		4235117103,
+		9521175012,
+		2079881899,
+		2645927456,
+		1028357416,
+		8575323303,
+		8793524854,
+		4546764138
+	],
+	"verifier": 9577565812,
+	"verification": "https://youtu.be/nKOqCmJJRD4?si=XR2psgsy1Wq6o91A",
+	"percentToQualify": 100,
+	"password": "No Copy",
+	"song": 626472,
+	"records": [
+		{
+			"user": 8608948771,
+			"link": "https://youtu.be/4qUOrKO1keU",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 1255942108,
+			"link": "https://youtu.be/ghowY6S32oQ",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 7049977450,
+			"link": "https://www.youtube.com/watch?v=pOoYIkiG6Uc",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3442731355,
+			"link": "https://youtu.be/3RfmJYu-vP4",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}

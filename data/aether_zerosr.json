@@ -1,0 +1,55 @@
+{
+	"id": 99800205,
+	"name": "aether (ZeroSR)",
+	"tags": [
+		"2.2",
+		"Long",
+		"Fast-Paced",
+		"Learny",
+		"Gimmicky",
+		"UFO",
+		"Spider",
+		"New Swing"
+	],
+	"author": 1683839249,
+	"creators": [
+		1683839249,
+		2335779579
+	],
+	"verifier": 7818417859,
+	"verification": "https://youtu.be/-IkL_h0y1zE?si=juNkKbDVXLZumQKZ",
+	"percentToQualify": 100,
+	"song": 912289,
+	"records": [
+		{
+			"user": 6503878577,
+			"link": "https://www.youtube.com/watch?v=aNIdst7esek&ab_channel=ElEek",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8659626507,
+			"link": "https://www.youtube.com/watch?v=-DFu56zvyrA",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 6694885071,
+			"link": "https://youtu.be/RTNkoPVxX8g?si=mTWDrCYzoUSTw6vx",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 3014926899,
+			"link": "https://youtu.be/TTJ51PvRapg",
+			"percent": 100,
+			"hz": 360
+		},
+		{
+			"user": 8969166265,
+			"link": "https://youtu.be/65KL7JmlrIc?si=crg3Ti6S0UBs00X-",
+			"percent": 100,
+			"hz": 360
+		}
+	]
+}
